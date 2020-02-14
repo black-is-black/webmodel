@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>收款</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<script src="js/jquery-1.10.1.min.js"></script>
+
+<body >
+<div class="nei_header" >
+
+    <h3>收款</h3>
+     <div class="rentu">
+         <img src="images/renturn.png" alt="">
+     </div>
+    <div class="jix">
+        牌号：<input type="text" value="0001" style="width: 100px; height:36px;">
+    </div>
+</div>
+
+
+
+
+
+
+<div class="con_sec">
+
+        <div class="jisuan">
+            <ul>
+                <li><span style="background-color: #73b7b8;">总额： </span >  <input type="text" value="299.8" style="color:#73b7b8;"> <button class="on">现金</button></li>
+                <li><span style="background-color: #cb636e;">现金：</span>   <input type="text" value="299.8" style="color:#cb636e;"><button >储蓄卡</button></li>
+                <li><span style="background-color: #73b7b8;">找零：</span>   <input type="text" value="0" style="color:#73b7b8;"><button>银联卡</button></li>
+                <li><div class="zuhe">组合支付 <input type="checkbox"> </div></li>
+            </ul>
+        </div>
+
+
+    <div class="bing_box">
+        <div class="anjian">
+            <div class="sdleft">
+
+                <input type="button" value="1">
+                <input type="button" value="2">
+                <input type="button" value="3">
+                <input type="button" value="4">
+                <input type="button" value="5">
+                <input type="button" value="6">
+                <input type="button" value="7">
+                <input type="button" value="8">
+                <input type="button" value="9">
+                <input type="button" value="0">
+                <input type="button" value="00">
+                <input type="button" value=".">
+            </div>
+            <div class="sfrit">
+                <div>
+                    <input type="button" value="50">
+                    <input type="button" value="100">
+                    <input type="button" value="200">
+                    <input type="button" value="300">
+                </div>
+                <div class="mio">
+                    <input type="button" class="qingc">
+                    <input type="button" value="确认" class="que">
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--左侧展开折扣-->
+<div class="box">
+    <div class="change-type">
+        <div class="type-left" :class="showType == true ? 'showListType':''">
+
+            <div class="tabbox">
+                <div class="tab">
+                    <a href="javascript:;" class="on">整单折扣</a>
+                    <a href="javascript:;">优惠卷</a>
+                </div>
+                <div class="content">
+                    <ul>
+                        <li style="display:block;">
+                            <input type="text" value="100%" class="milo">
+                            <span>95折</span>
+                            <span>9折</span>
+                            <span>85折</span>
+                            <span>8折</span>
+                            <span>75折</span>
+                            <span>7折</span>
+                            <span>6折</span>
+                            <span>5折</span>
+                            <span>免单</span>
+                            <span>抹零</span>
+
+
+
+                        </li>
+                        <li>
+                            <input type="text" value="扫描或者输入优惠卷号" class="milo">
+                            
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="type-right">
+            <p>
+                <i class="el-icon-menu"></i>
+                折扣
+            </p>
+        </div>
+    </div>
+</div>
+<script>
+    $(function(){
+        $('.type-right').click(function(){
+            $(this).prev('.type-left').toggleClass('showListType')
+        });
+        $('.type-left ul li').click(function(){
+            $(this).addClass('active').siblings('li').removeClass('active')
+        });
+
+
+
+        //tab栏
+
+        $(".tabbox .tab a").mouseover(function(){
+            $(this).addClass('on').siblings().removeClass('on');
+            var index = $(this).index();
+            number = index;
+            $('.tabbox .content li').hide();
+            $('.tabbox .content li:eq('+index+')').show();
+        });
+
+        var auto = 0;  //等于1则自动切换，其他任意数字则不自动切换
+        if(auto ==1){
+            var number = 0;
+            var maxNumber = $('.tabbox .tab a').length;
+            function autotab(){
+                number++;
+                number == maxNumber? number = 0 : number;
+                $('.tabbox .tab a:eq('+number+')').addClass('on').siblings().removeClass('on');
+                $('.tabbox .content ul li:eq('+number+')').show().siblings().hide();
+            }
+            var tabChange = setInterval(autotab,3000);
+            //鼠标悬停暂停切换
+            $('.tabbox').mouseover(function(){
+                clearInterval(tabChange);
+            });
+            $('.tabbox').mouseout(function(){
+                tabChange = setInterval(autotab,3000);
+            });
+        }
+
+
+
+
+    })
+</script>
+<!--左侧展开折扣-->
+
+
+
+
+</body>
+</html>

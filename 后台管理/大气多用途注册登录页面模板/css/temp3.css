@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+@import url("public.css");
+      
+body{font-family: 'Microsoft Yahei' !important; font-weight: 400 !important;}
+.pre{position: relative;}
+.center960{background-color: #FFFFFF;width: 960px;margin: auto;margin-top:50px; padding-top: 1px;padding-bottom: 30px;}
+.center840{width: 800px;margin: auto;position: relative;}
+.bgimg{background:url('../images/bg.png') repeat-y center top; width: 900px; height: 331px; margin-top: 122px; padding-top: 1px;}
+.w840{width: 900px;position: relative; margin-top:85px; height: 90px;padding-top: 10px;}
+.fn48{font-size: 48px;}
+.w160h66{width: 900px;color: #5bc0de; text-align: center;}
+.sex{margin-left: 20px;font-size: 16px;}
+.birthday{margin-left: 20px;font-size: 16px;}
+.w1602h66{ width: 160px; margin: auto;}
+.mt5{ margin-top: 5px;}
+.jbxx div{bottom: 0px;}
+.base{min-height: 105px;overflow: hidden;max-width: 760px; margin: auto;}
+.base ul li{float: left;margin-right: 26px;height: 46px;min-width: 110px;margin-top: 10px;}
+.base ul .w300{min-width: 280px;margin-right: 0px;}
+.base ul .w160{min-width: 160px;}
+.base ul .jzd{margin-right: 0px;}
+.base ul li label{font-size: 14px;color: #898989;}
+.base ul li p{font-size: 16px;padding-top: 2px;}
+.center840 h2{height: 40px;line-height: 40px; border-bottom: 2px solid #5bc0de; color: #5bc0de; font-size: 18px;padding-left: 30px;margin-top:10px;margin-bottom:10px;text-align: left;}
+.h40{height: 40px;line-height: 40px;}
+.work{overflow: hidden;padding-bottom: 10px;margin-top: 10px;}
+.w130{ width: 80px;background-color: #eeeeee;height: 24px;line-height: 24px;font-size: 14px;text-align: center;border-radius: 20px; margin-top: 8px;}
+.w650 {width: 100%; position: relative;border-bottom: 1px solid #f5f5f5;min-height: 40px; padding-bottom: 5px; margin-left: 95px;}
+.time_b_e{ margin-left: 29px; padding-left: 1px; overflow: hidden;}
+.work_address{min-width: 122px;height: 40px;line-height: 40px;float: left;margin-right: 30px;font-size: 16px;font-weight: bold;}
+.work_descipt{width: 686px;clear: both; }
+.work_descipt ul li{background: url("../images/d.png") 22px 9px no-repeat;margin-top: 10px;font-size: 14px;padding-left: 36px;line-height: 22px;}
+.w130_2{min-width: 160px;min-height: 40px;text-align: left;padding-left: 30px;line-height: 40px;font-size: 16px;}
+.shill_level{position: absolute;right: 5px;top: 0px;height: 40px;margin-top: 10px;line-height: 40px;font-size: 14px;}
+.shill_level label{float: left;height: 20px;line-height: 20px;margin-left: 5px;color: #898989;}
+.skill{border-bottom: 1px solid #f5f5f5;overflow: hidden;position: relative;}
+.work_zw{float: left;margin-right: 120px;}
+.edu_base{width: 505px;float: left;padding-left: 0px;padding-top: 18px;padding-bottom: 10px;}
+.edu_base ul{width: 515px;}
+.edu_base div{min-height: 22px;line-height: 22px;float: left;}
+.edu_base div label{min-height: 22px;line-height: 22px;}
+.mw2202{min-width: 220px;line-height:22px;line-height:22px;margin-right: 10px;font-size: 16px;font-weight: bold;}
+.mw220{min-width: 200px;margin-right: 25px;font-size: 14px;}
+.mw2552{width: 160px;height:22px;line-height:22px;font-size: 14px;font-weight: bold;margin-right: 25px;}
+.mw255{min-width: 225px;float: left;margin-right: 20px;font-size: 14px;}
+.edu{min-height: 80px;border-bottom: 1px solid #f5f5f5;overflow: hidden;.edu}
+.headimg {position: absolute;top: -70px;right: 0px;left: 0px; margin: auto; width: 150px; height: 150px; background-color: #ffffff;border-radius: 100%; padding: 5px;}
+.headimg img {  border-radius: 100%; width: 140px; height: 140px;}
+.mb0{margin-bottom: 0px !important;padding-bottom: 0px;}
+.sch_gred{color: #000000;font-weight: bold;}
+.col_8989{color: #898989;}
+.minw{width: 400px;}
+.begin_year {width: 60px;height: 60px;line-height: 60px;background-color: #ed865c;border-radius: 100%;font-size: 16px; text-align: center; color: #fff;margin-bottom: 10px;}
+.time_b_e {margin-left: 30px; border-left: 2px dotted #535353; margin-top: 2px;}
+.time_abst{ float:left;width: 95px; padding-left: 5px; font-size: 14px;position: relative;margin-left: -96px;}
+.time_begin {height: 40px;}
+.time_be{ margin-bottom: 10px;}
+.time_begin .time_begin_li{ width: 90px; height: 20px; line-height: 20px;padding-top: 10px; }
+.time_end_li{ width: 90px; height: 20px; line-height: 20px; padding-top: 10px; }
+.time_end{height: 40px;line-height: 20px; margin-top: 10px;}
+
+.toicon {background: url("../images/iconpdf915.png") 0px -6px no-repeat;}
+.toiconedu {background: url("../images/iconpdf915.png") 0px -56px no-repeat;}
+.toiconwrok {background: url("../images/iconpdf915.png") 0px -106px no-repeat;}
+.toiconskill {background: url("../images/iconpdf915.png") 0px -206px no-repeat;}

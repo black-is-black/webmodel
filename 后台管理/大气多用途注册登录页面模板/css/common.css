@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0}
+ul{ list-style:none}
+body{color:#666; font-family:"微软雅黑"}
+a{ text-decoration:none; color:#666}
+a:hover{ text-decoration:none;cursor:pointer}
+.hides{ display:none}
+.shows{ display:block}
+.txt,.txt input,.txt select{ background-color:#f7f7f9}
+L{ float:left}
+R{ float:left}
+/*点击小邮件弹出框开始*/
+.reveal-modal-bg{position:fixed;height:100%;width:100%;background-color:#000;z-index:100;display:none;top:0;left:0;}
+.reveal-modal{visibility:hidden;top:200px;left:50%;margin-left:-340px;width:600px; background:#fff;position:absolute;z-index:101;padding:30px 40px 34px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;}
+.reveal-modal .close-reveal-modal {
+font-size:22px;line-height:.5;position:absolute;top:8px;right:11px;color:#aaa;font-weight:bold;cursor:pointer;}
+.tckbj{background:url(../images/icon_goback1.png) no-repeat}
+.reveal-modal .title0{font-size:24px;color:#434343;padding:0 0 20px 0;}
+.reveal-modal .tutu{ width:262px; /*height:237px;*/ padding-top:60px; margin:0 auto; padding-bottom:100px;}
+.reveal-modal .tutu img{ width:262px; height:237px;}
+.tckbj:hover{ background:url(../images/icon_goback0.png) no-repeat}
+/*点击小邮件弹出框结束*/
+
+/*头部开始*/
+.header{ width:100%; height:50px;border-bottom:1px solid #e7e7e7; background:#fff}
+.header .header_n{ width:900px; height:50px; margin:0 auto; }
+.header .header_logo{float:left; width:96px; height:50px; background:url(../images/logo.png) center no-repeat}
+.header .header_nav{ float:right;width:304px; height:50px; margin-right:15px;background:#FFF}
+.header .header_nav ul.ul1{ }
+.header .header_nav ul.ul1 li{ float:left; height:50px; line-height:50px; margin-right:20px;font-weight:100;font-weight:100;}
+.header .header_nav ul.ul1 li a:hover{ color:#229ad6}
+.header ul.ul1 li .email0{ width:16px; height:50px; background:url(../images/email0.png) center no-repeat}
+.header ul.ul1 li .email0:hover{width:16px; height:50px; background:url(../images/email1.png) center no-repeat;cursor:pointer}
+.header ul.ul1 li .header_nav2{ background:url(../images/hedaer_tx.jpg) no-repeat;background-position:center center;background-size:32px;  width:32px; height:50px;}
+.header ul.ul1 li .header_nav2:hover{ cursor:pointer}
+
+.header .header_nav ul.ul2{position:absolute;z-index:1000;margin:2px 0 0;font-size:14px; top:48px; margin-left:145px;width:158px; height:150px; background-color:#fff;-webkit-background-clip:padding-box;background-clip:padding-box; border:1px solid rgba(0,0,0,.15);border-radius:4px;-webkit-box-shadow:0 6px 12px rgba(0,0,0,.175);box-shadow:0 6px 12px rgba(0,0,0,.175)}
+.header ul.ul2 li{ float:left; width:158px; height:50px; text-align:center; line-height:50px; cursor:pointer}
+.header ul.ul2 li:hover{ background:#efefef; color:#22a4dd}
+/*头部结束*/

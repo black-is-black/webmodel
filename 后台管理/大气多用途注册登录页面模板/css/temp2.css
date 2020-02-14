@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+@import url("public.css");
+
+        
+.main2{width:960px;margin: 0 auto;color:#434343;background-color: #ffffff;margin-top:50px;min-height: 1200px;}
+.logo_tem{height:50px;}
+.center_tem{position:relative;padding-bottom: 40px;overflow: hidden;}
+.mainleft{width:300px;background:#e8e6e7; float: left;  }
+.leftpic{padding-top: 50px;position:relative;}
+.leftpic img{display: block;width:126px;height:126px;}
+.uname{margin-top: 23px;position:relative; text-align: center;font-size: 28px;line-height: 32px;}
+
+.uxsxx{margin-top: 28px;text-align: center;font-size: 16px;padding-left: 14px;padding-right: 14px;}
+.uxsxx p{margin-bottom: 8px;}
+.uxsxx .min{font-size: 14px; color: #5d5d5d;}
+.lianxiwo{padding:0 24px;margin-top: 40px; text-align: center;}
+.top:last-child{margin-bottom: 0;}
+.lianxiwo li{ width: 210px;text-align: left;line-height: 20px;font-size: 14px;padding-left: 46px;color: #000; padding-top: 10px;}
+.icon_qq{ background: url("../images/tem6-xicon.png") no-repeat 18px -94px;}
+.icon_email{ background: url("../images/tem6-xicon.png") no-repeat 18px -47px;}
+.icon_phone{ background: url("../images/tem6-xicon.png") no-repeat 18px -6px;}
+.icon_weixin{ background: url("../images/tem6-xicon.png") no-repeat 18px -139px;}
+.lianxiwo .prex{width:54px;float: left;}
+.lianxiwo .next{word-break:break-all;word-wrap: break-word;color: #000000;}
+.jineng{padding:0 24px;margin-top: 40px;}
+.jineng ul{ clear: both; padding-top: 22px;}
+.jineng .prex{    width: 240px;text-align: left; line-height: 20px;font-size: 14px;color: #000; padding-left: 30px;}
+.jineng .next{width: 200px;height: 22px;background-color: #FFFFFF;border: 1px solid #5d5d5d;margin: auto;margin-top: 16px;}
+
+.jineng li{margin-bottom: 8px;}
+.jineng span{float: left;width: 6px;height: 6px;border-radius: 6px;margin-right: 4px;margin-top: 6px;background: #e8e6e7;border: 2px solid #000;position: relative;left:0;top:0;margin-left: -14px;}
+.jineng span.on{background:#00b7ee;border:1px solid #00b7ee;}
+.mainright{min-height: 1200px;margin-bottom: -9999px;padding-bottom: 9999px;float: right; width: 660px;}
+.rightcenter{padding:0 0 0 32px;}
+.top{margin-bottom: 25px;position: relative;}
+.righttitle{font-size: 18px;color: #434343;margin-bottom: 10px;width: 275px;float: left;height: 34px;    margin-top: 23px;margin-left: 12px;}
+.centermain{padding-left:33px; }
+.schollmain{  position: relative; margin-bottom: 10px;     display: inline-block; }
+.schollname{font-size:16px; margin-right: 10px; height: 22px; line-height: 22px;}
+.schollname span{font-size: 14px;color:#434343;padding-left: 30px;}
+.zhuanye{font-size:16px;color:#5d5d5d;margin-top: 8px;  bottom: 30px; }
+.pb50{ bottom: 52px;}
+.liebiao{position:relative;margin-top: 0px;}
+.erjititle span{background:#fff; font-size:14px;line-height: 15px; text-align:left; width:100px; border-radius: 12px;min-width: 54px;padding: 2px 0px; max-width: 130px;overflow: hidden;height: 15px;position:relative;z-index: 2;padding-bottom: 3px;}
+
+.erjineirong{font-size: 14px;line-height: 24px;word-break:break-all;word-wrap: break-word; margin-top: 10px;padding-left: 17px;}
+.picbg{position: relative; padding:4px;width: 141px;height: 141px;left: 0;top: 0;border-radius: 100%;background: #f2f1f2;z-index: 1;/* left: 65px;*//* top: 45px;*/margin: auto;
+    }
+.picmain{width: 133px;height: 133px;overflow: hidden;border-radius: 100%;background: url('../images/web_headimg_default.jpg') center no-repeat;background-size: cover;position: absolute;z-index: 2;margin: auto; }
+.mainnavbg{background:#e8e6e7;margin-bottom: -9999px;padding-bottom: 9999px;}
+.seshool{margin-left: 0px;margin-top: 8px;font-size: 16px;color: #5d5d5d; bottom: 30px;}
+.liebiao ul li{margin-bottom: 20px;position: relative;display: inline-block;}
+.pptg{font-size: 14px;margin-top: 0px;height: 20px;color: #5d5d5d;}
+.w476{width: 533px; position: relative;min-height: 22px;}
+.w513{width: 533px; position: relative;min-height: 22px;}
+
+/*new*/
+.erjimain{ float: left;}
+.w533{ width: 533px;position:relative;}
+.erjimain{padding-left:20px;margin-bottom: 0px; margin-top: 0px;}
+.erjixxtitle{position:relative;left:0;top:0;font-size: 14px;margin-top: 0px;margin-bottom:0px; color: #000000;}
+.erjixxtitle p{width:8px;height:8px;border-radius: 4px;position:absolute;left:-23px;top:4px;background:#00b7ee;}
+.erjidate{font-size: 14px;color: #5d5d5d;margin-bottom: 10px;position: absolute;right: 0px;top: 2px;}
+.ti_right{position: relative; margin-top: 14px;}
+.seshool2{margin-left: 0px;margin-top: 8px;font-size: 16px;color: #5d5d5d; bottom: 30px;}
+.zidingyinr{margin-top: 5px;width: 533px;line-height: 24px;font-size: 14px;    }
+.workmain{position: relative;}
+.schollname .totitle{ float: left; line-height: 22px;}
+.schollname .zcxz{background-color: #229ad6;color: #FFFFFF;font-size: 14px;text-align: center;height: 20px;line-height: 20px;float: left;padding: 0 7px;margin: 0px;margin-left: 5px;margin-top: 1px;}
+
+
+.w64h64{ width: 64px; height: 64px; background-color: #FFFFFF; border-radius: 100%; text-align: center; float: left;}
+.w64h64 .w25h21 { width: 27px; height: 23px; margin-top: 20px;     margin-left: 1px;}
+.lefttitle{font-size: 18px;color: #1b1b1b;height: 28px;line-height: 24px;text-align: left; padding-left: 10px;  width: 170px;margin: auto; float: left; margin-top: 20px;}
+.lefttitle label{ font-size:14px;}
+.lianxiwo ul{ clear: both; padding-top: 16px;}
+.bgcccc{ background-color: #e8e6e7;}
+.erjititle{width: 100px;float: left;font-size: 14px;height: 18px;line-height: 18px;}
+.mt10{ margin-left: 10px;}
+.mt20{margin-top: 20px;}
+.yuanquan{ float: left;width: 6px;height: 6px;border-radius: 6px;margin-right: 6px;margin-top: 6px;background: #fff;border: 2px solid #000;}

@@ -1,0 +1,238 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "microsoft yahei";
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.nav {
+	width: 100%;
+	height: 48px;
+	background: #3aaaf8;
+	position: relative;
+}
+
+.nav ul {
+	width: 1200px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.nav ul li {
+	position: relative;
+	display: inline-block;
+	float: left;
+}
+
+.nav ul li:first-child {
+	width: 220px;
+	cursor: pointer;
+}
+
+.nav ul li label {
+	display: block;
+	padding-left: 55px;
+	background: #128ee3;
+	position: relative;
+	height: 48px;
+	line-height: 48px;
+	color: #fff;
+}
+
+.nav ul li label i {
+	width: 24px;
+	height: 24px;
+	background: url(../images/nav_icon.png) -24px -82px no-repeat;
+	display: block;
+	position: absolute;
+	top: 13px;
+	left: 20px;
+}
+
+.nav ul li a {
+	display: block;
+	padding: 0 35px;
+	line-height: 48px;
+	color: #fff;
+	font-size: 18px;
+}
+
+.nav ul li a.current {
+	background: #5dc071;
+}
+
+.nav ul li a:hover {
+	background: #5dc071;
+}
+
+.nav ul li:first-child:hover .side {
+	display: block;
+}
+
+.nav .side {
+	display: none;
+	position: absolute;
+	padding: 10px 0 0 20px;
+	top: 48px;
+	left: 0;
+	z-index: 3;
+	width: 220px;
+	height: 360px;
+	background: #fff;
+	border: 1px solid #e2e2e2;
+	border-top: none;
+	border-bottom: 1px solid #fff;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	background-color: rgba(255, 255, 255, .95);
+	box-sizing: border-box;
+}
+
+.nav .side li {
+	width: 200px;
+}
+
+.nav .side li a {
+	color: #333;
+	height: 40px;
+	line-height: 40px;
+	padding: 8px 0 8px 0;
+	display: block;
+	font-size: 16px;
+}
+
+.nav .side li a:hover {
+	background: none;
+	color: #0085cd;
+}
+
+.nav .side li a i {
+	transition: all 0.3s ease 0s;
+}
+
+.nav .side li a i.side_t {
+	height: 22px;
+	width: 22px;
+	display: inline-block;
+	background: url(../images/img_public.png) no-repeat;
+	vertical-align: middle;
+	margin-right: 30px;
+}
+
+.nav .side li a i.icon-one {
+	background-position: 0 -40px;
+}
+
+.nav .side li a i.icon-two {
+	background-position: -160px -40px;
+}
+
+.nav .side li a i.icon-three {
+	background-position: -120px -40px;
+}
+
+.nav .side li a i.icon-four {
+	background-position: -240px -40px;
+}
+
+.nav .side li a i.icon-five {
+	background-position: -440px -40px;
+}
+
+.nav .side li a i.icon-six {
+	background-position: -40px -40px;
+}
+
+.nav .side li:hover .side_main {
+	display: block;
+	z-index: 999;
+}
+
+.nav .side .side_main {
+	display: none;
+	width: 300px;
+	background: #FFFFFF;
+	position: absolute;
+	left: 198px;
+	top: -10px;
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+	border: 1px #cecece solid;
+	z-index: 7;
+}
+
+.nav .side .side_main dl {
+	margin: 20px;
+	padding: 0;
+}
+
+.nav .side .side_main dl dt {
+	font-size: 18px;
+	margin-bottom: 10px;
+	color: #0173b2;
+	font-weight: bold;
+}
+
+.nav .side .side_main dl dd {
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+.nav .side .side_main dl dd a {
+	display: block;
+	color: #777;
+	font-size: 12px;
+	padding: 0;
+	height: auto;
+	line-height: 1.5;
+}
+
+.nav .side .side_main dl dd a strong {
+	font-size: 14px;
+	display: block;
+	color: #555;
+	font-weight: normal;
+}
+
+i.icon-hot,
+i.icon-new {
+	display: inline-block;
+	height: 9px;
+	width: 24px;
+	background: url(../images/img_public.png) no-repeat;
+	vertical-align: middle;
+}
+
+i.icon-hot {
+	background-position: 0 -240px;
+}
+
+i.icon-new {
+	background-position: -40px -240px;
+}
+
+.nav .side .side_main dl dd a span {
+	color: #999;
+}
+
+.nav .side .side_main dl dd a:hover {
+	background: none;
+}
+
+.nav .side .side_main dl dd a:hover strong {
+	color: #40adf5;
+}
+
+.nav .side .side_main dl dd a:hover span {
+	color: #40adf5;
+}
+
+.nav .side li a:hover i {
+	margin-left: 10px;
+}

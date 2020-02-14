@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+@import url("public.css");
+body{font-family: 'Microsoft Yahei' !important; font-weight: 400 !important;}
+.main0{width:960px;margin: 0 auto;color:#434343; background-color: #ffffff;margin-top:50px;}
+.head1{height:10px;background:#00b7ee;}
+.logo_tem{height:50px;}
+.center_tem{padding-bottom: 40px; overflow: hidden;}
+.mainleft{width:280px;background:#f9f9f9;float:left;margin-bottom: -19999px;padding-bottom: 19999px;}
+.leftpic{padding-top: 50px;position:relative;}
+.iconbg{display: inline-block;background: url("http://www.zhiyeapp.com/static/images/web/iconpdf.png") no-repeat;}
+
+.leftpic img{display: block;width:126px;height:126px;}
+.uname{margin-top: 40px;position:relative;text-align: center;font-size: 38px;line-height: 42px;word-wrap: break-word;}
+.uname .woman{display:inline-block;margin-left:4px;background-position: -240px 0;width:24px;height:24px;margin-top:8px;position:absolute;top:1px;}
+.uname .man{display:inline-block;margin-left:4px;background-position: -216px 0;width:24px;height:24px;margin-top:8px;position:absolute;top:1px;}
+.uxsxx{margin-top: 20px; text-align: center;font-size: 16px; padding-left: 14px; padding-right: 14px;}
+.uxsxx p{margin-bottom: 8px;}
+.uxsxx .min{font-size: 13px;}
+.lianxiwo{padding:0 24px;margin-top: 40px; }
+.lefttitle{font-size:18px;color:#1b1b1b;margin-bottom: 12px;height:24px;line-height: 24px;}
+.lianxiwo li{font-size:16px;line-height: 20px;margin-top: 4px;}
+.lianxiwo .prex{width:54px;float: left;}
+.lianxiwo .next{padding-left: 55px;word-break:break-all;word-wrap: break-word;}
+.jineng{padding:0 24px;margin-top: 40px; }
+.jineng .prex{width:110px;float: left;line-height: 20px;word-break:break-all;word-wrap: break-word; font-size: 16px;}
+.jineng .next{padding-top: 6px;float: right;height:20px;}
+.jineng li{margin-bottom: 8px;}
+.jineng span{float: left;width:8px;height:8px;border-radius: 5px;margin-right: 5px;background:#f9f9f9;border:1px solid #00b7ee;}
+.jineng span.on{background:#00b7ee;border:1px solid #00b7ee;}
+
+.mainright{min-height: 1200px;margin-bottom: -19999px;padding-bottom: 19999px;width: 680px;float: right;min-height: 500px;}
+.rightcenter{padding:0 73px 0 30px;}
+.top{margin-bottom: 25px;}
+.righttitle{font-size: 18px;color:#434343;margin-bottom:10px;}
+.centermain{padding-left:33px;}
+.schollmain{ margin-top: 10px; position: relative;}
+.schollname{font-size:20px;color:#00b7ee;margin-right: 10px; width: 405px;}
+.schollname span{font-size: 14px;color:#434343;padding-left: 30px;}
+.zhuanye{font-size:14px;color:#898989;margin-top: 6px; margin-right: 20px; line-height: 20px;}
+.liebiao{position:relative;margin-top: 25px;}
+.xiantiao{position:absolute;width:1px;height:100%;background:#00b7ee;left:35px;top:0;z-index: 1;}
+.erjititle span{background:#fff;line-height: 15px;border-radius: 12px;font-size:14px;border:1px solid #00b7ee;display: inline-block;min-width: 54px;padding: 2px 5px;text-align: center;overflow: hidden;height: 22px;position:relative;z-index: 2;padding-bottom: 3px;}
+.erjimain{padding-left:55px;margin-bottom: 25px;}
+.erjixxtitle{position:relative;left:0;top:0;font-size: 18px;margin-top: 8px;margin-bottom: 10px;}
+.erjixxtitle p{width:8px;height:8px;border-radius: 4px;position:absolute;left:-23px;top:4px;background:#00b7ee;}
+.erjidate{font-size: 13px;color:#898989;margin-bottom: 10px;}
+.erjineirong{font-size: 16px;color:#535353;line-height: 24px;word-wrap: break-word;}
+.erjititlems{padding-left: 30px;font-size: 16px;color:#a0a0a0;}
+
+.lxwicon{background-position: -192px 0;width: 24px;height:24px;position: relative;top:6px;left:0;margin-right: 6px;}
+.jinengicon{background-position: -168px 0;width: 24px;height:24px;position: relative;top:6px;left:0;margin-right: 6px;}
+.jiaoyujingliicon{background-position: -72px 0;width: 24px;height:24px;position: relative;top:6px;left:0;margin-right: 6px;}
+.shixigongzuoicon{background-position: -48px 0;width: 24px;height:24px;position: relative;top:4px;left:0;margin-right: 6px;}
+.picbg {position: relative;width: 134px;height: 134px;left: 0;top: 0; border-radius: 67px;background: #fff;z-index: 1; margin: auto;border: 1px solid #00b7ee;}
+.picmain{ width: 126px;height: 126px;overflow: hidden; border-radius: 100%;background: url('../images/web_headimg_default.jpg') center no-repeat;background-size: cover;position: absolute;z-index: 2;
+margin: auto;left: 3px; top: 3px;}
+.mainnavbg{background:#f9f9f9;}
+.mt20{margin-bottom: 25px;}
+.scholldate{font-size: 14px;color:#434343;margin-top: 8px; }
+.mt10{margin-top: 10px;}
+.seshool{margin-left: 0px;margin-top: 8px;font-size: 14px;color: #898989;}
+.liebiao ul li { margin-bottom: 25px;}

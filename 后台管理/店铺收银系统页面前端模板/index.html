@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="logo"  ><img src="images/shouyin.png" alt=""></div>
+    <div class="con_list">
+        <ul>
+            <li onclick="location.href='jiaojieban.html'">
+                <img src="images/jiao.png" alt="">
+                <p>交接班</p>
+            </li>
+            <li onclick="location.href='tianjiahuiyuan.html'">
+                <img src="images/xinyaoqinghuiyuan.png" alt="">
+                <p>新增会员</p>
+            </li>
+            <li onclick="location.href='xiaoshoudanju.html'">
+                <img src="images/xiaoshoudanju.png" alt="">
+                <p>销售单据</p>
+            </li>
+            <li >
+                <img src="images/bangzhu.png" alt="">
+                <p>帮助</p>
+            </li>
+            <li onclick="location.href='xitongshezhi.html'">
+                <img src="images/xitongshezhi.png" alt="">
+                <p>系统设置</p>
+            </li>
+            <li onClick="showpop('#koifr');">
+                <img src="images/gongnengguanli.png" alt="">
+                <p>所有功能</p>
+            </li>
+        </ul>
+    </div>
+    <div class="mingc">
+        会员名称：jdy
+    </div>
+</header>
+
+
+
+<!--功能弹出框-->
+<div id="koifr" class="popup">
+    <div class="popupbox">
+        <div class="pop_title">
+            系统菜单  <span class="fet_out"></span>
+        </div>
+
+        <div class="pop_con">
+            <ul>
+                <li onclick="location.href='jiaojieban.html'">
+                    <img src="images/on_1_03.jpg" alt="">
+                    <p>交接班</p>
+                </li>
+                <li onclick="location.href='tianjiahuiyuan.html'">
+                    <img src="images/on_2_03.jpg" alt="">
+                    <p>新增会员</p>
+                </li>
+                <li onclick="location.href='xiaoshoudanju.html'">
+                    <img src="images/on_3_03.jpg" alt="">
+                    <p>销售单据</p>
+                </li>
+                <li onclick="location.href='duihuo.html'">
+                    <img src="images/on_4_03.png" alt="">
+                    <p>退货</p>
+                </li>
+                <li onclick="location.href='pandian.html'">
+                    <img src="images/on_5_03.jpg" alt="">
+                    <p>盘点</p>
+                </li>
+                <li onclick="location.href='huoliutongzhi.html'">
+                    <img src="images/on_6_03.jpg" alt="">
+                    <p>货流通知</p>
+                </li>
+                <li onclick="location.href='tiaohuo.html'">
+                    <img src="images/on_7_03.jpg" alt="">
+                    <p>调货</p>
+                </li>
+                <li onclick="location.href='jinhuo.html'">
+                    <img src="images/on_8_03.jpg" alt="">
+                    <p>进货</p>
+                </li>
+                <li onclick="location.href='dinghuo.html'">
+                    <img src="images/on_9_03.jpg" alt="">
+                    <p>订货</p>
+                </li>
+                <li onclick="location.href='shangpinbianji.html'">
+                    <img src="images/on_10_03.jpg" alt="">
+                    <p>商品编辑</p>
+                </li>
+                <li onclick="location.href='xitongshezhi.html'">
+                    <img src="images/on_11_03.jpg" alt="">
+                    <p>系统设置</p>
+                </li>
+                <li>
+                    <img src="images/on_12_03.jpg" alt="">
+                    <p>打开钱箱</p>
+                </li>
+                <li onclick="location.href='shangpinbaocun.html'">
+                    <img src="images/on_13_03.jpg" alt="">
+                    <p>报损</p>
+                </li>
+                <li >
+                    <img src="images/on_14_03.jpg" alt="">
+                    <p>生产制作</p>
+                </li>
+                <li onClick="showpop('#jieqing');">
+                    <img src="images/on_15_03.jpg" alt="">
+                    <p>洁清</p>
+                </li>
+                <li>
+                    <img src="images/on_17_03.jpg" alt="">
+                    <p>帮助</p>
+                </li>
+                <li  onClick="showpop('#bankcard');">
+                    <img src="images/on_18_03.jpg" alt="">
+                    <p>通知</p>
+                </li>
+                <li onclick="location.href='yufuka.html'">
+                    <img src="images/on_19_03.jpg" alt="">
+                    <p>预付卡</p>
+                </li>
+                <li onclick="location.href='yuyue.html'">
+                    <img src="images/on_20_03.jpg" alt="">
+                    <p>预约</p>
+                </li>
+            </ul>
+
+        </div>
+
+
+    </div>
+</div>
+<!--功能弹出框-->
+
+
+
+
+
+
+
+
+
+
+
+<!--通知弹出框-->
+<div id="bankcard" class="popup">
+    <div class="popupbox">
+        <div class="pop_title">
+            通知中心  <span class="fet_out"></span>
+        </div>
+        <div class="left_to">
+            <ul>
+                <li><img src="images/s_1_03.jpg" alt=""> 生日提醒 <i>0</i> </li>
+                <li> <img src="images/s_2_03.jpg" alt="">保质期预警 <i>0</i> </li>
+                <li><img src="images/S_3_03.jpg" alt="">周期消费提醒 <i>0</i> </li>
+                <li><img src="images/s_4_03.jpg" alt="">库存预警 <i>0</i> </li>
+                <li><img src="images/s_1_03.jpg" alt="">商品调价通知 <i>0</i> </li>
+                <li><img src="images/s_1_03.jpg" alt="">货流通知 <i>0</i> </li>
+            </ul>
+        </div>
+
+        <div class="right_to">
+            <div> <span>商品</span><span>售价</span><span>新售价</span><span>生效日期</span> </div>
+        </div>
+
+    </div>
+</div>
+
+<!--通知弹出框-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!--洁清弹出框-->
+
+<div id="jieqing" class="popup ">
+    <div class="popupbox jieqing">
+        <div class="pop_title">
+            洁清  <span class="fet_out"></span>
+        </div>
+
+
+        <section >
+            <div class="main_box">
+                <div class="cont_box editpro_box">
+                    <!--财务报表-->
+                    <table border="0" cellspacing="0" cellpadding="0" class="table" id="table_box">
+                        <thead>
+                        <tr>
+                            <th colspan="1">商品条码</th>
+                            <th colspan="2">商品名称</th>
+                            <th>规格</th>
+                            <th>预设库存</th>
+                            <th>操作</th>
+                        </tr>
+
+
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td></td>
+                            <td colspan="2"></td>
+                            <td>1.</td>
+                            <td>1.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td colspan="2"></td>
+                            <td>1.</td>
+                            <td>1.</td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+        <div class="jie_btn">
+            <button class="fty">全部恢复</button>
+            <button class="sfg">确认</button>
+            <input type="text" value="加入结清：条码/拼音码/品名">
+        </div>
+
+    </div>
+</div>
+
+<!--洁清弹出框-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!--选择商品弹出窗-->
+
+<div id="xuans" class="popup ">
+    <div class="popupbox jieqing">
+        <div class="pop_title">
+            选择商品 <span class="fet_out"></span>
+        </div>
+
+
+        <section >
+            <div class="sousuo">
+                <input type="text" value="按条码/拼音码/品名搜索"> <button>搜索</button>
+            </div>
+
+
+            <div class="main_box">
+                <div class="cont_box editpro_box">
+                    <!--财务报表-->
+                    <table border="0" cellspacing="0" cellpadding="0" class="table" id="table_box">
+                        <thead>
+                        <tr>
+                            <th colspan="1">商品条码</th>
+                            <th colspan="2">商品名称</th>
+                            <th>规格</th>
+                            <th>价格</th>
+                            <th>货号</th>
+                        </tr>
+
+
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td></td>
+                            <td colspan="2"></td>
+                            <td>1.</td>
+                            <td>1.</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td colspan="2"></td>
+                            <td>1.</td>
+                            <td>1.</td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="jie_btn">
+            <span>找到4件匹配商品</span>
+
+            <button class="sfg" style="float: right;  margin-left: 15px;">加入</button>
+            <button class="fty" style="float: right;  width: 100px;">取消</button>
+
+
+        </div>
+
+    </div>
+</div>
+<!--选择商品弹出窗-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!--新增商品开始-->
+
+<div id="bakdate" class="popup">
+    <div class="mo_date" style="width: 700px; top: 45%; ">
+        <div class="mo_title">商品资料 <span class="fet_out" style="cursor: pointer">×</span></div>
+        <div class="bianjikuang">
+            <ul>
+                <li>
+                    条码：<input type="text" value="9395856959689"> <span>生成</span>
+                </li>
+                <li>
+                    销售价：<input type="text" value="11">
+                </li>
+                <li>
+                    品名：<input type="text" value="热情">
+                </li>
+                <li>
+                    进货价：<input type="text" value="1">
+                </li>
+                <li>
+                    分类：<select name=""  style="width: 167px; height: 34px;"> <option>sd</option>
+                    <option value="">ad </option> </select>
+                </li>
+                <li>
+                    库&nbsp;&nbsp;&nbsp;存：<input type="text" value="9395856959689"> <span>推荐</span>
+                </li>
+
+                <li style="width: 100%">
+                    <div class="biji-content">
+                        <ul>
+                            <li>
+                                拼音码：<input type="text" value="RQ">
+                            </li>
+                            <li>
+                                &nbsp;库存上限：<input type="text" value="9395856959689">
+                            </li>
+                            <li>
+                                供货商：<select name=""    style="width: 167px; height: 34px;">
+                                <option value="">请选择供货商</option> </select>
+                            </li>
+                            <li>
+                                &nbsp;库存下限：<input type="text" value="1">
+                            </li>
+                            <li>
+                                生产期：<input type="date" value="11">
+                            </li>
+                            <li>
+                                保质期/天：<input type="text" value="11">
+                            </li>
+                            <li style="width: 100%;">
+                                <ul>
+                                    <li>商品状态：启用 <input type="radio" name="sex"> 禁用：<input type="radio" name="sex"> </li>
+                                    <li>会员价：<input type="checkbox">  会员折扣 <input type="text" style="width: 90px;"></li>
+                                </ul>
+                                <div class="ssdr">
+                                    <textarea name="" id="" cols="30" rows="10" style="width: 100%; height: 80px;" ></textarea>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a class="biji-oth">
+                        <button class="kai_i">展开更多</button>
+                    </a>
+
+                </li>
+            </ul>
+
+
+        </div>
+        <div class="mo_btn">
+            <button style="background-color: #0099cb;">确认</button>
+            <button>取消</button>
+        </div>
+     
+    </div>
+</div>
+
+
+<script>
+    $(function(){
+        $(".biji-content").hide();
+        //按钮点击事件
+        $(".kai_i").click(function(){
+            var txts = $(this).parents("li");
+            if ($(this).text() == "展开更多"){
+                $(this).text("以上展开部分为选填内容（收起）");
+                txts.find(".biji-tit").hide();
+                txts.find(".biji-content").show();
+            }else{
+                $(this).text("展开更多");
+                txts.find(".biji-tit").show();
+                txts.find(".biji-content").hide();
+            }
+        })
+    });
+</script>
+<!--新增商品结束-->
+
+
+
+
+
+
+
+<script>
+    //弹框
+    function showpop(id){
+        $(id).fadeIn();
+
+        var h = ($(window).height() - $(id).children('.popup-box').height())/2;
+        $(id).children('.popup-box').css('margin-top',h);
+    }
+
+    $('.fet_out').click(function(){
+        $('.popup').fadeOut();
+    });
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section style="padding-bottom: 200px; padding-top: 75px">
+    <div class="main_box">
+        <div class="cont_box editpro_box">
+            <!--财务报表-->
+            <table border="0" cellspacing="0" cellpadding="0" class="table" id="table_box">
+                <thead>
+                <tr>
+                    <th colspan="1">商品条码</th>
+                    <th colspan="2">商品名称</th>
+                    <th>原价</th>
+                    <th>折扣</th>
+                    <th>数量</th>
+                    <th>现价</th>
+                    <th>小计</th>
+                </tr>
+
+
+                </thead>
+                <tbody>
+                <tr>
+                    <td></td>
+                    <td colspan="2">油条五根少时诵诗sdsadsadsadasdaddasdsadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa书所所所所所所所所所</td>
+                    <td>1.</td>
+                    <td>1.</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="zongji">
+        <ul>
+            <li><img src="images/yewuzongshu.png" alt=""> 共计商品 <span>4444</span>件</li>
+            <li>
+                <div class="btn_con">
+                    <button onclick="showpop('#bakdate');">+新增商品</button>
+                    <button class="xinz">网店订单</button>
+                    <button>删除</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="lst">
+        <ul>
+            <li>
+                <label for=""> <input type="text" value="条码/拼音码/品名"> <img src="images/jianpan.png" alt="" onClick="showpop('#xuans');"> </label>
+                <label for=""> <input type="text" value="输入价格无银收码"> <img src="images/jianpan.png" alt=""></label>
+            </li>
+            <li>
+                <label for=""> <input type="text" value="条码/拼音码/品名"> <img src="images/jianpan.png" alt=""> </label>
+                <div class="cz">
+                    <ol>
+                        <li>
+                            <p>来宾</p>
+                            <div>姓名 <a href="">查看</a> </div>
+                        </li>
+                        <li>
+                            <p>0</p>
+                            <div>余额<a href="">充值</a> </div>
+                        </li>
+                        <li>
+                            <p>0</p>
+                            <div>积分 <a href="">兑换</a> </div>
+                        </li>
+                    </ol>
+                </div>
+            </li>
+            <li class="mosh" onclick="location.href='shoukuan.html'">
+                <div>
+                    <h4>收&nbsp;款</h4>
+                    <p>[空格键]</p>
+                </div>
+                <div class="moren">￥0</div>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+</body>
+</html>

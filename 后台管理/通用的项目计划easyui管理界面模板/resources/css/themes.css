@@ -1,0 +1,387 @@
+/* 中文 UTF-8 */
+/*
+主题样式切换，相应样式名放在 <body> 里， 如 <body class="body-theme-1"></body>
+*/
+
+/************************
+        样式预览
+************************/
+.theme_1_thumb {background-color:#D4F4FF}
+.theme_2_thumb {background-color:#00A1F1}
+.theme_3_thumb {background-color:#000}
+.theme_3_thumb:after {content:"";display:block;border:6px solid #E86E0C;margin:1px;width:29px;position:absolute;left:0;bottom:0;}
+.theme_4_thumb {background-color:#000}
+.theme_4_thumb:after {content:"";display:block;border:6px solid #78CC40;margin:1px;width:29px;position:absolute;left:0;bottom:0;}
+.theme_5_thumb {background-color:#0083E9}
+.theme_5_thumb:after {content:"";display:block;border:6px solid #ED448F;margin:1px;width:29px;position:absolute;left:0;bottom:0;}
+.theme_6_thumb {background-color:#02A2AA}
+.theme_6_thumb:after {content:"";display:block;border:6px solid #E44B2A;margin:1px;width:29px;position:absolute;left:0;bottom:0;}
+.theme_7_thumb {background-color:#417EB7}
+.theme_7_thumb:after {content:"";display:block;border:6px solid #F1F1F1;margin:1px;width:29px;position:absolute;left:0;bottom:0;}
+
+
+/************************
+        默认样式
+************************/
+.body-theme-1 {}
+
+/************************
+        样式二
+************************/
+.body-theme-2 {}
+.body-theme-2 a {color:#00A1F1;}
+.body-theme-2 .div-header {background:#00A1F1}
+.body-theme-2 .div-header a {color:#fff}
+.body-theme-2 .header-title {color:#fff}
+.body-theme-2 .dc-title .dc-name{color:#00A1F1}
+.body-theme-2 .header-menu ul li a.active {background-color:#00A1F1;}
+.body-theme-2 .left-nav-group ul li a.active {background-color:#daf3ff;color:#00A1F1;}
+.body-theme-2 .div-leftside-bg {background:#f1f5f7}
+.body-theme-2 .add-panel {background: #daf3ff;padding: 15px 0 5px;border: 1px solid #9addff;}
+.body-theme-2 .btn-default .glyphicon {color: #00a1f1;}
+.body-theme-2 .alert-info {color: #00a1f1;background-color: #fafafb;border-color: #bce8f1;}
+.body-theme-2 .step-bar ul li.active:before, .body-theme-2  .step-bar ul li.active:after {background: #47c2ff;}
+
+.body-theme-2 .div-header .glyphicon-user {font-size:12px;color:#00A1F1}
+.body-theme-2 .nav .open > a,.body-theme-2  .nav .open > a:hover,.body-theme-2  .nav .open > a:focus,
+.body-theme-2 .navbar-nav > li > a:focus,
+.body-theme-2 .navbar-nav > li > a:active,
+.body-theme-2 .navbar-nav > li > a:hover {color:#00A1F1;background-color:#f0f0f0}
+.body-theme-2 .navbar-nav > li > a .glyphicon {color:#fff}
+.body-theme-2 .navbar-nav > li.open > a .glyphicon {color:#00A1F1}
+.body-theme-2 .navbar-nav .dropdown-menu li a {color:#333;}
+
+.body-theme-2 .btn-success {color: #fff;background-color: #008fd6;border-color: #0084c5;}
+.body-theme-2 .btn-success:hover {background-color: #007dbb;}
+
+
+.body-theme-2 .dk_options a:hover, 
+.body-theme-2 .dk_options:focus,
+.body-theme-2 .dk_options .dk_option_current a {background:#00A1F1;}
+
+/************************
+        样式三
+************************/
+.body-theme-3 {}
+.body-theme-3 a {color:#9a4500;}
+.body-theme-3 a:hover {color:#da6200;}
+.body-theme-3 .div-header {background:#333}
+.body-theme-3 .div-header a {color:#fff}
+.body-theme-3 .header-title {color:#fff}
+.body-theme-3 .dc-title .dc-name{color:#333}
+.body-theme-3 .header-menu ul li a.active {background-color:#e86e0c;}
+.body-theme-3 .left-nav-group ul li a.active {background-color:#ffddc1;color:#9a4500;}
+.body-theme-3 .left-nav-group ul li a:hover {background-color:#f0f0f0;color:#9a4500;}
+.body-theme-3 .div-leftside-bg {background:#f1f5f7}
+.body-theme-3 .add-panel {background: #fff8f3;padding: 15px 0 5px;border: 1px solid #ddd;}
+.body-theme-3 .btn-default .glyphicon {color: #00a1f1;}
+.body-theme-3 .alert-info {color: #666;background-color: #fafafb;border-color: #ddd;}
+.body-theme-3 .step-bar ul li.active:before, .body-theme-3  .step-bar ul li.active:after {background: #e86e0c;}
+.body-theme-3 .step-bar ul li.active:before, .body-theme-3 .step-bar ul li.active:after {background: #e86e0c;}
+
+.body-theme-3 .div-header .glyphicon-user {font-size:12px;color: #e86e0c;}
+.body-theme-3 .nav .open > a,.body-theme-3  .nav .open > a:hover,.body-theme-3  .nav .open > a:focus,
+.body-theme-3 .navbar-nav > li > a:focus,
+.body-theme-3 .navbar-nav > li > a:active,
+.body-theme-3 .navbar-nav > li > a:hover {color:#000;background-color:#f0f0f0}
+.body-theme-3 .navbar-nav > li > a .glyphicon {color:#fff}
+.body-theme-3 .navbar-nav > li.open > a .glyphicon {color:#000}
+.body-theme-3 .navbar-nav .dropdown-menu li a {color:#333;}
+
+.body-theme-3 .btn-success {color: #fff;background-color: #ff8019;border-color: #cc5b00;}
+.body-theme-3 .btn-success:hover {background-color: #ff7200;}
+
+.body-theme-3 .btn-info {color: #ffffff;background-color: #ff9037;border-color: #ff8b2d;}
+.body-theme-3 .btn-info:hover {background-color:#ff7200;}
+
+.body-theme-3 .leftside-switch {background:#bbb;}
+
+.body-theme-3 .btn-toolbar ul li .btn {height: 26px;font-size: 12px;padding: 0 10px;color: #9a4500;border-color: #ccc;}
+.body-theme-3 .btn-default .glyphicon {color:#ff8b2d;}
+
+.body-theme-3 .pagination {float: right;color: #555;}
+.body-theme-3 .pagination > li a {color: #555;}
+
+.body-theme-3 .form-search .dk_toggle {padding-top: 2px;padding-bottom: 2px;color: #333;}
+
+.body-theme-3 .tooltip {border-color: #ff9037;color: #9a4500;}
+.body-theme-3 .tree-frame-switch {background:#bbb;}
+
+.body-theme-3 .edit-block {background: #fff8f3;padding: 15px 0 5px;border: 1px solid #ddd;border-radius: 4px;position: relative;margin-top: 10px;}
+
+.body-theme-3 .step-bar ul li.active span {color: #9a4500;}
+.body-theme-3 .td-lnks a {color:#ff8b2d;}
+.body-theme-3 .td-lnks a .glyphicon-remove, .body-theme-3 .td-lnks a .glyphicon-trash {color: #ff8b2d;}
+.body-theme-3 .badge {background-color: #E86E0C;}
+.body-theme-3 .header-menu ul li a:hover {color:#999;}
+.body-theme-3 .header-menu ul li a.active:hover {color:#fff;}
+
+.body-theme-3 .input-group .input-group-addon .glyphicon {color: #FF8B2D;}
+.body-theme-3 .home-text {color: #d78f00;}
+.body-theme-3 .home-logo .glyphicon {color: #d78f00;}
+
+.body-theme-3 .list-group-news .list-group-item a:before {background-color: #d78f00;}
+.body-theme-3 .list-group-item.active,.body-theme-3  .list-group-item.active:hover,.body-theme-3  .list-group-item.active:focus {background-color: #da6c00;border-color: #b15800;}
+.body-theme-3 .tree-node-selected {background: #ffddc1;color: #9a4500;}
+
+.body-theme-3 .panel-btns li .btn:hover {background:#E86E0C;}
+
+.body-theme-3 .dk_options a:hover, 
+.body-theme-3 .dk_options:focus,
+.body-theme-3 .dk_options .dk_option_current a {background:#F58D39;}
+
+
+/************************
+        样式四
+************************/
+
+.body-theme-4 {}
+.body-theme-4 a {color:#444;}
+.body-theme-4 a:hover {color:#78CC40;}
+.body-theme-4 .div-header {background: #62AD2D;}
+.body-theme-4 .div-header a {color:#fff;}
+.body-theme-4 .header-title {color:#fff;}
+.body-theme-4 .div-header .dropdown ul li a {color:#333;}
+.body-theme-4 .nav .open > a, .body-theme-4 .nav .open > a:hover,.body-theme-4 .nav .open > a:focus,
+.body-theme-4 .navbar-nav > li > a:focus,
+.body-theme-4 .navbar-nav > li > a:active,
+.body-theme-4 .navbar-nav > li > a:hover {color:#fff;background-color:#000}
+.body-theme-4 .div-header .glyphicon-user {color: #fff;}
+.body-theme-4 .div-header .dropdown-menu .glyphicon-user {color: #62AD2D;}
+.body-theme-4 .header-menu ul li a {color:#999;}
+.body-theme-4 .header-menu ul li a.active {color:#fff;}
+.body-theme-4 .header-menu ul li a.active {background-color: #3e800f;}
+.body-theme-4 .dc-title .dc-name {color: #3e800f;font-size: 23px;}
+.body-theme-4 .div-leftside-bg {background: #353B4B;}
+.body-theme-4 .left-nav-group {border: 1px solid #2D3341;background-color: #353B4B;}
+.body-theme-4 .left-nav-group h2 {background-color: #2D3341;color:#fff;}
+.body-theme-4 .left-nav-group ul li a.active:hover,
+.body-theme-4 .left-nav-group ul li a.active {color: #62ad2d;background-color: #495269;}
+.body-theme-4 .left-nav-group ul li a {color: #fff;}
+.body-theme-4 .left-nav-group ul li a:hover {color: #fff;background-color: #495269;}
+.body-theme-4 .leftside-switch {background-color: #62ad2d;}
+.body-theme-4 .step-bar ul li.active:before,.body-theme-4 .step-bar ul li.active:after {background: #62ad2d;}
+.body-theme-4 .step-bar ul li.active span {color: #3b8e00;}
+.body-theme-4 .btn-default .glyphicon {color: #87c35d;}
+.body-theme-4 .btn-plus .glyphicon,.body-theme-4 .btn-minus .glyphicon {color:#87c35d;}
+.body-theme-4 .btn-info {background-color: #75bd42;border-color: #6eb33c;}
+.body-theme-4 .pagination > li a {color: #555;}
+.body-theme-4 .pagination {color: #555;}
+.body-theme-4 .alert-info {color: #3e800f;background-color: #e9ffd9;border-color: #9dda72;}
+.body-theme-4 .tree-frame-switch {background-color: #62ad2d;}
+.body-theme-4 .tree-node-selected {background: #dbffc2;color: #3e800f;}
+.body-theme-4 .edit-block,
+.body-theme-4 .add-panel {background: #e9ffd9;border: 1px solid #9dda72;}
+.body-theme-4 .panel-btns li .btn:hover {background:#62AD2D;}
+.body-theme-4 .tooltip-top .tooltip-arrow-outer {border-top-color: rgb(62, 128, 15);}
+.body-theme-4 .tooltip {border-color: #62ad2d;color: #3e800f;}
+.body-theme-4 .badge {background-color: #999;}
+.body-theme-4 .input-group .input-group-addon .glyphicon {color: #62ad2d;}
+.body-theme-4 .list-group-news .list-group-item a:before {background-color: #62AD2D;}
+.body-theme-4 .list-group-item.active,.body-theme-4  .list-group-item.active:hover,.body-theme-4  .list-group-item.active:focus {background-color: #62AD2D;border-color: #498e19;}
+.body-theme-4 .list-group-item.active .list-group-item-text {color:#fff;}
+.body-theme-4 .home-logo .glyphicon {font-size: 28px;color: #62AD2D;}
+.body-theme-4 .home-text {color: #62AD2D;}
+
+
+
+.body-theme-4 .dk_options a:hover, 
+.body-theme-4 .dk_options:focus,
+.body-theme-4 .dk_options .dk_option_current a {background:#62AD2D;}
+
+/************************
+        样式五
+************************/
+
+.body-theme-5 {}
+.body-theme-5 a {color:#0083E9;}
+.body-theme-5 a:hover {color:#28a1ff;}
+.body-theme-5 .div-header {background: #0083E9;}
+.body-theme-5 .div-header a {color:#fff;}
+.body-theme-5 .header-title {color:#fff;}
+.body-theme-5 .div-header .dropdown ul li a {color:#333;}
+.body-theme-5 .nav .open > a,.body-theme-5 .nav .open > a:hover, .body-theme-5 .nav .open > a:focus,
+.body-theme-5 .navbar-nav > li > a:focus,
+.body-theme-5 .navbar-nav > li > a:active,
+.body-theme-5 .navbar-nav > li > a:hover {color:#fff;background-color:#000}
+.body-theme-5 .div-header .glyphicon-user {color: #fff;}
+.body-theme-5 .div-header .dropdown-menu .glyphicon-user {color: #0083E9;}
+.body-theme-5 .header-menu ul li a {color:#999;}
+.body-theme-5 .header-menu ul li a.active {color:#fff;}
+.body-theme-5 .header-menu ul li a.active {background-color: #ED448F;}
+.body-theme-5 .dc-title .dc-name {color: #0083E9;font-size: 23px;}
+.body-theme-5 .div-leftside-bg {background: #353B4B;}
+.body-theme-5 .left-nav-group {border: 1px solid #2D3341;background-color: #353B4B;}
+.body-theme-5 .left-nav-group h2 {background-color: #2D3341;color:#fff;}
+.body-theme-5 .left-nav-group ul li a.active:hover,
+.body-theme-5 .left-nav-group ul li a.active {color: #fff;background-color: #ED448F;}
+.body-theme-5 .left-nav-group ul li a {color: #fff;}
+.body-theme-5 .left-nav-group ul li a:hover {color: #fff;background-color: #495269;}
+.body-theme-5 .step-bar ul li.active:before,.body-theme-5 .step-bar ul li.active:after {background: #0083E9;}
+.body-theme-5 .step-bar ul li.active span {color: #0083e9;}
+.body-theme-5 .btn-default .glyphicon {color: #0083E9;}
+.body-theme-5 .btn-plus .glyphicon,.body-theme-5 .btn-minus .glyphicon {color:#0083E9;}
+.body-theme-5 .pagination > li a {color: #555;}
+.body-theme-5 .pagination {color: #555;}
+.body-theme-5 .alert-info {color: #0083E9;background-color: #e1f2ff;border-color: #b2deff;}
+.body-theme-5 .leftside-switch {background-color: #0083E9;}
+.body-theme-5 .leftside-switch:hover {background-color: #1599ff;}
+.body-theme-5 .tree-frame-switch {background-color: #0083E9;}
+.body-theme-5 .tree-frame-switch:hover {background-color: #1599ff;}
+.body-theme-5 .tree-node-selected {background: #0e96ff;color: #ffffff;}
+.body-theme-5 .edit-block,
+.body-theme-5 .add-panel {background: #e1f2ff;border: 1px solid #b2deff;}
+.body-theme-5 .panel-btns li .btn:hover {background:#0083E9;}
+.body-theme-5 .tooltip-top .tooltip-arrow-outer {border-top-color: rgb(62, 128, 15);}
+.body-theme-5 .tooltip {border-color: #0083E9;color: #0083E9;}
+.body-theme-5 .badge {background-color: #999;}
+.body-theme-5 .input-group .input-group-addon .glyphicon {color: #0083E9;}
+.body-theme-5 .list-group-news .list-group-item a:before {background-color: #0083E9;}
+.body-theme-5 .list-group-item.active,.body-theme-5  .list-group-item.active:hover,.body-theme-5  .list-group-item.active:focus {background-color: #0083E9;border-color: #498e19;}
+.body-theme-5 .list-group-item.active .list-group-item-text {color:#fff;}
+.body-theme-5 .home-logo .glyphicon {font-size: 28px;color: #0083E9;}
+.body-theme-5 .home-text {color: #0083E9;}
+
+.body-theme-5 .td-lnks a .glyphicon-remove,.body-theme-5 .td-lnks a .glyphicon-trash {color: #ED448F;}
+
+.body-theme-5 .btn-info {background-color: #0e96ff;border-color: #0084ea;}
+.body-theme-5 .btn-info:hover {background-color: #239fff;    border-color: #1398ff;}
+.body-theme-5 .btn-success {background-color: #ED448F;border-color: #cc2f75;}
+.body-theme-5 .btn-success:hover {background-color: #ff64a9;    border-color: #e43f89;}
+
+
+.body-theme-5 .dk_options a:hover, 
+.body-theme-5 .dk_options:focus,
+.body-theme-5 .dk_options .dk_option_current a {background:#39A8FF;}
+
+
+
+/************************
+        样式六
+************************/
+
+.body-theme-6 {}
+.body-theme-6 a {color:#02A2AA;}
+.body-theme-6 a:hover {color:#02C4CE;}
+.body-theme-6 .div-header {background: #02A2AA;}
+.body-theme-6 .div-header a {color:#fff;}
+.body-theme-6 .header-title {color:#fff;}
+.body-theme-6 .div-header .dropdown ul li a {color:#333;}
+.body-theme-6 .nav .open > a,.body-theme-6 .nav .open > a:hover,.body-theme-6 .nav .open > a:focus,
+.body-theme-6 .navbar-nav > li > a:focus,
+.body-theme-6 .navbar-nav > li > a:active,
+.body-theme-6 .navbar-nav > li > a:hover {color:#fff;background-color:#000}
+.body-theme-6 .div-header .glyphicon-user {color: #fff;}
+.body-theme-6 .div-header .dropdown-menu .glyphicon-user {color: #02A2AA;}
+.body-theme-6 .header-menu ul li a {color:#999;}
+.body-theme-6 .header-menu ul li a.active {color:#fff;}
+.body-theme-6 .header-menu ul li a.active {background-color: #E44B2A;}
+.body-theme-6 .dc-title .dc-name {color: #02A2AA;font-size: 23px;}
+.body-theme-6 .div-leftside-bg {background: #353B4B;}
+.body-theme-6 .left-nav-group {border: 1px solid #2D3341;background-color: #353B4B;}
+.body-theme-6 .left-nav-group h2 {background-color: #2D3341;color:#fff;}
+.body-theme-6 .left-nav-group ul li a.active:hover,
+.body-theme-6 .left-nav-group ul li a.active {color: #fff;background-color: #E44B2A;}
+.body-theme-6 .left-nav-group ul li a {color: #fff;}
+.body-theme-6 .left-nav-group ul li a:hover {color: #fff;background-color: #495269;}
+.body-theme-6 .step-bar ul li.active:before,.body-theme-6 .step-bar ul li.active:after {background: #02A2AA;}
+.body-theme-6 .step-bar ul li.active span {color: #02A2AA;}
+.body-theme-6 .btn-default .glyphicon {color: #02A2AA;}
+.body-theme-6 .btn-plus .glyphicon,.body-theme-6 .btn-minus .glyphicon {color:#02A2AA;}
+.body-theme-6 .pagination > li a {color: #555;}
+.body-theme-6 .pagination {color: #555;}
+.body-theme-6 .alert-info {color: #02A2AA;background-color: #e1f2ff;border-color: #b2deff;}
+.body-theme-6 .leftside-switch {background-color: #02A2AA;}
+.body-theme-6 .leftside-switch:hover {background-color: #1599ff;}
+.body-theme-6 .tree-frame-switch {background-color: #02A2AA;}
+.body-theme-6 .tree-frame-switch:hover {background-color: #1599ff;}
+.body-theme-6 .tree-node-selected {background: #cbfdff;color: #02A2AA;}
+.body-theme-6 .edit-block,
+.body-theme-6 .add-panel {background: #e1f2ff;border: 1px solid #b2deff;}
+.body-theme-6 .panel-btns li .btn:hover {background:#02A2AA;}
+.body-theme-6 .tooltip-top .tooltip-arrow-outer {border-top-color: rgb(62, 128, 15);}
+.body-theme-6 .tooltip {border-color: #02A2AA;color: #02A2AA;}
+.body-theme-6 .badge {background-color: #999;}
+.body-theme-6 .input-group .input-group-addon .glyphicon {color: #02A2AA;}
+.body-theme-6 .list-group-news .list-group-item a:before {background-color: #02A2AA;}
+.body-theme-6 .list-group-item.active,.body-theme-6  .list-group-item.active:hover,.body-theme-6  .list-group-item.active:focus {background-color: #02A2AA;border-color: #498e19;}
+.body-theme-6 .list-group-item.active .list-group-item-text {color:#fff;}
+.body-theme-6 .home-logo .glyphicon {font-size: 28px;color: #02A2AA;}
+.body-theme-6 .home-text {color: #02A2AA;}
+
+.body-theme-6 .td-lnks a .glyphicon-remove,.body-theme-6 .td-lnks a .glyphicon-trash {color: #E44B2A;}
+
+.body-theme-6 .btn-info {background-color: #13bfc7;border-color: #07a9b1;}
+.body-theme-6 .btn-info:hover {background-color: #23dae2;    border-color: #12bbc3;}
+.body-theme-6 .btn-success {background-color: #E44B2A;border-color: #d23918;}
+.body-theme-6 .btn-success:hover {background-color: #ff6b4b;    border-color: #ec4b29;}
+
+
+.body-theme-6 .dk_options a:hover, 
+.body-theme-6 .dk_options:focus,
+.body-theme-6 .dk_options .dk_option_current a {background:#02A2AA;}
+
+
+/************************
+        样式七
+************************/
+
+.body-theme-7 {}
+.body-theme-7 a {color:#417EB7;}
+.body-theme-7 a:hover {color:#28a1ff;}
+.body-theme-7 .div-header {background: linear-gradient(#fff, #f0f0f0);background: -webkit-linear-gradient(#fff, #f0f0f0); background: -o-linear-gradient(#fff, #f0f0f0);background: -moz-linear-gradient(#fff, #f0f0f0);}
+.body-theme-7 .div-header a {color: #333;}
+.body-theme-7 .header-title {color:#333;}
+.body-theme-7 .div-header .dropdown ul li a {color:#333;}
+.body-theme-7 .nav .open > a,.body-theme-7 .nav .open > a:hover,.body-theme-7 .nav .open > a:focus,
+.body-theme-7 .navbar-nav > li > a:focus,
+.body-theme-7 .navbar-nav > li > a:active,
+.body-theme-7 .navbar-nav > li > a:hover {color:#fff;background-color:#417EB7}
+.body-theme-7 .div-header .glyphicon-user {color: #333;}
+.body-theme-7 .div-header .dropdown-menu .glyphicon-user {color: #417EB7;}
+.body-theme-7 .header-menu ul li a {color:#999;}
+.body-theme-7 .header-menu ul li a.active {color:#fff;}
+.body-theme-7 .header-menu ul li a.active {background-color: #569ada;}
+.body-theme-7 .dc-title .dc-name {color: #417EB7;font-size: 23px;}
+.body-theme-7 .div-leftside-bg {background: #569ada;}
+.body-theme-7 .left-nav-group {border:1px solid #569ada;background-color: #569ada;}
+.body-theme-7 .left-nav-group h2 {background: linear-gradient(#fff, #f0f0f0);background: -webkit-linear-gradient(#fff, #f0f0f0);background: -o-linear-gradient(#fff, #f0f0f0);background: -moz-linear-gradient(#fff, #f0f0f0);color:#000;}
+.body-theme-7 .left-nav-group ul li a.active:hover,
+.body-theme-7 .left-nav-group ul li a.active {color: #fff;background-color: #3e84c5;}
+.body-theme-7 .left-nav-group ul li a {color: #fff;}
+.body-theme-7 .left-nav-group ul li a:hover {color: #fff;background-color: #62a5e4;}
+.body-theme-7 .step-bar ul li.active:before,.body-theme-7 .step-bar ul li.active:after {background: #417EB7;}
+.body-theme-7 .step-bar ul li.active span {color: #417EB7;}
+.body-theme-7 .btn-default .glyphicon {color: #417EB7;}
+.body-theme-7 .btn-plus .glyphicon,.body-theme-7 .btn-minus .glyphicon {color:#417EB7;}
+.body-theme-7 .pagination > li a {color: #555;}
+.body-theme-7 .pagination {color: #555;}
+.body-theme-7 .alert-info {color: #417EB7;background-color: #e1f2ff;border-color: #b2deff;}
+.body-theme-7 .leftside-switch {background-color: #417EB7;}
+.body-theme-7 .leftside-switch:hover {background-color: #1599ff;}
+.body-theme-7 .tree-frame-switch {background-color: #417EB7;}
+.body-theme-7 .tree-frame-switch:hover {background-color: #1599ff;}
+.body-theme-7 .tree-node-selected {background: #569ada;color:#fff ;}
+.body-theme-7 .edit-block,
+.body-theme-7 .add-panel {background: #e1f2ff;border: 1px solid #b2deff;}
+.body-theme-7 .panel-btns li .btn:hover {background:#417EB7;}
+.body-theme-7 .tooltip-top .tooltip-arrow-outer {border-top-color: rgb(62, 128, 15);}
+.body-theme-7 .tooltip {border-color: #417EB7;color: #417EB7;}
+.body-theme-7 .badge {background-color: #999;}
+.body-theme-7 .input-group .input-group-addon .glyphicon {color: #417EB7;}
+.body-theme-7 .list-group-news .list-group-item a:before {background-color: #417EB7;}
+.body-theme-7 .list-group-item.active,.body-theme-7  .list-group-item.active:hover,.body-theme-7  .list-group-item.active:focus {background-color: #417EB7;border-color: #316ea7;}
+.body-theme-7 .list-group-item.active .list-group-item-text {color:#fff;}
+.body-theme-7 .home-logo .glyphicon {font-size: 28px;color: #417EB7;}
+.body-theme-7 .home-text {color: #417EB7;}
+
+
+.body-theme-7 .btn-info {background-color: #13bfc7;border-color: #07a9b1;}
+.body-theme-7 .btn-info:hover {background-color: #23dae2;    border-color: #12bbc3;}
+
+.body-theme-7 .dk_options a:hover, 
+.body-theme-7 .dk_options:focus,
+.body-theme-7 .dk_options .dk_option_current a {background:#569ada;}
+
+
+

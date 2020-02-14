@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>预约</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.10.1.min.js"></script>
+
+</head>
+<body >
+<div class="yu_head">
+    <span> ＜ 预约</span>
+    <input type="text" value="输入电话号码搜索">
+</div>
+
+<div class="dengji">
+    预约登记表
+    <ul>
+        <li class="on">10.30</li>
+        <li>10.31</li>
+        <li>11.01</li>
+        <li>11.02</li>
+        <li>11.03</li>
+        <li>11.04</li>
+        <li>11.05</li>
+        <li>选着日期</li>
+    </ul>
+</div>
+
+<div class="yu_date">
+    <ul>
+        <li >
+            <p>01:00</p>
+            <div class="mit" onClick="showpop('#bakdate');"></div>
+        </li>
+        <li>
+            <p>02:00</p>
+            <div class="mit"  onClick="showpop('#bakdate');"></div>
+        </li>
+        <li>
+            <p>03:00</p>
+            <div class="mit"  onClick="showpop('#bakdate');"></div>
+        </li>
+        <li>
+            <p>04:00</p>
+            <div class="mit"  onClick="showpop('#bakdate');"></div>
+        </li>
+        <li>
+            <p>05:00</p>
+            <div class="mit"  onClick="showpop('#bakdate');"></div>
+        </li>
+    </ul>
+</div>
+
+
+
+<!--弹出框-->
+<div id="bakdate" class="popup">
+    <div class="mo_date">
+        <div class="mo_title">创建预约信息 <span class="fet_out" style="cursor: pointer">×</span></div>
+        <div class="mo_con">
+            <ul>
+                <li>预约项目    <span>＋</span></li>
+                <li>预&nbsp; 定&nbsp; 金<input type="text" value="请填写预定金"></li>
+                <li>预约时间 <input type="datetime-local" value="2015-09-24T13:59:59"/> 至<input  class="mi_ti" type="time" value="13:59"/> </li>
+                <li>顾客电话 <input type="text" value="请填写顾客电话"></li>
+                <li>顾客姓名 <input type="text" value="请填写顾客姓名"></li>
+                <li class="mo_be">预约备注 <textarea name="" id="" cols="30" rows="10">请填写预约备注</textarea> </li>
+            </ul>
+        </div>
+        <div class="mo_btn">
+            <button style="background-color: #ff5555;">确认</button>
+            <button>取消</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    //弹框
+    function showpop(id){
+        $(id).fadeIn();
+
+        var h = ($(window).height() - $(id).children('.popup-box').height())/2;
+        $(id).children('.popup-box').css('margin-top',h);
+    }
+
+    $('.fet_out').click(function(){
+        $('.popup').fadeOut();
+    });
+
+</script>
+
+
+
+</body>
+</html>

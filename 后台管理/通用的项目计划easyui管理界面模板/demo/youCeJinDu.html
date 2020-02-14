@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Cache-Control" content="no-transform " />
+    <title>表单页</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+	<link href="../resources/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+	<link href="../resources/dropkick/dropkick.css" rel="stylesheet" type="text/css" />
+	<link href="../resources/easyui/easyui.css" rel="stylesheet" type="text/css" />
+	<link href="../resources/css/default.css" rel="stylesheet" type="text/css" />
+	<link href="../resources/css/themes.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="../resources/js/jquery.1.11.3.min.js"></script>
+	<script type="text/javascript" src="../resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../resources/dropkick/jquery.dropkick-min.js"></script>
+	<script type="text/javascript" src="../resources/easyui/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="../resources/js/pop.js"></script>
+	<script type="text/javascript" src="../resources/js/myfunctions.js"></script>
+	<script type="text/javascript" src="../resources/js/frame.js"></script>
+</head>
+<body>
+
+<div class="div-header">
+
+	<div class="container-fluid">
+		<div class="header-title">项目管理系统</div>
+		<ul class="nav navbar-nav navbar-right">
+		<li><a href="qianTaiShouYe.html">首页</a></li>
+		<li><a href="shouYe.html">后台首页</a></li>
+		<li class="dropdown">
+		  <a href="#" class="dropdown-toggle">切换角色 <span class="caret"></span></a>
+		  <ul class="dropdown-menu">
+			<li><a href="#"><span class="glyphicon glyphicon-user"></span> 超级管理员</a></li>
+			<li><a href="#"><span class="glyphicon glyphicon-user"></span> 学科办管理员</a></li>
+		  </ul>
+		</li>
+		<li class="dropdown">
+		  <a href="#" class="dropdown-toggle"><span class="glyphicon glyphicon-user"></span> 欢迎您：系统管理员</a>
+		  <div class="dropdown-menu dropdown-user">
+			   <div class="pop-dropdown-apps user-tk">
+				<div class="pda_arr"></div>
+				<dl class="pda-list user_pda">
+					<img src="../resources/images/moRenTouXiang.jpg">
+					<div class="userright-list">
+						<h1>超级管理员&nbsp;&nbsp;|&nbsp;&nbsp;23326</h1>
+						<h2>
+							<b>单位/部门：</b>学科规划与建设办公室
+							<br> <b>角&nbsp; &nbsp;色：</b>
+						</h2>
+					</div>
+					<div class="clear"></div>
+					<div class="select-themes">
+						
+						<ul>
+							<li>
+								<a data-theme="body-theme-1" class="theme_1_thumb active" href="javascript:;"><span class="glyphicon glyphicon-ok-sign"></span></a>
+							</li>
+							<li>
+								<a data-theme="body-theme-2" class="theme_2_thumb" href="javascript:;"><span class="glyphicon glyphicon-ok-sign"></span></a>
+							</li>
+							<li>
+								<a data-theme="body-theme-3" class="theme_3_thumb" href="javascript:;"><span class="glyphicon glyphicon-ok-sign"></span></a>
+							</li>
+							<li>
+								<a data-theme="body-theme-4" class="theme_4_thumb" href="javascript:;"><span class="glyphicon glyphicon-ok-sign"></span></a>
+							</li>
+							<li>
+								<a data-theme="body-theme-5" class="theme_5_thumb" href="javascript:;"><span class="glyphicon glyphicon-ok-sign"></span></a>
+							</li>
+							<li>
+								<a data-theme="body-theme-6" class="theme_6_thumb" href="javascript:;"><span class="glyphicon glyphicon-ok-sign"></span></a>
+							</li>
+							<li>
+								<a data-theme="body-theme-7" class="theme_7_thumb" href="javascript:;"><span class="glyphicon glyphicon-ok-sign"></span></a>
+							</li>
+							<!--<li>
+								<a data-theme="body-theme-8" class="theme_8_thumb" href="javascript:;"><span class="glyphicon glyphicon-ok-sign"></span></a>
+							</li>
+							<li>
+								<a data-theme="body-theme-9" class="theme_9_thumb" href="javascript:;"><span class="glyphicon glyphicon-ok-sign"></span></a>
+							</li>
+							<li>
+								<a data-theme="body-theme-10" class="theme_10_thumb" href="javascript:;"><span class="glyphicon glyphicon-ok-sign"></span></a>
+							</li>-->
+						</ul>
+					</div>
+					<div class="userexit">
+						<button id="btn_FanHui2" type="button" class="btn btn-info addbtm" style=" padding-top:4px;"><span class="glyphicon glyphicon-pencil"></span> 编辑信息</button>
+						<button onclick="location.href='login.html'" type="button" class="btn btn-default">退出登录</button>
+					</div>
+					<div class="clear"></div>
+				</dl>
+
+			</div>
+		  </div>
+		</li>
+		</ul>
+	</div><!-- container-fluid -->
+
+ 
+</div><!-- div_header -->
+
+<div class="div-catalog">
+	<div class="header-menu">
+		<ul>
+			<li>
+				<a class="active" href="javascript:;">
+				<span class="glyphicon glyphicon-time"></span>建设周期管理</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+				<span class="glyphicon glyphicon-folder-open"></span>项目管理</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+				<span class="glyphicon glyphicon-calendar"></span>计划管理</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+				<span class="glyphicon glyphicon-pencil"></span>申请管理</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+				<span class="glyphicon glyphicon-tasks"></span>基础数据管理</a>
+			</li>
+		</ul>
+	</div><!-- header-menui -->
+	<div class="dc-title">
+		<div class="dc-name"><span class="glyphicon glyphicon-info-sign"></span> 右侧提示样式</div>
+	</div>
+</div><!-- catalog -->
+
+
+<div class="div-leftside-bg">
+</div>
+<div class="div-leftside">
+
+	 <div class="leftside-switch" onclick="LeftNav.toggle()">
+		<span class="caret"></span>
+	 </div>
+
+
+
+	 <div class="left-nav">
+		<div class="left-nav-group">
+			<div class="lng-toggle"><span class="caret"></span></div>
+			<h2>基础布局样式</h2>
+			<ul>
+				<li><a href="form.html">表单</a></li>
+				<li><a href="biaoGe.html">表格</a></li>
+				<li><a href="bianJiKuan.html">编辑块</a></li>
+				<li><a href="youCeTiShi.html">右侧提示</a></li>
+				<li><a href="tanChuKuang.html">弹出框</a></li>
+				<li><a href="xiaLaLieBiao.html">下拉列表</a></li>
+				<li><a class="active" href="youCeJinDu.html">右侧进度</a></li>
+				<li><a href="shu.html">树</a></li>
+				<li><a href="easyui_grid.html">easyui表格</a></li>
+			</ul>
+		</div><!-- left-nav-group -->
+		
+
+	 </div><!-- left-nav -->
+
+
+</div><!-- div_leftside -->
+
+
+<div class="div-rightside show-tips-frame">
+
+
+<ol class="breadcrumb">
+  <li><a href="shouYe.html">首页</a></li>
+  <li><a href="#">基础数据</a></li>
+  <li class="active">表单配右则提示</li>
+</ol>
+
+	<div class="main-right">
+		<div class="alert alert-info">
+			<span class="glyphicon glyphicon-info-sign"></span> 项目计划查看
+		</div>
+		<div class="rul-title"></div>
+		<ul class="rul">
+			
+				<li><img src="http://192.168.10.118:8080/xjdxkjs/resource/images/person.gif" alt="">
+					<div class="neirong">
+						<span class="neirongtitle">超级管理员提交计划</span> 
+						
+							<span class="neirongmesg">超级管理员&nbsp;&nbsp;2016-6-12 16:27:38</span>
+							<span class="neirongmesg">超级管理员提交计划审核</span>
+						
+						
+					</div>
+					<div class="clearfix"></div></li>
+			
+				<li class="active"><img src="http://192.168.10.118:8080/xjdxkjs/resource/images/person.gif" alt="">
+					<div class="neirong">
+						<span class="neirongtitle">项目负责人审核</span> 
+						
+						
+							<span class="label label-success Rlable">审核通过</span> 
+							<span class="neirongmesg">聂奇慧&nbsp;&nbsp;2016-6-12 16:44:54</span> 
+							<span class="neirongmesg"><div style="word-wrap:break-word;">没问题，审核通过，请继续努力工作！</div></span>
+						
+					</div>
+					<div class="clearfix"></div></li>
+			
+				<li class="active"><img src="http://192.168.10.118:8080/xjdxkjs/resource/images/person.gif" alt="">
+					<div class="neirong">
+						<span class="neirongtitle">学科负责人审核</span> 
+						
+						
+							<span class="label label-success Rlable">审核通过</span> 
+							<span class="neirongmesg">聂奇慧&nbsp;&nbsp;2016-6-12 16:45:26</span> 
+							<span class="neirongmesg"><div style="word-wrap:break-word;">没问题，审核通过，请继续努力工作！</div></span>
+						
+					</div>
+					<div class="clearfix"></div></li>
+			
+				<li class="active"><img src="http://192.168.10.118:8080/xjdxkjs/resource/images/person.gif" alt="">
+					<div class="neirong">
+						<span class="neirongtitle">学科办审核并启动</span> 
+						
+						
+							<span class="label label-success Rlable">审核通过</span> 
+							<span class="neirongmesg">超级管理员&nbsp;&nbsp;2016-6-13 13:32:18</span> 
+							<span class="neirongmesg"><div style="word-wrap:break-word;">没问题，审核通过，请继续努力工作！</div></span>
+						
+					</div>
+					<div class="clearfix"></div></li>
+			
+				<li><img src="http://192.168.10.118:8080/xjdxkjs/resource/images/person.gif" alt="">
+					<div class="neirong">
+						<span class="neirongtitle">学科办暂停计划</span> 
+						
+							<span class="neirongmesg">超级管理员&nbsp;&nbsp;2016-7-18 15:49:35</span>
+							<span class="neirongmesg">学科办暂停计划</span>
+						
+						
+					</div>
+					<div class="clearfix"></div></li>
+			
+				<li><img src="http://192.168.10.118:8080/xjdxkjs/resource/images/person.gif" alt="">
+					<div class="neirong">
+						<span class="neirongtitle">学科办恢复计划</span> 
+						
+							<span class="neirongmesg">超级管理员&nbsp;&nbsp;2016-7-18 15:49:41</span>
+							<span class="neirongmesg">学科办恢复计划</span>
+						
+						
+					</div>
+					<div class="clearfix"></div></li>
+			
+		</ul>
+	</div>
+
+
+						
+	<div class="main-frame">
+
+	<div class="step-bar step-bar-cols-2">
+		<ul>
+			<li class="active"><span>待提交</span></li>
+			<li><span>待负责人审核</span></li>
+		</ul>
+	</div><!-- step-bar -->
+
+	<div class="step-bar step-bar-cols-3">
+		<ul>
+			<li class="active"><span>待提交</span></li>
+			<li><span>待负责人审核</span></li>
+			<li><span>待学科办审核</span></li>
+		</ul>
+	</div><!-- step-bar -->
+
+	<div class="step-bar">
+		<ul>
+			<li class="active"><span>待提交</span></li>
+			<li><span>待负责人审核</span></li>
+			<li><span>待学科办审核</span></li>
+			<li><span>审核通过</span></li>
+		</ul>
+	</div><!-- step-bar -->
+
+	<div class="step-bar step-bar-cols-5">
+		<ul>
+			<li class="active"><span>待提交</span></li>
+			<li class="active"><span>待负责人审核</span></li>
+			<li><span>待学科办审核</span></li>
+			<li><span>审核通过</span></li>
+			<li><span>完成</span></li>
+		</ul>
+	</div><!-- step-bar -->
+
+	<!-- 组开始 -->
+	<div class="section-title">右侧进度</div>
+	<div class="form-horizontal">
+	  <div class="form-group col-sm-12">
+		<label class="fg-text control-label">字段一</label>
+		<div class="fg-input">
+		  <input type="text" class="form-control" id="inputEmail3" placeholder="请填写这一个字段">
+		</div>
+	  </div>
+	  <div class="form-group col-sm-12">
+		<label class="fg-text control-label">字段一</label>
+		<div class="fg-input">
+		  <input type="text" class="form-control" id="inputEmail3" placeholder="请填写这一个字段">
+		</div>
+	  </div>
+	  <div class="form-group col-sm-12">
+		<label class="fg-text control-label">字段一</label>
+		<div class="fg-input">
+			<div class="input-group">
+			  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+			  <span class="input-group-btn">
+				<button type="button" class="btn btn-info">浏览</button>
+			  </span>
+			</div>
+		</div>
+	  </div>
+	  <div class="form-btns">
+		  <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-ok"></span> 确定保存</button>
+		  <button type="submit" class="btn btn-default">取消</button>
+	  </div>
+	</div>
+	<!-- 组结束 -->
+
+	</div>
+
+
+
+
+<!-- 混合表单结束 -->
+
+
+
+</div><!-- div_rightside -->
+
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+/****
+guopc
+后台管理系统
+2015-10-10
+****/
+*{margin: 0;padding: 0; list-style: none; box-sizing: border-box;}
+html,body,h1,h2,h3,h4,h5,h6,hr,p,iframe,dl,dt,dd,ul,ol,li,pre,form,button,input,textarea,th,td,fieldset{margin:0;padding:0}
+ul,ol,dl{list-style-type:none}
+html,body{*position:static;height: 100%;}
+i{font-style: normal;}
+html{font-family: sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:400}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
+input,button{overflow: visible;vertical-align:middle;outline:none}
+body,th,td,button,input,select,textarea{font-family:"Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Helvetica,tahoma,arial,Verdana,sans-serif,"\5B8B\4F53";font-size:14px;color:#333;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+body{line-height:18px}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+a,area{outline:none;blr:expression(this.onFocus=this.blur())}
+a{text-decoration:none;color:#333;cursor:pointer}
+a:hover{text-decoration:none;outline:none}
+a:focus{outline:none}
+a:hover,a:active{outline:none}:focus{outline:none}
+sub,sup{vertical-align:baseline}
+button,input[type="button"], input[type="submit"] {line-height:normal !important;}
+img{border:0;vertical-align:middle}
+a img,img{-ms-interpolation-mode:bicubic}
+.clearfix:after{visibility: hidden;display:block;font-size:0;content:"";clear:both;height:0;}
+.clearfix{zoom:1}/*早日舍弃IE6*/
+/*HTML5 新增reset*/
+header,footer,section,aside,details,menu,article,section,nav,address,hgroup,figure,figcaption,legend{display:block;margin:0;padding:0}
+time{display:inline}
+audio,canvas,video{display:inline-block;*display:inline;*zoom:1}
+audio:not([controls]){display:none}
+legend{width:100%;margin-bottom:20px;font-size:21px;line-height:40px;border:0;border-bottom:1px solid #e5e5e5}
+legend small{font-size:15px;color:#999}
+svg:not(:root) {overflow: hidden}
+fieldset {border-width:0;padding: 0.35em 0.625em 0.75em;margin: 0 2px;border: 1px solid #c0c0c0}
+input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button {height: auto}
+input[type="search"]{-webkit-appearance:textfield; /* 1 */}
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration {-webkit-appearance:none}
+
+header{ width: 100%; height: 75px; position: fixed; left: 0; top: 0; z-index: 999; background-color: #0099cb; padding: 10px; overflow: hidden;color: #fff;}
+header .logo{ float: left; width: 15%; border-right: 1px solid #fff;}
+header .logo img{ width: 70%; padding-top: 4px; }
+header .con_list{ float: left; width: 30%;}
+header .con_list ul{ display: flex; height: 100%;}
+header .con_list ul li{ font-size: 14px;  line-height: 20px; flex: 1; text-align: center;  height: 100%;}
+header .con_list ul li img{ width: 40%;}
+header .con_list ul li:hover{ background-color: #095fb5; }
+header  .mingc{width:55%; font-size: 20px; text-align: right; float: left; padding-right: 10px; }
+
+
+.nei_header{  padding: 0 20px; text-align: center; font-size: 30px;   line-height: 100px; background-color: #0099cb; color: #fff; }
+.nei_header  .rentu{ float: left; padding: 0 40px 0 0; border-right: 1px solid #00b8c9;}
+.nei_header  .rentu img{ width: 40px; vertical-align: middle; padding-bottom: 10px;}
+.nei_header h3{width: 20%; margin: 0 auto; display: inline-block;}
+.nei_header .jix { font-size: 18px;  float: right; color: #fff; }
+.nei_header .jix  a{ color: #fff;}
+
+

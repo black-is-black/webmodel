@@ -1,0 +1,419 @@
+/*通用样式*/
+html,body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin:0;padding:0;
+}
+table /* 设置table 的样式*/
+{
+    border-collapse:collapse;
+    border-spacing:0;
+    width: 100%;
+}
+fieldset, img {
+    border:0;
+}
+em, strong {
+    font-style:normal;
+    font-weight:normal;
+}
+ul {
+    list-style:none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size:100%;
+    font-weight:normal;
+}
+body, input, button, textarea {
+    font-size:12px;
+    font-family:"微软雅黑",Arial, Helvetica, sans-serif;
+}
+a{ text-decoration:none;outline:none;color:#fff;}
+a:hover{ cursor:pointer;}
+
+/*页面样式*/
+html,body{
+    height:100%;
+}
+.index{
+    width:1920px;
+    height:1080px;
+    background:#0a1031;
+}
+/*头部样式*/
+.head{
+    width:100%;
+    height:82px;
+    background:url('../img/headbg.png') no-repeat;
+}
+.head>b{
+    display: inline-block;
+    width:292px;
+    height: 38px;
+    background:url('../img/logo.png') no-repeat;
+    margin-left:53px;
+    margin-top:20px;
+}
+.head ul{
+    float:right;
+}
+.head ul li{
+    float:left;
+    color:#fff;
+    line-height: 76px;
+    margin-right: 24px;
+}
+.head ul li.set,.head ul li.user{
+    margin-right: 38px;
+}
+.head ul li.quit{
+    margin-right: 46px;
+}
+.head ul li.user #userImage{
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+    border-radius: 14px;
+    margin-right: 8px;
+}
+.head ul li.set a:hover,.head ul li.quit a:hover{
+    color:#f4bb4a;
+}
+.head ul li.set b{
+    display: inline-block;
+    width:16px;
+    height: 16px;
+    background:url('../img/user.png') no-repeat;
+    margin-right: 8px;
+}
+.head ul li.set b:hover{
+    display: inline-block;
+    width:16px;
+    height: 16px;
+    background:url('../img/user-hover.png') no-repeat;
+    margin-right: 8px;
+}
+.head ul li.quit b{
+    display: inline-block;
+    width:16px;
+    height: 16px;
+    background:url('../img/quit.png') no-repeat;
+    margin-right: 8px;
+}
+.head ul li.quit b:hover{
+    display: inline-block;
+    width:16px;
+    height: 16px;
+    background:url('../img/quit-hover.png') no-repeat;
+    margin-right: 8px;
+}
+.head ul li.back input{
+    display: inline-block;
+    width:68px;
+    height: 28px;
+    background:url('../img/backbg.png') no-repeat;
+    color: #fff;
+    border: none;
+    font-size: 13px;
+}
+.head ul li.back input:hover{
+    background:url('../img/backbg-hover.png') no-repeat;
+}
+.head ul li a{
+    color:#fff;
+    font-size: 13px;
+}
+/*主体样式*/
+.content{
+    width:1872px;
+    height:958px;
+    background:url('../img/bg.png') no-repeat;
+    margin:24px;
+    margin-top:16px;
+}
+.content .left{
+    float:left;
+    position:relative;
+}
+.content .right{
+    float:left;
+    margin-left:20px;
+    margin-top:36px;
+}
+/*左侧菜单栏*/
+.left ul{
+    margin-top:36px;
+}
+.left ul li{
+    color:#fff;
+    font-size: 15px;
+    margin-left:32px;
+    background:url('../img/itemBg.png') no-repeat;
+    width:240px;
+    height:44px;
+    margin-top:15px;
+    text-align: left;
+    padding-left:25px;
+    line-height: 44px;
+}
+.left ul li.selected{
+    background:url('../img/itemBg-hover.png') no-repeat;
+}
+.left>b{
+    display: inline-block;
+    width:19px;
+    height:43px;
+    background:url('../img/shrink.png') no-repeat;
+    position:absolute;
+    left:285px;
+    top:452px;
+}
+.left>b:hover{
+    background:url('../img/shrink-hover.png') no-repeat;
+}
+.left>b.out{
+    background:url('../img/deploy.png') no-repeat;
+    left:32px;
+}
+.left>b.out:hover{
+    background:url('../img/deploy-hover.png') no-repeat;
+    left:32px;
+}
+
+
+/*表格*/
+.left-info{
+    float:left;
+    color:#fff;
+    width:650px;
+    margin-left: 10px;
+    position: relative;
+}
+.left-info input{
+    background: transparent;
+    border:none;
+    border:2px solid #2b3a6a;
+    width:650px;
+    height:30px;
+    color:#fff;
+    text-indent: 5px;
+}
+.left-info b{
+    display: inline-block;
+    width:20px;
+    height:20px;
+    background:url('../img/plus.png') no-repeat;
+    position:absolute;
+    top:6px;
+    left:620px;
+}
+/*表格样式*/
+.testCase_content {
+    float:left;
+    width: 650px;
+    position: relative;
+    height: 822px;
+    overflow: hidden;
+    border: 2px solid #2b3a6a;
+    margin-top:20px;
+}
+table{
+    display: table;
+    border-collapse: separate;
+    /*border-color: #cccccc;*/
+    font-size:13px;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+td,th{
+    display: table-cell;
+    vertical-align: inherit;
+}
+table.common_tableTitle {
+    width: 100%;
+    background: #212e6b;
+    border-bottom: 1px solid #2b3a6a;
+}
+table.common_tableTitle th {
+    text-align: left;
+    padding-left:34px;
+    line-height: 38px;
+    font-weight: normal;
+    color:#fff;
+}
+.testCase_contentForm {
+    height: 788px;
+    background: transparent;
+    overflow: hidden;
+}
+table.common_tableContent {
+    width: 100%;
+}
+table.common_tableContent td {
+    border-bottom: 1px solid #2b3a6a;
+    line-height: 40px;
+    text-align: left;
+    background-position: center;
+    height: 40px;
+    position: relative;
+    word-break: break-all;
+    /*border-right: 1px solid #e2e2e2;*/
+    padding-left:34px;
+}
+
+table.common_tableContent tr:hover{
+    background: #212d6b;
+    opacity: 0.5;
+    color:#f4bb4a;
+    font-size:13px;
+}
+
+/*分页*/
+.pagination{
+    height: 44px;
+    width: 650px;
+    background: #212e6b;
+    text-align: center;
+    /* border: 2px solid #2b3a6a; */
+    border-top: none;
+    margin-top: -49px;
+}
+.pagination span{
+    margin-top: 12px;
+}
+.pagination .current.prev, .pagination .current.next{
+    background: transparent;
+    border:none;
+    color:#fff;
+}
+.pagination .current{
+    background: transparent;
+    border:1px solid #2b3a6a;
+    padding: 4px 7px;
+}
+.pagination .current:hover{
+    background: #f4bb4a;
+    border:1px solid #f4bb4a;
+}
+/*用户信息*/
+.info{
+    float:left;
+    margin-left:34px;
+    width:826px;
+    height:822px;
+}
+.info .line{
+    background:url('../img/line.png') no-repeat;
+    width:830px;
+    height: 27px;
+    color: #98b1f8;
+    font-size: 17px;
+    font-family: '微软雅黑';
+    margin-top: 7px;
+}
+.info .user_info{
+    margin-top:20px;
+    height:220px;
+    border:2px solid #2b3a6a;
+    position:relative;
+}
+.user_left{
+    float:left;
+    color:#fff;
+    margin-top:35px;
+    margin-left:50px;
+}
+.user_left ul li{
+    margin-bottom: 32px;
+}
+.user_right{
+    float:right;
+    margin-right:50px;
+    margin-top:35px;
+}
+.user_right img{
+    width:225px;
+    height:150px;
+}
+.info .time{
+    margin-top:22px;
+    height: 576px;
+    border:2px solid #2b3a6a;
+    position:relative;
+}
+.event_time{
+    overflow-y: scroll;
+    height: 556px;
+    margin-top:10px;
+    width:800px;
+}
+/*四个白角样式*/
+.i1,.i5,.i9{
+    display: inline-block;
+    width:22px;
+    height:22px;
+    border:2px solid #fff;
+    border-right:none;
+    border-bottom: none;
+    position: absolute;
+    top: 54px;
+    left: 0px;
+    z-index: 2;
+}
+.i2,.i6,.i10{
+    display: inline-block;
+    width:22px;
+    height:22px;
+    border:2px solid #fff;
+    border-left:none;
+    border-bottom: none;
+    position: absolute;
+    right: -4px;
+    top: 54px;
+    z-index: 2;
+}
+.i3,.i7,.i11{
+    display: inline-block;
+    width:22px;
+    height:22px;
+    border:2px solid #fff;
+    border-right:none;
+    border-top: none;
+    position: absolute;
+    margin-top: -24px;
+}
+.i4,.i8,.i12{
+    display: inline-block;
+    width:22px;
+    height:22px;
+    border:2px solid #fff;
+    border-left:none;
+    border-top: none;
+    position: absolute;
+    right: 0px;
+    margin-top: -24px;
+}
+.i5,.i9{
+    top: -2px;
+    left: -2px;
+}
+.i6,.i10{
+    top:-2px;
+    right: -2px;
+}
+.i7,.i11{
+    margin-top: 0px;
+    left: -2px;
+    bottom: -2px;
+}
+.i8,.i12{
+    margin-top: 0px;
+    right: -2px;
+    bottom: -2px;
+}

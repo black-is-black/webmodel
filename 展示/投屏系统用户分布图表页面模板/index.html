@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户分布情况</title>
+    <link rel="stylesheet" href="css/pagination.css">
+    <link rel="stylesheet" href="css/home.css">
+    <!--<link rel="stylesheet" href="css/history.css">-->
+    <link rel="stylesheet" href="css/user-map.css">
+
+</head>
+<body>
+    <div class="index">
+        <!--头部-->
+        <div class="head">
+            <b></b>
+            <ul>
+                <li  class="user">
+                    <a href=""><img src="img/user.jpg" alt="" id="userImage" />小茗</a>
+                </li>
+                <li  class="set">
+                    <b></b>
+                    <a href="">个人设置</a>
+                </li>
+                <li  class="quit">
+                    <b></b>
+                    <a href="">退出</a>
+                </li>
+                <li class="back">
+                    <!--<a href="#">返回</a>-->
+                    <input type="button" value="返回">
+                </li>
+            </ul>
+        </div>
+        <!--主体-->
+        <div class="content">
+            <div class="left">
+                <ul class="tabs">
+                    <li class="selected">用户分布情况</li>
+
+                    <a href="user-vps.html"><li> 资源使用状态</li></a>
+
+                </ul>
+                <b></b>
+            </div>
+
+            <div class="right">
+                <div class="item">
+
+                    <div class="left-info">
+                        <input type="text">
+                        <b></b>
+                        <i class="i1"></i>
+                        <i class="i2"></i>
+                        <div class="testCase_content">
+                            <table align="center" cellpadding="0" cellspacing="0" class="common_tableTitle">
+                                <tbody>
+                                <tr>
+                                    <th width="50%">用户名</th>
+                                    <th width="50%">状态</th>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="testCase_contentForm">
+                                <table align="center" cellpadding="0" cellspacing="0" class="common_tableContent">
+                                    <tbody>
+                                        <tr>
+                                            <td width="50%">韦小宝</td>
+                                            <td width="50%">在线</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="50%">用户2</td>
+                                            <td width="50%">离线</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--分页-->
+                            <div id="Pagination" class="pagination"></div>
+                            <i class="i3"></i>
+                            <i class="i4"></i>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <div class="line">
+                            <span>用户信息</span>
+                        </div>
+                        <div class="user_info">
+                            <i class="i5"></i>
+                            <i class="i6"></i>
+                            <div class="user_left">
+                                <ul>
+                                    <li>用户名：<span class="userName">韦小宝</span></li>
+                                    <li>电话：<span class="tel">13012345678</span></li>
+                                    <li>身份证：<span class="card">110222198009082211</span></li>
+                                    <li>地址：<span class="address">北京市东城区景山前街4号紫禁城教师房</span></li>
+                                </ul>
+                            </div>
+                            <div class="user_right">
+                                <img src="img/user.jpg" alt="">
+                            </div>
+                            <i class="i7"></i>
+                            <i class="i8"></i>
+                        </div>
+                        <div class="time">
+                            <!--<div id="arrow">
+                                <ul>
+                                    <li class="arrowup" style="opacity: 1;"></li>
+                                    <li class="arrowdown" style="opacity: 1;"></li>
+                                </ul>
+                            </div>
+                            <div id="history">
+
+                                <div class="title">
+                                    <div id="circle">
+                                        <div class="cmsk"></div>
+                                        <div class="circlecontent">
+                                            <div thisyear="2013" class="timeblock">
+                                                <span class="numf"></span>
+                                                <span class="nums"></span>
+                                                <span class="numt"></span>
+                                                <span class="numfo"></span>
+                                                <div class="clear"></div>
+                                            </div>
+                                            <div class="timeyear">YEAR</div>
+                                        </div>
+                                        <a href="#" class="clock"></a>
+                                    </div>
+                                </div>
+
+                                <div id="content">
+                                    <ul class="list">
+                                        <li style="margin-top:-110px;">
+                                            <div class="liwrap">
+                                                <div class="lileft">
+                                                    <div class="date">
+                                                        <span class="year">2013</span>
+                                                        <span class="md">0905</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="point"><b></b></div>
+
+                                                <div class="liright">
+                                                    <div class="histt"><a href="#">HTML5 CSS3 发展历程 发布</a></div>
+                                                    <div class="hisct">修正了上一版本中的错误，欢迎大家测试，如果发现问题请联系我们,谢谢。</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="liwrap">
+                                                <div class="lileft">
+                                                    <div class="date">
+                                                        <span class="year">2013</span>
+                                                        <span class="md">0807</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="point"><b></b></div>
+
+                                                <div class="liright">
+                                                    <div class="histt"><a href="#">HTML5 CSS3 发展历程 发布</a></div>
+                                                    <div class="hisct">随着用户的访问量增大,功能不能满足需求，我们进行了重大更新，对设计和功能都进行大幅度的升级,增加了原创，欣赏版块</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="liwrap">
+                                                <div class="lileft">
+                                                    <div class="date">
+                                                        <span class="year">2013</span>
+                                                        <span class="md">0528</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="point"><b></b></div>
+
+                                                <div class="liright">
+                                                    <div class="histt"><a href="#">官方微博</a></div>
+                                                    <div class="hisct">推出了HTML5 CSS3 官方微博</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="liwrap">
+
+                                                <div class="lileft">
+                                                    <div class="date">
+                                                        <span class="year">2013</span>
+                                                        <span class="md">0524</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="point"><b></b></div>
+
+                                                <div class="liright">
+                                                    <div class="histt"><a href="#">HTML5 CSS3 发展历程 上线</a></div>
+                                                    <div class="hisct">虽然功能还未健全，但是我们已迫不及待的让它去接受广大用户的火眼金睛</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="liwrap">
+                                                <div class="lileft">
+                                                    <div class="date">
+                                                        <span class="year">2013</span>
+                                                        <span class="md">0508</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="point"><b></b></div>
+
+                                                <div class="liright">
+                                                    <div class="histt"><a href="#">初期讨论</a></div>
+                                                    <div class="hisct">在集体探讨下，发现目前的HTML5 CSS3 发展历程已经不能满足需求，集体讨论=，这时候，韩老师之前的设计稿被端上了会议桌。</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="liwrap">
+                                                <div class="lileft">
+                                                    <div class="date">
+                                                        <span class="year">2012</span>
+                                                        <span class="md">0701</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="point"><b></b></div>
+
+                                                <div class="liright">
+                                                    <div class="histt"><a href="#">灵感迸发</a></div>
+                                                    <div class="hisct">某天晚上的凌晨三点一刻，预想建立这样一个功能的网站，专为网页设计师。</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="liwrap">
+
+                                                <div class="lileft">
+                                                    <div class="date">
+                                                        <span class="year">2012</span>
+                                                        <span class="md">0524</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="point"><b></b></div>
+
+                                                <div class="liright">
+                                                    <div class="histt"><a href="#">HTML5 CSS3 发展历程 上线</a></div>
+                                                    <div class="hisct">虽然功能还未健全，但是我们已迫不及待的让它去接受广大用户的火眼金睛</div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <Br /><br /><br /><Br /><br /><br />-->
+                            <i class="i9"></i>
+                            <i class="i10"></i>
+                            <div class="event_time">
+                                <div class="event_wrap clearfix">
+                                    <div class="middle_line">
+                                    </div>
+                                </div>
+                            </div>
+                            <i class="i11"></i>
+                            <i class="i12"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.pagination.js"></script>
+<!--<script src="js/jquery.easing.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
+<script src="js/history.js"></script>-->
+<script src="js/jquery.eventFlow.js"></script>
+<script>
+    /*时间轴*/
+    $(function(){
+        var bigEvent =[{
+            'year' : 2017,
+            'events' :[
+                {
+                    'mouths' : 2,
+                    'times' :'2017年2月29',
+                    'even' :'韦小宝注册了聚测平台'
+                },{
+                    'mouths' : 4,
+                    'times' :'2017年4月3',
+                    'even' :'韦小宝接手项目12'
+                },{
+                    'mouths' : 10,
+                    'times' :'2017年10月11日',
+                    'even' :'韦小宝完成项目12'
+                }]
+        },{
+            'year' : 2016,
+            'events' :[
+                {
+                    'mouths' : 1,
+                    'times' :'2016年1月18',
+                    'even' :'韦小宝修复了3个漏洞'
+                },{
+                    'mouths' : 5,
+                    'times' :'2016年5月15',
+                    'even' :'韦小宝参与了项目35'
+                }
+                ,{
+                    'mouths' : 11,
+                    'times' :'2016年11月15',
+                    'even' :'韦小宝完成了项目35'
+                }
+            ]},{
+            'year' : 2017,
+            'events' :[
+                {
+                    'mouths' : 5,
+                    'times' :'2015年5月18',
+                    'even' :'韦小宝修复了3个漏洞'
+                },
+                {
+                    'mouths' : 12,
+                    'times' :'2015年12月18',
+                    'even' :'韦小宝修复了3个漏洞'
+                }
+            ]}];
+        $('.event_wrap').eventFlow({'events':bigEvent});
+    })
+
+    /*分页*/
+    var pageSize =6;     //每页显示多少条记录
+    var total;           //总共多少记录
+    $(function() {
+        Init(0); //注意参数，初始页面默认传到后台的参数，第一页是0;
+        $("#Pagination").pagination(total, {   //total不能少
+            callback: PageCallback,
+            prev_text: '上一页',
+            next_text: '下一页',
+            items_per_page: pageSize,
+            num_display_entries: 4,        //连续分页主体部分显示的分页条目数
+            num_edge_entries: 1,           //两侧显示的首尾分页的条目数
+        });
+        function PageCallback(index, jq) {     //前一个表示您当前点击的那个分页的页数索引值，后一个参数表示装载容器。
+            Init(index);
+        }
+    });
+
+    function Init(pageIndex){      //这个参数就是点击的那个分页的页数索引值，第一页为0，上面提到了，下面这部分就是AJAX传值了。
+
+    };
+
+    /*tab标签切换*/
+    $('.tabs li').click(function(){
+        var i = $(this).index();
+        $(this).addClass('selected').siblings().removeClass('selected');
+        $('.right .item').eq(i).show().siblings().hide();
+    })
+    //点击展开收缩
+    $(".left>b").click(function(){
+        if($(this).hasClass('out')){
+            $(".tabs").show();
+            $(this).removeClass("out");
+            $('.left-info input').css('width','650px');
+            $('.testCase_content').css('width','650px');
+            $('.pagination').css('width','650px');
+            $('.info').css('margin-left','30px');
+            $('.left-info').css('margin-left','10px');
+            $('.left-info b').css('left','620px');
+            $('.i2').css('right','-4px');
+
+        }else{
+            $(".tabs").hide();
+            $(this).addClass("out");
+            $('.left-info input').css('width','900px');
+            $('.testCase_content').css('width','900px');
+            $('.pagination').css('width','900px');
+            $('.info').css('margin-left','290px');
+            $('.left-info').css('margin-left','50px');
+            $('.left-info b').css('left','870px');
+            $('.i2').css('right','-253px');
+        }
+    });
+    /*去掉火狐全屏出现的滚动条*/
+    BrowserType();
+    //判断当前浏览类型
+    function BrowserType()
+    {
+        var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
+        var isFF = userAgent.indexOf("Firefox") > -1; //判断是否Firefox浏览器
+        //var isChrome = userAgent.indexOf("Chrome") > -1 && userAgent.indexOf("Safari") > -1; //判断Chrome浏览器
+
+        if (isFF) {
+            var times = true;
+            window.document.onkeydown = disableRefresh;
+            function disableRefresh(evt){
+                evt = (evt) ? evt : window.event;
+
+                if (evt.keyCode) {
+                    if(evt.keyCode == 122){
+                        times = !times
+                        if(times){
+                            $("body").eq(0).css('overflow','auto');
+                        }else{
+                            /*取消滚动条*/
+                            $("body").eq(0).css('overflow','hidden');
+                        }
+                    }
+                }
+            }
+        }
+    }
+</script>
+
+</html>

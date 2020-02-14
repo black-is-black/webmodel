@@ -1,0 +1,2800 @@
+/* 新样式 */
+
+/* 配色方案 */
+@colorMain-theme-1:#1491B3;
+@colorMain-theme-2:#7A82BD;
+@colorMain-theme-3:#b28658;
+@colorMain-theme-4:#289346;
+@colorMain-theme-5:#965f8e;
+@colorMain-theme-6:#667;
+@colorMain-theme-7:#1498C8;
+
+[class^="theme_"] {
+  border:none;
+  &:before,
+  &:after {
+    content:none;
+  }
+}
+
+.theme_1_thumb {background-color:@colorMain-theme-1}
+.theme_2_thumb {background-color:@colorMain-theme-2}
+.theme_3_thumb {background-color:@colorMain-theme-3}
+.theme_4_thumb {background-color:@colorMain-theme-4}
+.theme_5_thumb {background-color:@colorMain-theme-5}
+.theme_6_thumb {background-color:@colorMain-theme-6}
+.theme_7_thumb {background-color:@colorMain-theme-7}
+
+@colorMain:@colorMain-theme-1;
+@colorLoginBackground:@colorMain;
+@colorFont:#58585a;
+@colorGrayLight:#F2F2F6;
+@colorHoverGray:darken(@colorGrayLight,5%);
+@colorInputBorder:#ccccce;
+
+@colorMainGrayLight:desaturate(lighten(@colorMain,30%),35%);
+
+@white:#fff;
+@red:#f00;
+@green:#00B500;
+
+@fontSizePageTitle:24px;
+@fontSizeCatalog:20px;
+@fontSizeTitle:15px;
+@fontSizeTextClear:14px;
+@fontSizeText:13px;
+
+@heightHeader:60px;
+@heightCatalog:70px;
+
+@widthLeftSide:230px;
+@widthTreeFrame:280px;
+
+@spacingNormal:10px;
+
+/* 杂项 */
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {-webkit-box-shadow:0 0 0 50px white inset!important;}
+body, div, table, td, th, span, ul, ol, li, dl, dd, dt {font-size:@fontSizeText;}
+body,div,td,li {font-size:@fontSizeText;}
+.fontSongTi {font-family:"宋体"}
+.fontDefault {font-family:"Microsoft YaHei","Helvetica Neue", "Luxi Sans", "DejaVu Sans", "Tahoma",
+"Hiragino Sans GB", "STHeiti", "Microsoft YaHei";}
+.form-control {border-color:@colorInputBorder;}
+a {
+  color:@colorMain;
+  &:hover {
+    color:lighten(@colorMain,10%);
+  }
+}
+.box-center {
+  display:box;
+  display:-webkit-box;
+  display:-moz-box;
+  -webkit-box-pack:center;
+  -moz-box-pack:center;
+  -webkit-box-align:center;
+  -moz-box-align:center;
+}
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 登陆页面 */
+.body-login {
+  background-color:@colorLoginBackground;
+  .div-login {
+    background:url(../images/login_background.png);width:331px;height:340px;border:none;box-shadow:none;color:#fff;
+    .section-title {
+      text-align:center;border:none;padding:13px 0 0;text-indent:180px;
+    }
+    .form-group {
+      margin-bottom:@spacingNormal;
+      label {margin-bottom:0;}
+      .form-control[type=text],
+      .form-control[type=password]{
+        background-color:#fff;border:none;border-radius:0;height:30px;
+      }
+      &:after {
+        content:"";display:block;clear:both;
+      }
+    }
+    .btn-submit {
+      margin-top:20px;background-color:@colorLoginBackground;border:2px solid #fff;border-radius:4px;box-shadow:2px 2px 2px #666;
+      &:hover{
+        background-color:lighten(@colorLoginBackground,5%);
+      }
+    }
+    .login-code {
+      .form-control,
+      .code-img,
+      .code-refresh {
+        float:left;
+      }
+      .form-control {width:100px;}
+      .code-img {margin-left:@spacingNormal;}
+      .code-refresh {margin:6px 0 0 10px;font-size:@fontSizeText;color:#fff;text-decoration:underline;}
+    }
+    .pass-forgot {
+      margin:6px 0 0 0;display:block;text-align:right;font-size:@fontSizeText;color:#fff;text-decoration:underline;
+    }
+    .section-title {
+      margin-bottom:20px;
+    }
+  }
+}
+
+/* 顶部 */
+.div-header {
+  height:@heightHeader;background-color:@colorMain;
+  .container-fluid {
+    padding:0 30px;
+    .header-title {
+      font-size:@fontSizePageTitle;height:@heightHeader;line-height:@heightHeader;color:@white;
+    }
+    .navbar-nav {
+      & > li{
+        & > a,
+        & > a:focus,
+        &.open > a {
+          line-height:@heightHeader;padding-top:0;padding-bottom:0;font-size:@fontSizeTitle;color:@white;
+          &:hover {
+            background-color:lighten(@colorMain,5%);color:@white;
+          }
+          & > .glyphicon-user {color:@white;font-size:@fontSizeTitle;}
+        }
+      }
+      .dropdown-menu {
+        margin-top:-1px;
+        li a {color:#333}
+        &.dropdown-user {
+          top:100%;margin-top:-5px;
+        }
+        .glyphicon {
+          margin-right:14px;
+        }
+      }
+    }
+  }
+}
+
+/* 菜单栏目部分 */
+.div-catalog {
+  top:@heightHeader;height:@heightCatalog;border-bottom:1px solid @colorMain;box-shadow:none;background-color:@colorGrayLight;
+  .dc-title {
+    line-height:@heightCatalog;margin:0;padding:0 30px;color:@colorMain;
+    .dc-name {
+      font-size:@fontSizeCatalog;font-weight:bold;color:@colorMain;
+      .glyphicon {
+        font-size:@fontSizeCatalog;
+      }
+    }
+  }
+  .header-menu {
+    position:relative;overflow:hidden;height:65px;
+    ul {
+      li {
+        a {
+          height:62px;padding:8px @spacingNormal;min-width:120px;color:@colorFont;font-size:@fontSizeTitle;
+          &.active {background-color:@colorMain;color:@white;
+            .glyphicon {color:@white;}
+            &:hover {
+              background-color:@colorMain;
+            }
+          }
+          &:hover {
+            background-color:@colorHoverGray;
+          }
+          .glyphicon {font-size:26px;height:30px;color:lighten(@colorFont,15%);}
+        }
+      }
+    }
+    .hm-left{
+      width:@spacingNormal;height:32px;position:absolute;top:19px;left:0;.fontSongTi;background-color:darken(@colorGrayLight,10%);cursor:pointer;
+      &:before {
+        display:block;content:"<"; transform: rotateZ(0deg) scaleY(2);padding-left:2px;padding-top:5px;color:@white;
+      }
+      &.enable {
+        background-color:@colorMainGrayLight;
+      }
+      &:hover {
+        background-color:@colorMain;
+      }
+    }
+    .hm-right{
+      width:@spacingNormal;height:32px;position:absolute;top:19px;right:0;.fontSongTi;background-color:darken(@colorGrayLight,10%);cursor:pointer;
+      &:before {
+        display:block;content:">"; transform: rotateZ(0deg) scaleY(2);padding-left:2px;padding-top:5px;color:@white;
+      }
+      &.enable {
+        background-color:@colorMainGrayLight;
+      }
+      &:hover {
+        background-color:@colorMain;
+      }
+    }
+  }
+}
+/* 左侧部分 */
+.div-leftside {
+  top:@heightHeader + @heightCatalog + 1;width:@widthLeftSide;overflow:auto;bottom:0;position:fixed;z-index:1;
+transition:0.2s linear;transition-property:width,left;
+  .left-nav {
+    &.left-nav-fixed-top {
+      width:@widthLeftSide;top:@heightHeader;
+    }
+    .left-nav-group {
+      border:none;border-radius:0;/*min-height:190px;*/
+      h2 {
+        background-color:@colorMain;color:@white;font-weight:100;font-size:@fontSizeTitle;border-bottom:2px solid @white;
+      }
+      ul {
+        min-height:120px;
+        li {
+          a {
+            font-size:@fontSizeText;color:@colorFont;position:relative;padding:@spacingNormal 32px;background-color:transparent;
+            &:before {
+              position:absolute;content:">>";left:24px;top:11px;font-size:12px;transform:scale(0.7);.fontSongTi;font-weight:bold;letter-spacing:-11px;
+            }
+            &:after {
+              width:100%;height:1px;background-color:@colorGrayLight;content:"";display:block;position:absolute;bottom:-1px;left:0;
+            }
+            &.active {
+              color:@colorMain;font-weight:normal;padding:@spacingNormal 28px;border-left:4px solid @colorMain;border-right:4px solid @colorMain;
+              &:before {
+                left:20px;
+              }
+            }
+            &:hover {
+              color:@colorMain;
+            }
+            .badge {
+              float:right;margin-right:-@spacingNormal*2;
+            }
+          }
+        }
+        li:last-child {
+          a:after {
+            display:none;
+          }
+        }
+      }
+      &.left-nav-group-closed {
+        ul {
+          min-height:0;
+        }
+      }
+      .lng-toggle {
+        .caret {
+          color:#fff;border-width:6px 6px 0;top:13px;transform:rotateZ(180deg);
+          &:before {
+            width:12px;height:1px;background-color:@white;display:block;content:"";margin-top:-8px;margin-left:-6px;
+          }
+        }
+      }
+      &.left-nav-group-closed {
+        .lng-toggle {
+          .caret {
+            top:16px;transform:rotateZ(0deg);
+          }
+        }
+      }
+    }
+  }
+  .leftside-switch {
+    background-color:@colorMainGrayLight;left:@widthLeftSide - 10;
+    .caret {
+      .fontSongTi;border:none;transform:rotateZ(0deg) scaleY(2.0);
+      &:before {
+        color:#fff;content:"<";
+      }
+    }
+    &:hover {
+      background-color:@colorMain;
+    }
+  }
+}
+
+/* 全屏模式下的切换 */
+.body-full-mode {
+  .leftside-switch {
+    left:0;
+    .caret {
+      transform:rotateZ(180deg) scaleY(2.0);
+    }
+  }
+  .div-leftside-bg,
+  .div-leftside {
+    left:-@widthLeftSide;
+  }
+}
+
+.div-leftside-bg {
+  background-color:@colorGrayLight;width:@widthLeftSide;
+}
+
+/* 右侧部分 */
+.div-rightside {
+  margin-left:@widthLeftSide;margin-top:@heightHeader + @heightCatalog;padding:@spacingNormal;
+}
+
+/*.div-rightside {display:none;}*/
+
+/* 导航 */
+.breadcrumb {
+  margin-bottom:@spacingNormal;
+  li {
+    font-size:@fontSizeTitle;
+    a {
+      color:@colorFont;
+      &:hover {
+        color:@colorMain;
+      }
+    }
+  }
+  &> .active {
+    color:@colorMain;
+  }
+  &> li + li:before {
+    padding:0 5px 0 11px;color:@colorFont;
+  }
+}
+
+/* 页签 */
+.nav-tabs {
+  border-bottom:1px solid @colorGrayLight;margin-bottom:0;
+  li {
+    margin-right:@spacingNormal;
+    a {
+      font-size:@fontSizeTitle;padding:8px 18px;background-color:@colorGrayLight;margin:0;color:@colorFont;
+      &:hover {
+        border-color:@colorGrayLight;background-color:lighten(@colorGrayLight,10%);
+      }
+    }
+    &.active {
+      a,
+      a:hover,
+      a:focus {
+        background-color:#D9D9DC;border-color:#D9D9DC;
+      }
+    }
+  }
+}
+
+/* 正文元素 */
+
+/* 搜索栏 */
+.form-search,
+.search-normal
+{
+  border:none;padding:0;background:none;font-size:@fontSizeTextClear;
+  .btn {
+    width:auto;padding:0 8px;font-size:@fontSizeText;height:26px;
+  }
+  .glyphicon-search {
+    top:3px;
+    &:before {
+      content:"";width:18px;height:16px;display:block;background:url(../images/icn_search.png) no-repeat center center;background-size:18px 16px;
+    }
+  }
+  &,
+  label,
+  input,
+  div {
+    font-size:@fontSizeTextClear;
+  }
+  [type=text] {
+    height:26px;
+  }
+  .dk_toggle {
+    padding-top:2px;padding-bottom:2px;
+  }
+  &.form-horizontal {
+    .form-group {
+      margin-bottom:7px;
+    }
+    .control-label {
+      padding-top:3px;
+    }
+  }
+}
+
+/* 工具栏 */
+.btn-toolbar {
+  ul {
+    li {
+      .btn {
+        font-size:@fontSizeText + 1;color:@white;background-color:@colorMain;border-color:@colorMain;padding-left:4px;padding-right:4px;
+        .glyphicon {
+          color:@white;padding-right:4px;
+        }
+        &:hover {
+          background-color:lighten(@colorMain,5%);
+        }
+      }
+      .btn-danger {
+        background-color:@red;border-color:@red;
+        &:hover {
+          background-color:lighten(@red,15%);
+        }
+      }
+    }
+  }
+}
+
+/* 表单框 */
+.main-frame {
+  background-color:@colorGrayLight;padding:@spacingNormal;
+  .panel,
+  .panel-body
+  {
+    background:none;
+  }
+  &:after {
+    content:"";display:block;clear:both;
+  }
+}
+
+.table-toolbar {
+  border:none;background:none;margin:0 0 @spacingNormal;
+}
+
+/* 表格 grid */
+.main-frame {
+  .datagrid-header {
+    margin-bottom: @spacingNormal;
+    background: @white;
+    .datagrid-htable {
+      .datagrid-header-row {
+        th,
+        td {
+          border: none !important;
+          font-weight: bold;
+          font-size:@fontSizeText;
+        }
+      }
+    }
+    .datagrid-cell span {
+      /*font-weight: normal;*/
+    }
+  }
+}
+
+.datagrid-body {
+  background:@white;
+  .datagrid-btable {
+    .datagrid-row {
+      th,
+      td {
+        border-color:@colorGrayLight!important;
+        .td-lnks {
+          margin-top:5px;
+          .glyphicon {
+            top:4px;
+          }
+        }
+      }
+    }
+    .datagrid-row:last-child {
+      th,
+      td {
+        border:none!important;
+      }
+    }
+    .datagrid-row-over {
+      td {
+        color:@colorFont;
+      }
+    }
+  }
+}
+.datagrid-header .datagrid-cell,
+.datagrid-cell,
+.datagrid-cell-group,
+.datagrid-header-rownumber,
+.datagrid-cell-rownumber {
+  &,
+  & span {
+    font-size:@fontSizeText;
+  }
+}
+
+.datagrid-header {
+  background:#fff!important;
+}
+
+.table-normal {
+  .datagrid-empty {
+    td {
+      background:none;
+    }
+  }
+}
+
+.table-normal {
+  th {
+    font-weight: bold;
+    font-size:@fontSizeText;
+  }
+  td {background-color:@white;}
+  .form-control {
+    height:34px;
+  }
+  thead {
+    background:@white;
+  }
+}
+
+
+.form-horizontal {
+  .panel.datagrid {
+    margin-top:-@spacingNormal;margin-bottom:-@spacingNormal;
+    .datagrid-header {
+      margin-bottom:0;
+    }
+    .datagrid-body {
+      border-top:5px solid @colorGrayLight;
+    }
+  }
+  .table-normal {
+    margin-top:-@spacingNormal;margin-bottom:-@spacingNormal;
+  }
+}
+
+/* 按钮 */
+.btn-info {
+  color:#fff;background-color:@colorMain;border-color:@colorMain;
+}
+
+.btn-success {
+  background-color:@green;border-color:@green;
+  &:hover {
+    background-color:lighten(@green,5%);
+  }
+}
+
+
+/* tooltip */
+.tooltip {
+  border-color:@colorMain;color:@white;background-color:@colorMain;
+  .tooltip-arrow {
+    border-top-color:@white;
+  }
+}
+
+/* 页码 */
+.foot-page {
+  .fontDefault;color:@colorFont;
+  span {
+    color:@colorFont;
+    .btnGoPage {
+      background-color:@colorMain;color:@white;border-color:@colorMain;margin:0;.fontDefault;
+      &:hover {
+        background-color:lighten(@colorMain,5%);
+      }
+    }
+    .pageNum {
+      height:26px;line-height:1.3;
+    }
+  }
+  ul {
+    li {
+      padding:0;margin-left:-1px;
+      a {
+        height:26px;line-height:1.3;border-color:@colorInputBorder;border-radius:0;color:@colorFont;
+        &:hover {
+          background-color:@colorHoverGray;border-color:@colorInputBorder;color:@colorFont;
+        }
+        &.xz {
+          border-color:@colorInputBorder;color:@colorMain;
+        }
+      }
+      &:first-of-type {
+        a {border-radius:4px 0 0 4px}
+      }
+      &:last-of-type {
+        a {border-radius:0 4px 4px 0}
+      }
+    }
+  }
+}
+
+/* loading */
+
+.load-container {
+  border:1px solid @white;
+  width:150px;
+  height:140px;
+  float:left;
+  position:relative;
+  overflow:hidden;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+.load-container a:link,
+.load-container a:visited {
+  position:absolute;
+  bottom:3px;
+  font-size:1.15em;
+  text-align:center;
+  left:0;
+  right:0;
+  text-decoration:none;
+  color:#FFF;
+}
+.load-container a:link:hover,
+.load-container a:visited:hover {
+  text-decoration:underline;
+}
+.load2 .loader,
+.load2 .loader:before,
+.load2 .loader:after {
+  border-radius:50%;
+}
+.load2 .loader:before,
+.load2 .loader:after {
+  position:absolute;
+  content:'';
+}
+.load2 .loader:before {
+  width:5.2em;
+  height:10.2em;
+  background:@white;
+  border-radius:10.2em 0 0 10.2em;
+  top:-0.1em;
+  left:-0.1em;
+  -webkit-transform-origin:5.2em 5.1em;
+  transform-origin:5.2em 5.1em;
+  -webkit-animation:load2 2s infinite ease 1.5s;
+  animation:load2 2s infinite ease 1.5s;
+  opacity:0.9;
+}
+.load2 .loader {
+  font-size:11px;
+  text-indent:-99999em;
+  margin:0.5em 1em 0 2em;
+  position:relative;
+  width:10em;
+  height:10em;
+  box-shadow:inset 0 0 0 1em @colorMain;
+}
+.load2 .loader:after {
+  width:5.2em;
+  height:10.2em;
+  background:@white;
+  border-radius:0 10.2em 10.2em 0;
+  top:-0.1em;
+  left:5.1em;
+  -webkit-transform-origin:0px 5.1em;
+  transform-origin:0px 5.1em;
+  -webkit-animation:load2 2s infinite ease;
+  animation:load2 2s infinite ease;
+  opacity:0.9;
+}
+@-webkit-keyframes load2 {
+  0% {
+    -webkit-transform:rotate(0deg);
+    transform:rotate(0deg);
+  }
+  100% {
+    -webkit-transform:rotate(360deg);
+    transform:rotate(360deg);
+  }
+}
+@keyframes load2 {
+  0% {
+    -webkit-transform:rotate(0deg);
+    transform:rotate(0deg);
+  }
+  100% {
+    -webkit-transform:rotate(360deg);
+    transform:rotate(360deg);
+  }
+}
+.modal-body:after {
+  content:"";display:block;clear:both;
+}
+.load-msg {
+  font-size:@fontSizeTitle;margin-left:140px;line-height:200%;padding-top:30px;.box-center;
+}
+
+/* 弹出框 */
+.modal-header {
+  button.close {
+    padding:0;border-radius:4px;width:24px;height:24px;line-height:normal;background-color:@colorMain;opacity:1.0;
+    span {
+      font-size:21px;text-shadow:none;color:#fff;line-height:0.5;
+    }
+  }
+}
+.modal-body {
+  min-height:150px;
+  .main-frame {
+    background-color:@white;
+  }
+}
+
+/* 详情页 */
+
+.section-title {
+  margin:15px 0 0;border:none;
+}
+.main-frame .section-title:first-of-type {margin-top:0;}
+.section-title + .form-horizontal,
+.table-title + .form-horizontal {
+  background-color:@white;padding:@spacingNormal 0;
+  & > .table {
+    margin-top:-@spacingNormal;
+  }
+}
+.section-title + .table {
+  background-color:@white;
+}
+.section-title + .table {
+  thead {
+    tr th {
+      padding-top:10px;margin-top:0;
+    }
+  }
+}
+
+.form-horizontal {
+  .table-title {
+    margin:0;padding-bottom:10px;padding-top:15px;
+  }
+  .table-bordered {
+    border:none;
+  }
+  .table {
+    margin-bottom:0;
+    th,
+    td {
+      border-left:none;border-right:none;font-size:@fontSizeText;
+    }
+    thead {
+      border-bottom:5px solid @colorGrayLight;
+    }
+    tr:last-child {
+      td {
+        border-bottom:none;
+      }
+    }
+  }
+  .table-title {background-color:@colorGrayLight;}
+  .form-group {
+    .fg-input {
+      [type=checkbox] {
+        margin-top:@spacingNormal;
+      }
+    }
+  }
+}
+.form-horizontal .form-horizontal .table-title {text-align:center;}
+
+.modal-body {
+  .form-horizontal {
+    .table {
+      thead {
+        border-top:1px solid #ddd;
+        border-bottom:none;
+        th {
+          border:none;
+        }
+      }
+    }
+  }
+}
+
+
+form {
+  margin-bottom:0;
+}
+.form-btns {
+  padding-bottom:@spacingNormal;margin-top:@spacingNormal;
+}
+
+.fg-text {width:105px;}
+.fg-input {margin-left:105px + @spacingNormal;}
+@media (max-width: 768px){
+.fg-input {
+  margin-left: 0;
+}
+}
+
+/* 标题旁边的添加按钮 */
+.table-title,
+.section-title {
+  .btn {
+    font-size:@fontSizeText + 1;
+    color: #fff;
+    background-color: @colorMain;
+    border-color: @colorMain;
+    height: 26px;
+    padding: 0 10px;
+    margin-left:@spacingNormal * 2;
+    .glyphicon {
+      color:@white;padding-right:4px;
+    }
+    &:hover {
+      background-color:lighten(@colorMain,5%);
+    }
+  }
+}
+
+.modal-footer,
+.form-btns {
+  .btn {
+    font-size:@fontSizeText + 1;
+    height: 26px;
+    padding: 0 10px;
+    .glyphicon {
+      color:@white;padding-right:4px;
+    }
+  }
+  .btn-default {
+    .glyphicon {
+      color:@colorFont;
+    }
+  }
+}
+
+
+
+/* 中间树 */
+.show-tree-panel {
+  .tree-frame {
+    width:@widthTreeFrame;
+    .tree-frame-switch {
+      left:@widthLeftSide + @widthTreeFrame - @spacingNormal;
+      .caret {
+        transform:rotateZ(0deg) scaleY(2.0);
+      }
+      &:hover {
+        background-color:@colorMain;
+      }
+    }
+    .tree {
+      border: @spacingNormal solid @colorGrayLight;border-radius: 0;
+      .tree-title {
+        font-size:@fontSizeText;
+      }
+      .tree-node {
+        border-bottom:none;padding-left:4px;padding-right:4px;position:relative;
+        &:after {
+          content:"";height:1px;background-color:@colorGrayLight;width:100%;left:0;bottom:0;position:absolute;
+        }
+      }
+      .tree-node-selected {
+        border-left:4px solid @colorMain;border-right:4px solid @colorMain;padding-left:0;padding-right:0;background-color:@white;
+        .tree-toolbar {
+          right:6px;
+        }
+      }
+    }
+  }
+  .main-frame {
+    margin-left:@widthTreeFrame;
+  }
+}
+.tree-frame {
+  .tree {
+    border: @spacingNormal solid @colorGrayLight;border-radius: 0;
+  }
+}
+.body-full-mode .show-tree-panel .tree-frame .tree-frame-switch {
+  left:@widthTreeFrame - @spacingNormal;
+}
+.tree-frame-switch {
+  left:@widthLeftSide;background-color:@colorMainGrayLight;
+  .caret {
+    .fontSongTi;border:none;transform:rotateZ(180deg) scaleY(2.0);
+    &:before {
+      color:#fff;content:"<";
+    }
+  }
+}
+.tree-frame {
+  left:@widthLeftSide;top:@heightHeader + @heightCatalog;
+}
+
+.tree-collapsed,
+.tree-expanded {
+  width:16px;height:16px;position:relative;transition:transform 0.2s linear;
+  &:before {
+    border-left: 6px solid transparent;border-right: 6px solid transparent;border-bottom: 6px solid @colorMain;overflow:visible;background-color:@white;display:block;content:"";position:absolute;left:3px;top:6px;
+  }
+  &:after {
+    content:"";background-color:@colorMain;height:1px;width:12px;top:13px;left:3px;position:absolute;
+  }
+}
+.tree-collapsed {
+  transform:rotate(180deg);margin-top:4px;
+}
+
+/* 树特殊页面 */
+/* 在树中，内容元素必须放在 main-frame 中，故须特殊处理 */
+.tree-frame + .main-frame {
+  background-color:@white;padding:@spacingNormal 0 0;
+  & > .nav-tabs {
+    & ~ div {
+      background-color:@colorGrayLight;padding:10px;
+    }
+  }
+  & > div > .table-normal {
+    background-color:@colorGrayLight;padding:@spacingNormal;
+  }
+}
+
+
+/* 提示 */
+#tiShi {
+  background-color:@white;
+  h1 {
+    margin-bottom:0;padding-bottom:100px;
+  }
+}
+
+/* 加减行 */
+.btn-plus,
+.btn-minus {
+  background-color:@colorMainGrayLight;border-color:@colorMainGrayLight;
+  .glyphicon {
+    line-height:0;color:@white;top:0!important;
+  }
+
+  &:hover,
+  &:active,
+  &.active,
+  &:focus,
+  &.focus,
+  &:checked,
+  &.checked {
+    background-color:lighten(@colorMainGrayLight,5%);
+    border-color:lighten(@colorMainGrayLight,5%);
+  }
+}
+.input-group {
+  .btn {
+    padding-top:9px;padding-bottom:9px;
+  }
+  .input-group-btn {
+    .btn {
+      padding-bottom:10px;
+    }
+  }
+}
+
+/* 树搜索栏 */
+
+.tree-search-bar {
+  display:table;margin-bottom:@spacingNormal;
+  li {
+    display:table-cell;vertical-align:top;padding-left:2px;
+    .form-control,
+    .btn {
+      padding:4px;height:30px;
+    }
+    [type=text] {
+      border-radius:30px;border:1px solid @colorMain;
+    }
+    button {
+      .glyphicon-search:before {
+        content: "";
+        width: 18px;
+        height: 16px;
+        display: block;
+        background: url(../images/icn_search.png) no-repeat center center;
+        background-size: 18px 16px;
+      }
+    }
+  }
+  li:first-child {
+    padding-left:0;
+  }
+}
+
+
+input[type="checkbox"].checkbox {
+  width: 15px;
+  height: 20px;
+  padding: 0 5px 0 0;
+  display: block;
+  clear: left;
+  float: left;
+  margin:0;
+  min-height:0;
+}
+
+.panel-head {
+  background:@white;border-radius:0;border:none;border-bottom:1px solid @colorGrayLight;
+}
+
+.add-panel {
+  background:@white;padding:0;border:none;
+  .table {
+    border:none;margin-bottom:0;
+    th,
+    td {
+      border-color:@colorGrayLight;
+    }
+    thead th {
+      border-bottom:4px solid @colorGrayLight;
+    }
+  }
+}
+
+.tips-frame {
+  top:@heightCatalog + @heightHeader + @spacingNormal;
+  .tf-open {
+    top:@heightCatalog + @heightHeader + @spacingNormal;
+  }
+}
+
+.main-right {
+  top:@heightCatalog + @heightHeader;right:0;background:@colorGrayLight;padding:@spacingNormal;
+}
+
+/* 进度条 */
+.step-bar ul li.active {
+  &:before,
+  &:after {
+    background-color:@colorMain;
+  }
+  span {
+    color:@colorMain;
+    &:before {
+      .glyphicon;
+      content: "\e013";
+      left: 50%;
+      margin-left: -7px;
+      top:0 ;
+      position: absolute;
+      color: #fff;
+      z-index: 1;
+      transform: scale(0.7);
+    }
+  }
+}
+
+/* 右侧计划栏 */
+.rul li.active {
+  border: 1px solid @green;
+  box-shadow: 0 0 5px lighten(@green,5%);
+}
+.label-success {
+  background-color:@green
+}
+.rul-title {
+  font-size:@fontSizeTitle;
+  .glyphicon {
+    color:@colorMain;font-size:@fontSizeTitle + 2;top:3px;
+  }
+}
+
+/* 后台首页 */
+.div-home {
+  margin:(@heightHeader + @heightCatalog + 1) 15px 0 15px;
+  .nav {
+    margin-left:15px;
+  }
+  .main-frame {
+    background-color:@white;padding:0;
+    .home-panel-frame {
+      .home-panel {
+        border:none;margin:0 -15px 10px -15px;background-color:@colorGrayLight;
+      }
+    }
+    .home-panel .hp-more {
+      .btn {
+        border: none;
+        background: none;
+        margin-top: 10px;
+        margin-right: 20px;
+        position:relative;
+        &:after {
+          .glyphicon;content:"\e072";position:absolute;transform: scale(0.7);top:5px;
+        }
+        &:hover {
+          color:@colorMain!important;
+        }
+      }
+    }
+    .home-panel .list-group-item {
+      border-color:@colorGrayLight;border-radius:0;
+      a {
+        color:@colorFont;
+        &:hover {
+          color:@colorMain;
+        }
+      }
+    }
+
+  }
+}
+.badge {background-color:@colorMain;}
+
+
+/*******************************************************************************************/
+/*                                        以下是换色                                        */
+/*******************************************************************************************/
+
+/* body-theme-2 */
+body.body-theme-2 {
+  @colorMain:@colorMain-theme-2;
+  @colorLoginBackground:@colorMain;
+  @colorMainGrayLight:desaturate(lighten(@colorMain,30%),35%);
+  a {
+    color:@colorMain;
+    &:hover {
+      color:lighten(@colorMain,10%);
+    }
+  }
+  /* 登陆页面 */
+  .body-login {
+    background-color:@colorLoginBackground;
+    .div-login {
+      .btn-submit {
+        background-color:@colorLoginBackground;
+        &:hover{
+          background-color:lighten(@colorLoginBackground,5%);
+        }
+      }
+    }
+  }
+  .input-group .input-group-addon .glyphicon {color:@colorMain;}
+  /* 顶部 */
+  .div-header {
+    background-color:@colorMain;
+    .container-fluid {
+      .navbar-nav {
+        & > li{
+          & > a:focus,
+          &.open > a {
+            background-color:lighten(@colorMain,5%);line-height:@heightHeader;padding-top:0;padding-bottom:0;font-size:@fontSizeTitle;color:@white;
+            &:hover {
+              background-color:lighten(@colorMain,5%);color:@white;
+            }
+          }
+          & > a:hover {
+            background-color:lighten(@colorMain,5%);color:@white;
+          }
+        }
+      }
+    }
+    .glyphicon-user {color:@colorMain;}
+  }
+  .userright-list h1 {color:darken(@colorMain,5%);}
+  /* 菜单栏目部分 */
+  .div-catalog {
+    border-bottom:1px solid @colorMain;
+    .dc-title {
+      color:@colorMain;
+      .dc-name {
+        color:@colorMain;
+      }
+    }
+    .header-menu {
+      ul {
+        li {
+          a {
+            &.active {background-color:@colorMain;
+              &:hover {
+                background-color:@colorMain;
+              }
+            }
+          }
+        }
+      }
+      .hm-left{
+        &.enable {
+          background-color:@colorMainGrayLight;
+        }
+        &:hover {
+          background-color:@colorMain;
+        }
+      }
+      .hm-right{
+        &.enable {
+          background-color:@colorMainGrayLight;
+        }
+        &:hover {
+          background-color:@colorMain;
+        }
+      }
+    }
+  }
+  /* 左侧部分 */
+  .div-leftside {
+    .left-nav {
+      .left-nav-group {
+        h2 {
+          background-color:@colorMain;
+        }
+        ul {
+          min-height:120px;
+          li {
+            a {
+              &.active {
+                color:@colorMain;border-left:4px solid @colorMain;border-right:4px solid @colorMain;
+              }
+              &:hover {
+                color:@colorMain;
+              }
+            }
+          }
+        }
+      }
+    }
+    .leftside-switch {
+      background-color:@colorMainGrayLight;
+      &:hover {
+        background-color:@colorMain;
+      }
+    }
+  }
+  /* 导航 */
+  .breadcrumb {
+    li {
+      a {
+        &:hover {
+          color:@colorMain;
+        }
+      }
+    }
+    &> .active {
+      color:@colorMain;
+    }
+  }
+  /* 工具栏 */
+  .btn-toolbar {
+    ul {
+      li {
+        .btn {
+          background-color:@colorMain;border-color:@colorMain;
+          &:hover {
+            background-color:lighten(@colorMain,5%);
+          }
+        }
+      }
+    }
+  }
+  /* 按钮 */
+  .btn-info {
+    color:#fff;background-color:@colorMain;border-color:@colorMain;
+  }
+  /* tooltip */
+  .tooltip {
+    border-color:@colorMain;color:@white;background-color:@colorMain;
+    .tooltip-arrow {
+      border-top-color:@white;
+    }
+  }
+  /* 页码 */
+  .foot-page {
+    span {
+      .btnGoPage {
+        background-color:@colorMain;border-color:@colorMain;
+        &:hover {
+          background-color:lighten(@colorMain,5%);
+        }
+      }
+    }
+    ul {
+      li {
+        a {
+          &.xz {
+            color:@colorMain;
+          }
+        }
+      }
+    }
+  }
+  .load2 .loader {
+    box-shadow:inset 0 0 0 1em @colorMain;
+  }
+  /* 弹出框 */
+  .modal-header {
+    button.close {
+      background-color:@colorMain;
+    }
+  }
+  /* 标题旁边的添加按钮 */
+  .table-title,
+  .section-title {
+    .btn {
+      background-color: @colorMain;
+      border-color: @colorMain;
+      &:hover {
+        background-color:lighten(@colorMain,5%);
+      }
+    }
+  }
+  /* 中间树 */
+  .show-tree-panel {
+    .tree-frame {
+      .tree-frame-switch {
+        &:hover {
+          background-color:@colorMain;
+        }
+      }
+      .tree {
+        .tree-node-selected {
+          border-left:4px solid @colorMain;border-right:4px solid @colorMain;
+        }
+      }
+    }
+  }
+  .tree-frame-switch {
+    background-color:@colorMainGrayLight;
+  }
+  .tree-collapsed,
+  .tree-expanded {
+    &:before {
+      border-bottom: 6px solid @colorMain;
+    }
+    &:after {
+      background-color:@colorMain;
+    }
+  }
+  /* 加减行 */
+  .btn-plus,
+  .btn-minus {
+    background-color:@colorMainGrayLight;border-color:@colorMainGrayLight;
+    &:hover,
+    &:active,
+    &.active,
+    &:focus,
+    &.focus,
+    &:checked,
+    &.checked {
+      background-color:lighten(@colorMainGrayLight,5%);
+      border-color:lighten(@colorMainGrayLight,5%);
+    }
+  }
+  /* 树搜索栏 */
+  .tree-search-bar {
+    li {
+      [type=text] {
+        border-radius:30px;border:1px solid @colorMain;
+      }
+    }
+  }
+  /* 进度条 */
+  .step-bar ul li.active {
+    &:before,
+    &:after {
+      background-color:@colorMain;
+    }
+    span {
+      color:@colorMain;
+    }
+  }
+  .rul-title {
+    .glyphicon {
+      color:@colorMain;
+    }
+  }
+  /* 后台首页 */
+  .div-home {
+    .main-frame {
+      .home-panel .hp-more {
+        .btn {
+          &:hover {
+            color:@colorMain!important;
+          }
+        }
+      }
+      .home-panel .list-group-item {
+        a {
+          &:hover {
+            color:@colorMain;
+          }
+        }
+      }
+
+    }
+  }
+  .badge {background-color:@colorMain;}
+}
+
+/* body-theme-3 */
+body.body-theme-3 {
+  @colorMain:@colorMain-theme-3;
+  @colorLoginBackground:@colorMain;
+  @colorMainGrayLight:desaturate(lighten(@colorMain,30%),35%);
+  a {
+    color:@colorMain;
+    &:hover {
+      color:lighten(@colorMain,10%);
+    }
+  }
+  /* 登陆页面 */
+  .body-login {
+    background-color:@colorLoginBackground;
+    .div-login {
+      .btn-submit {
+        background-color:@colorLoginBackground;
+        &:hover{
+          background-color:lighten(@colorLoginBackground,5%);
+        }
+      }
+    }
+  }
+  .input-group .input-group-addon .glyphicon {color:@colorMain;}
+  /* 顶部 */
+  .div-header {
+    background-color:@colorMain;
+    .container-fluid {
+      .navbar-nav {
+        & > li{
+          & > a:focus,
+          &.open > a {
+            background-color:lighten(@colorMain,5%);line-height:@heightHeader;padding-top:0;padding-bottom:0;font-size:@fontSizeTitle;color:@white;
+            &:hover {
+              background-color:lighten(@colorMain,5%);color:@white;
+            }
+          }
+          & > a:hover {
+            background-color:lighten(@colorMain,5%);color:@white;
+          }
+        }
+      }
+    }
+    .glyphicon-user {color:@colorMain;}
+  }
+  .userright-list h1 {color:darken(@colorMain,5%);}
+  /* 菜单栏目部分 */
+  .div-catalog {
+    border-bottom:1px solid @colorMain;
+    .dc-title {
+      color:@colorMain;
+      .dc-name {
+        color:@colorMain;
+      }
+    }
+    .header-menu {
+      ul {
+        li {
+          a {
+            &.active {background-color:@colorMain;
+              &:hover {
+                background-color:@colorMain;
+              }
+            }
+          }
+        }
+      }
+      .hm-left{
+        &.enable {
+          background-color:@colorMainGrayLight;
+        }
+        &:hover {
+          background-color:@colorMain;
+        }
+      }
+      .hm-right{
+        &.enable {
+          background-color:@colorMainGrayLight;
+        }
+        &:hover {
+          background-color:@colorMain;
+        }
+      }
+    }
+  }
+  /* 左侧部分 */
+  .div-leftside {
+    .left-nav {
+      .left-nav-group {
+        h2 {
+          background-color:@colorMain;
+        }
+        ul {
+          min-height:120px;
+          li {
+            a {
+              &.active {
+                color:@colorMain;border-left:4px solid @colorMain;border-right:4px solid @colorMain;
+              }
+              &:hover {
+                color:@colorMain;
+              }
+            }
+          }
+        }
+      }
+    }
+    .leftside-switch {
+      background-color:@colorMainGrayLight;
+      &:hover {
+        background-color:@colorMain;
+      }
+    }
+  }
+  /* 导航 */
+  .breadcrumb {
+    li {
+      a {
+        &:hover {
+          color:@colorMain;
+        }
+      }
+    }
+    &> .active {
+      color:@colorMain;
+    }
+  }
+  /* 工具栏 */
+  .btn-toolbar {
+    ul {
+      li {
+        .btn {
+          background-color:@colorMain;border-color:@colorMain;
+          &:hover {
+            background-color:lighten(@colorMain,5%);
+          }
+        }
+      }
+    }
+  }
+  /* 按钮 */
+  .btn-info {
+    color:#fff;background-color:@colorMain;border-color:@colorMain;
+  }
+  /* tooltip */
+  .tooltip {
+    border-color:@colorMain;color:@white;background-color:@colorMain;
+    .tooltip-arrow {
+      border-top-color:@white;
+    }
+  }
+  /* 页码 */
+  .foot-page {
+    span {
+      .btnGoPage {
+        background-color:@colorMain;border-color:@colorMain;
+        &:hover {
+          background-color:lighten(@colorMain,5%);
+        }
+      }
+    }
+    ul {
+      li {
+        a {
+          &.xz {
+            color:@colorMain;
+          }
+        }
+      }
+    }
+  }
+  .load2 .loader {
+    box-shadow:inset 0 0 0 1em @colorMain;
+  }
+  /* 弹出框 */
+  .modal-header {
+    button.close {
+      background-color:@colorMain;
+    }
+  }
+  /* 标题旁边的添加按钮 */
+  .table-title,
+  .section-title {
+    .btn {
+      background-color: @colorMain;
+      border-color: @colorMain;
+      &:hover {
+        background-color:lighten(@colorMain,5%);
+      }
+    }
+  }
+  /* 中间树 */
+  .show-tree-panel {
+    .tree-frame {
+      .tree-frame-switch {
+        &:hover {
+          background-color:@colorMain;
+        }
+      }
+      .tree {
+        .tree-node-selected {
+          border-left:4px solid @colorMain;border-right:4px solid @colorMain;
+        }
+      }
+    }
+  }
+  .tree-frame-switch {
+    background-color:@colorMainGrayLight;
+  }
+  .tree-collapsed,
+  .tree-expanded {
+    &:before {
+      border-bottom: 6px solid @colorMain;
+    }
+    &:after {
+      background-color:@colorMain;
+    }
+  }
+  /* 加减行 */
+  .btn-plus,
+  .btn-minus {
+    background-color:@colorMainGrayLight;border-color:@colorMainGrayLight;
+    &:hover,
+    &:active,
+    &.active,
+    &:focus,
+    &.focus,
+    &:checked,
+    &.checked {
+      background-color:lighten(@colorMainGrayLight,5%);
+      border-color:lighten(@colorMainGrayLight,5%);
+    }
+  }
+  /* 树搜索栏 */
+  .tree-search-bar {
+    li {
+      [type=text] {
+        border-radius:30px;border:1px solid @colorMain;
+      }
+    }
+  }
+  /* 进度条 */
+  .step-bar ul li.active {
+    &:before,
+    &:after {
+      background-color:@colorMain;
+    }
+    span {
+      color:@colorMain;
+    }
+  }
+  .rul-title {
+    .glyphicon {
+      color:@colorMain;
+    }
+  }
+  /* 后台首页 */
+  .div-home {
+    .main-frame {
+      .home-panel .hp-more {
+        .btn {
+          &:hover {
+            color:@colorMain!important;
+          }
+        }
+      }
+      .home-panel .list-group-item {
+        a {
+          &:hover {
+            color:@colorMain;
+          }
+        }
+      }
+
+    }
+  }
+  .badge {background-color:@colorMain;}
+}
+
+/* body-theme-4 */
+body.body-theme-4 {
+  @colorMain:@colorMain-theme-4;
+  @colorLoginBackground:@colorMain;
+  @colorMainGrayLight:desaturate(lighten(@colorMain,30%),35%);
+  a {
+    color:@colorMain;
+    &:hover {
+      color:lighten(@colorMain,10%);
+    }
+  }
+  /* 登陆页面 */
+  .body-login {
+    background-color:@colorLoginBackground;
+    .div-login {
+      .btn-submit {
+        background-color:@colorLoginBackground;
+        &:hover{
+          background-color:lighten(@colorLoginBackground,5%);
+        }
+      }
+    }
+  }
+  .input-group .input-group-addon .glyphicon {color:@colorMain;}
+  /* 顶部 */
+  .div-header {
+    background-color:@colorMain;
+    .container-fluid {
+      .navbar-nav {
+        & > li{
+          & > a:focus,
+          &.open > a {
+            background-color:lighten(@colorMain,5%);line-height:@heightHeader;padding-top:0;padding-bottom:0;font-size:@fontSizeTitle;color:@white;
+            &:hover {
+              background-color:lighten(@colorMain,5%);color:@white;
+            }
+          }
+          & > a:hover {
+            background-color:lighten(@colorMain,5%);color:@white;
+          }
+        }
+      }
+    }
+    .glyphicon-user {color:@colorMain;}
+  }
+  .userright-list h1 {color:darken(@colorMain,5%);}
+  /* 菜单栏目部分 */
+  .div-catalog {
+    border-bottom:1px solid @colorMain;
+    .dc-title {
+      color:@colorMain;
+      .dc-name {
+        color:@colorMain;
+      }
+    }
+    .header-menu {
+      ul {
+        li {
+          a {
+            &.active {background-color:@colorMain;
+              &:hover {
+                background-color:@colorMain;
+              }
+            }
+          }
+        }
+      }
+      .hm-left{
+        &.enable {
+          background-color:@colorMainGrayLight;
+        }
+        &:hover {
+          background-color:@colorMain;
+        }
+      }
+      .hm-right{
+        &.enable {
+          background-color:@colorMainGrayLight;
+        }
+        &:hover {
+          background-color:@colorMain;
+        }
+      }
+    }
+  }
+  /* 左侧部分 */
+  .div-leftside {
+    .left-nav {
+      .left-nav-group {
+        h2 {
+          background-color:@colorMain;
+        }
+        ul {
+          min-height:120px;
+          li {
+            a {
+              &.active {
+                color:@colorMain;border-left:4px solid @colorMain;border-right:4px solid @colorMain;
+              }
+              &:hover {
+                color:@colorMain;
+              }
+            }
+          }
+        }
+      }
+    }
+    .leftside-switch {
+      background-color:@colorMainGrayLight;
+      &:hover {
+        background-color:@colorMain;
+      }
+    }
+  }
+  /* 导航 */
+  .breadcrumb {
+    li {
+      a {
+        &:hover {
+          color:@colorMain;
+        }
+      }
+    }
+    &> .active {
+      color:@colorMain;
+    }
+  }
+  /* 工具栏 */
+  .btn-toolbar {
+    ul {
+      li {
+        .btn {
+          background-color:@colorMain;border-color:@colorMain;
+          &:hover {
+            background-color:lighten(@colorMain,5%);
+          }
+        }
+      }
+    }
+  }
+  /* 按钮 */
+  .btn-info {
+    color:#fff;background-color:@colorMain;border-color:@colorMain;
+  }
+  /* tooltip */
+  .tooltip {
+    border-color:@colorMain;color:@white;background-color:@colorMain;
+    .tooltip-arrow {
+      border-top-color:@white;
+    }
+  }
+  /* 页码 */
+  .foot-page {
+    span {
+      .btnGoPage {
+        background-color:@colorMain;border-color:@colorMain;
+        &:hover {
+          background-color:lighten(@colorMain,5%);
+        }
+      }
+    }
+    ul {
+      li {
+        a {
+          &.xz {
+            color:@colorMain;
+          }
+        }
+      }
+    }
+  }
+  .load2 .loader {
+    box-shadow:inset 0 0 0 1em @colorMain;
+  }
+  /* 弹出框 */
+  .modal-header {
+    button.close {
+      background-color:@colorMain;
+    }
+  }
+  /* 标题旁边的添加按钮 */
+  .table-title,
+  .section-title {
+    .btn {
+      background-color: @colorMain;
+      border-color: @colorMain;
+      &:hover {
+        background-color:lighten(@colorMain,5%);
+      }
+    }
+  }
+  /* 中间树 */
+  .show-tree-panel {
+    .tree-frame {
+      .tree-frame-switch {
+        &:hover {
+          background-color:@colorMain;
+        }
+      }
+      .tree {
+        .tree-node-selected {
+          border-left:4px solid @colorMain;border-right:4px solid @colorMain;
+        }
+      }
+    }
+  }
+  .tree-frame-switch {
+    background-color:@colorMainGrayLight;
+  }
+  .tree-collapsed,
+  .tree-expanded {
+    &:before {
+      border-bottom: 6px solid @colorMain;
+    }
+    &:after {
+      background-color:@colorMain;
+    }
+  }
+  /* 加减行 */
+  .btn-plus,
+  .btn-minus {
+    background-color:@colorMainGrayLight;border-color:@colorMainGrayLight;
+    &:hover,
+    &:active,
+    &.active,
+    &:focus,
+    &.focus,
+    &:checked,
+    &.checked {
+      background-color:lighten(@colorMainGrayLight,5%);
+      border-color:lighten(@colorMainGrayLight,5%);
+    }
+  }
+  /* 树搜索栏 */
+  .tree-search-bar {
+    li {
+      [type=text] {
+        border-radius:30px;border:1px solid @colorMain;
+      }
+    }
+  }
+  /* 进度条 */
+  .step-bar ul li.active {
+    &:before,
+    &:after {
+      background-color:@colorMain;
+    }
+    span {
+      color:@colorMain;
+    }
+  }
+  .rul-title {
+    .glyphicon {
+      color:@colorMain;
+    }
+  }
+  /* 后台首页 */
+  .div-home {
+    .main-frame {
+      .home-panel .hp-more {
+        .btn {
+          &:hover {
+            color:@colorMain!important;
+          }
+        }
+      }
+      .home-panel .list-group-item {
+        a {
+          &:hover {
+            color:@colorMain;
+          }
+        }
+      }
+
+    }
+  }
+  .badge {background-color:@colorMain;}
+}
+
+/* body-theme-5 */
+body.body-theme-5 {
+  @colorMain:@colorMain-theme-5;
+  @colorLoginBackground:@colorMain;
+  @colorMainGrayLight:desaturate(lighten(@colorMain,30%),35%);
+  a {
+    color:@colorMain;
+    &:hover {
+      color:lighten(@colorMain,10%);
+    }
+  }
+  /* 登陆页面 */
+  .body-login {
+    background-color:@colorLoginBackground;
+    .div-login {
+      .btn-submit {
+        background-color:@colorLoginBackground;
+        &:hover{
+          background-color:lighten(@colorLoginBackground,5%);
+        }
+      }
+    }
+  }
+  .input-group .input-group-addon .glyphicon {color:@colorMain;}
+  /* 顶部 */
+  .div-header {
+    background-color:@colorMain;
+    .container-fluid {
+      .navbar-nav {
+        & > li{
+          & > a:focus,
+          &.open > a {
+            background-color:lighten(@colorMain,5%);line-height:@heightHeader;padding-top:0;padding-bottom:0;font-size:@fontSizeTitle;color:@white;
+            &:hover {
+              background-color:lighten(@colorMain,5%);color:@white;
+            }
+          }
+          & > a:hover {
+            background-color:lighten(@colorMain,5%);color:@white;
+          }
+        }
+      }
+    }
+    .glyphicon-user {color:@colorMain;}
+  }
+  .userright-list h1 {color:darken(@colorMain,5%);}
+  /* 菜单栏目部分 */
+  .div-catalog {
+    border-bottom:1px solid @colorMain;
+    .dc-title {
+      color:@colorMain;
+      .dc-name {
+        color:@colorMain;
+      }
+    }
+    .header-menu {
+      ul {
+        li {
+          a {
+            &.active {background-color:@colorMain;
+              &:hover {
+                background-color:@colorMain;
+              }
+            }
+          }
+        }
+      }
+      .hm-left{
+        &.enable {
+          background-color:@colorMainGrayLight;
+        }
+        &:hover {
+          background-color:@colorMain;
+        }
+      }
+      .hm-right{
+        &.enable {
+          background-color:@colorMainGrayLight;
+        }
+        &:hover {
+          background-color:@colorMain;
+        }
+      }
+    }
+  }
+  /* 左侧部分 */
+  .div-leftside {
+    .left-nav {
+      .left-nav-group {
+        h2 {
+          background-color:@colorMain;
+        }
+        ul {
+          min-height:120px;
+          li {
+            a {
+              &.active {
+                color:@colorMain;border-left:4px solid @colorMain;border-right:4px solid @colorMain;
+              }
+              &:hover {
+                color:@colorMain;
+              }
+            }
+          }
+        }
+      }
+    }
+    .leftside-switch {
+      background-color:@colorMainGrayLight;
+      &:hover {
+        background-color:@colorMain;
+      }
+    }
+  }
+  /* 导航 */
+  .breadcrumb {
+    li {
+      a {
+        &:hover {
+          color:@colorMain;
+        }
+      }
+    }
+    &> .active {
+      color:@colorMain;
+    }
+  }
+  /* 工具栏 */
+  .btn-toolbar {
+    ul {
+      li {
+        .btn {
+          background-color:@colorMain;border-color:@colorMain;
+          &:hover {
+            background-color:lighten(@colorMain,5%);
+          }
+        }
+      }
+    }
+  }
+  /* 按钮 */
+  .btn-info {
+    color:#fff;background-color:@colorMain;border-color:@colorMain;
+  }
+  /* tooltip */
+  .tooltip {
+    border-color:@colorMain;color:@white;background-color:@colorMain;
+    .tooltip-arrow {
+      border-top-color:@white;
+    }
+  }
+  /* 页码 */
+  .foot-page {
+    span {
+      .btnGoPage {
+        background-color:@colorMain;border-color:@colorMain;
+        &:hover {
+          background-color:lighten(@colorMain,5%);
+        }
+      }
+    }
+    ul {
+      li {
+        a {
+          &.xz {
+            color:@colorMain;
+          }
+        }
+      }
+    }
+  }
+  .load2 .loader {
+    box-shadow:inset 0 0 0 1em @colorMain;
+  }
+  /* 弹出框 */
+  .modal-header {
+    button.close {
+      background-color:@colorMain;
+    }
+  }
+  /* 标题旁边的添加按钮 */
+  .table-title,
+  .section-title {
+    .btn {
+      background-color: @colorMain;
+      border-color: @colorMain;
+      &:hover {
+        background-color:lighten(@colorMain,5%);
+      }
+    }
+  }
+  /* 中间树 */
+  .show-tree-panel {
+    .tree-frame {
+      .tree-frame-switch {
+        &:hover {
+          background-color:@colorMain;
+        }
+      }
+      .tree {
+        .tree-node-selected {
+          border-left:4px solid @colorMain;border-right:4px solid @colorMain;
+        }
+      }
+    }
+  }
+  .tree-frame-switch {
+    background-color:@colorMainGrayLight;
+  }
+  .tree-collapsed,
+  .tree-expanded {
+    &:before {
+      border-bottom: 6px solid @colorMain;
+    }
+    &:after {
+      background-color:@colorMain;
+    }
+  }
+  /* 加减行 */
+  .btn-plus,
+  .btn-minus {
+    background-color:@colorMainGrayLight;border-color:@colorMainGrayLight;
+    &:hover,
+    &:active,
+    &.active,
+    &:focus,
+    &.focus,
+    &:checked,
+    &.checked {
+      background-color:lighten(@colorMainGrayLight,5%);
+      border-color:lighten(@colorMainGrayLight,5%);
+    }
+  }
+  /* 树搜索栏 */
+  .tree-search-bar {
+    li {
+      [type=text] {
+        border-radius:30px;border:1px solid @colorMain;
+      }
+    }
+  }
+  /* 进度条 */
+  .step-bar ul li.active {
+    &:before,
+    &:after {
+      background-color:@colorMain;
+    }
+    span {
+      color:@colorMain;
+    }
+  }
+  .rul-title {
+    .glyphicon {
+      color:@colorMain;
+    }
+  }
+  /* 后台首页 */
+  .div-home {
+    .main-frame {
+      .home-panel .hp-more {
+        .btn {
+          &:hover {
+            color:@colorMain!important;
+          }
+        }
+      }
+      .home-panel .list-group-item {
+        a {
+          &:hover {
+            color:@colorMain;
+          }
+        }
+      }
+
+    }
+  }
+  .badge {background-color:@colorMain;}
+}
+
+/* body-theme-6 */
+body.body-theme-6 {
+  @colorMain:@colorMain-theme-6;
+  @colorLoginBackground:@colorMain;
+  @colorMainGrayLight:desaturate(lighten(@colorMain,30%),35%);
+  a {
+    color:@colorMain;
+    &:hover {
+      color:lighten(@colorMain,10%);
+    }
+  }
+  /* 登陆页面 */
+  .body-login {
+    background-color:@colorLoginBackground;
+    .div-login {
+      .btn-submit {
+        background-color:@colorLoginBackground;
+        &:hover{
+          background-color:lighten(@colorLoginBackground,5%);
+        }
+      }
+    }
+  }
+  .input-group .input-group-addon .glyphicon {color:@colorMain;}
+  /* 顶部 */
+  .div-header {
+    background-color:@colorMain;
+    .container-fluid {
+      .navbar-nav {
+        & > li{
+          & > a:focus,
+          &.open > a {
+            background-color:lighten(@colorMain,5%);line-height:@heightHeader;padding-top:0;padding-bottom:0;font-size:@fontSizeTitle;color:@white;
+            &:hover {
+              background-color:lighten(@colorMain,5%);color:@white;
+            }
+          }
+          & > a:hover {
+            background-color:lighten(@colorMain,5%);color:@white;
+          }
+        }
+      }
+    }
+    .glyphicon-user {color:@colorMain;}
+  }
+  .userright-list h1 {color:darken(@colorMain,5%);}
+  /* 菜单栏目部分 */
+  .div-catalog {
+    border-bottom:1px solid @colorMain;
+    .dc-title {
+      color:@colorMain;
+      .dc-name {
+        color:@colorMain;
+      }
+    }
+    .header-menu {
+      ul {
+        li {
+          a {
+            &.active {background-color:@colorMain;
+              &:hover {
+                background-color:@colorMain;
+              }
+            }
+          }
+        }
+      }
+      .hm-left{
+        &.enable {
+          background-color:@colorMainGrayLight;
+        }
+        &:hover {
+          background-color:@colorMain;
+        }
+      }
+      .hm-right{
+        &.enable {
+          background-color:@colorMainGrayLight;
+        }
+        &:hover {
+          background-color:@colorMain;
+        }
+      }
+    }
+  }
+  /* 左侧部分 */
+  .div-leftside {
+    .left-nav {
+      .left-nav-group {
+        h2 {
+          background-color:@colorMain;
+        }
+        ul {
+          min-height:120px;
+          li {
+            a {
+              &.active {
+                color:@colorMain;border-left:4px solid @colorMain;border-right:4px solid @colorMain;
+              }
+              &:hover {
+                color:@colorMain;
+              }
+            }
+          }
+        }
+      }
+    }
+    .leftside-switch {
+      background-color:@colorMainGrayLight;
+      &:hover {
+        background-color:@colorMain;
+      }
+    }
+  }
+  /* 导航 */
+  .breadcrumb {
+    li {
+      a {
+        &:hover {
+          color:@colorMain;
+        }
+      }
+    }
+    &> .active {
+      color:@colorMain;
+    }
+  }
+  /* 工具栏 */
+  .btn-toolbar {
+    ul {
+      li {
+        .btn {
+          background-color:@colorMain;border-color:@colorMain;
+          &:hover {
+            background-color:lighten(@colorMain,5%);
+          }
+        }
+      }
+    }
+  }
+  /* 按钮 */
+  .btn-info {
+    color:#fff;background-color:@colorMain;border-color:@colorMain;
+  }
+  /* tooltip */
+  .tooltip {
+    border-color:@colorMain;color:@white;background-color:@colorMain;
+    .tooltip-arrow {
+      border-top-color:@white;
+    }
+  }
+  /* 页码 */
+  .foot-page {
+    span {
+      .btnGoPage {
+        background-color:@colorMain;border-color:@colorMain;
+        &:hover {
+          background-color:lighten(@colorMain,5%);
+        }
+      }
+    }
+    ul {
+      li {
+        a {
+          &.xz {
+            color:@colorMain;
+          }
+        }
+      }
+    }
+  }
+  .load2 .loader {
+    box-shadow:inset 0 0 0 1em @colorMain;
+  }
+  /* 弹出框 */
+  .modal-header {
+    button.close {
+      background-color:@colorMain;
+    }
+  }
+  /* 标题旁边的添加按钮 */
+  .table-title,
+  .section-title {
+    .btn {
+      background-color: @colorMain;
+      border-color: @colorMain;
+      &:hover {
+        background-color:lighten(@colorMain,5%);
+      }
+    }
+  }
+  /* 中间树 */
+  .show-tree-panel {
+    .tree-frame {
+      .tree-frame-switch {
+        &:hover {
+          background-color:@colorMain;
+        }
+      }
+      .tree {
+        .tree-node-selected {
+          border-left:4px solid @colorMain;border-right:4px solid @colorMain;
+        }
+      }
+    }
+  }
+  .tree-frame-switch {
+    background-color:@colorMainGrayLight;
+  }
+  .tree-collapsed,
+  .tree-expanded {
+    &:before {
+      border-bottom: 6px solid @colorMain;
+    }
+    &:after {
+      background-color:@colorMain;
+    }
+  }
+  /* 加减行 */
+  .btn-plus,
+  .btn-minus {
+    background-color:@colorMainGrayLight;border-color:@colorMainGrayLight;
+    &:hover,
+    &:active,
+    &.active,
+    &:focus,
+    &.focus,
+    &:checked,
+    &.checked {
+      background-color:lighten(@colorMainGrayLight,5%);
+      border-color:lighten(@colorMainGrayLight,5%);
+    }
+  }
+  /* 树搜索栏 */
+  .tree-search-bar {
+    li {
+      [type=text] {
+        border-radius:30px;border:1px solid @colorMain;
+      }
+    }
+  }
+  /* 进度条 */
+  .step-bar ul li.active {
+    &:before,
+    &:after {
+      background-color:@colorMain;
+    }
+    span {
+      color:@colorMain;
+    }
+  }
+  .rul-title {
+    .glyphicon {
+      color:@colorMain;
+    }
+  }
+  /* 后台首页 */
+  .div-home {
+    .main-frame {
+      .home-panel .hp-more {
+        .btn {
+          &:hover {
+            color:@colorMain!important;
+          }
+        }
+      }
+      .home-panel .list-group-item {
+        a {
+          &:hover {
+            color:@colorMain;
+          }
+        }
+      }
+
+    }
+  }
+  .badge {background-color:@colorMain;}
+}
+
+/* body-theme-7 */
+body.body-theme-7 {
+  @colorMain:@colorMain-theme-7;
+  @colorLoginBackground:@colorMain;
+  @colorMainGrayLight:desaturate(lighten(@colorMain,30%),35%);
+  a {
+    color:@colorMain;
+    &:hover {
+      color:lighten(@colorMain,10%);
+    }
+  }
+  /* 登陆页面 */
+  .body-login {
+    background-color:@colorLoginBackground;
+    .div-login {
+      .btn-submit {
+        background-color:@colorLoginBackground;
+        &:hover{
+          background-color:lighten(@colorLoginBackground,5%);
+        }
+      }
+    }
+  }
+  .input-group .input-group-addon .glyphicon {color:@colorMain;}
+  /* 顶部 */
+  .div-header {
+    background-color:@colorMain;
+    .container-fluid {
+      .navbar-nav {
+        & > li{
+          & > a:focus,
+          &.open > a {
+            background-color:lighten(@colorMain,5%);line-height:@heightHeader;padding-top:0;padding-bottom:0;font-size:@fontSizeTitle;color:@white;
+            &:hover {
+              background-color:lighten(@colorMain,5%);color:@white;
+            }
+          }
+          & > a:hover {
+            background-color:lighten(@colorMain,5%);color:@white;
+          }
+        }
+      }
+    }
+    .glyphicon-user {color:@colorMain;}
+  }
+  .userright-list h1 {color:darken(@colorMain,5%);}
+  /* 菜单栏目部分 */
+  .div-catalog {
+    border-bottom:1px solid @colorMain;
+    .dc-title {
+      color:@colorMain;
+      .dc-name {
+        color:@colorMain;
+      }
+    }
+    .header-menu {
+      ul {
+        li {
+          a {
+            &.active {background-color:@colorMain;
+              &:hover {
+                background-color:@colorMain;
+              }
+            }
+          }
+        }
+      }
+      .hm-left{
+        &.enable {
+          background-color:@colorMainGrayLight;
+        }
+        &:hover {
+          background-color:@colorMain;
+        }
+      }
+      .hm-right{
+        &.enable {
+          background-color:@colorMainGrayLight;
+        }
+        &:hover {
+          background-color:@colorMain;
+        }
+      }
+    }
+  }
+  /* 左侧部分 */
+  .div-leftside {
+    .left-nav {
+      .left-nav-group {
+        h2 {
+          background-color:@colorMain;
+        }
+        ul {
+          min-height:120px;
+          li {
+            a {
+              &.active {
+                color:@colorMain;border-left:4px solid @colorMain;border-right:4px solid @colorMain;
+              }
+              &:hover {
+                color:@colorMain;
+              }
+            }
+          }
+        }
+      }
+    }
+    .leftside-switch {
+      background-color:@colorMainGrayLight;
+      &:hover {
+        background-color:@colorMain;
+      }
+    }
+  }
+  /* 导航 */
+  .breadcrumb {
+    li {
+      a {
+        &:hover {
+          color:@colorMain;
+        }
+      }
+    }
+    &> .active {
+      color:@colorMain;
+    }
+  }
+  /* 工具栏 */
+  .btn-toolbar {
+    ul {
+      li {
+        .btn {
+          background-color:@colorMain;border-color:@colorMain;
+          &:hover {
+            background-color:lighten(@colorMain,5%);
+          }
+        }
+      }
+    }
+  }
+  /* 按钮 */
+  .btn-info {
+    color:#fff;background-color:@colorMain;border-color:@colorMain;
+  }
+  /* tooltip */
+  .tooltip {
+    border-color:@colorMain;color:@white;background-color:@colorMain;
+    .tooltip-arrow {
+      border-top-color:@white;
+    }
+  }
+  /* 页码 */
+  .foot-page {
+    span {
+      .btnGoPage {
+        background-color:@colorMain;border-color:@colorMain;
+        &:hover {
+          background-color:lighten(@colorMain,5%);
+        }
+      }
+    }
+    ul {
+      li {
+        a {
+          &.xz {
+            color:@colorMain;
+          }
+        }
+      }
+    }
+  }
+  .load2 .loader {
+    box-shadow:inset 0 0 0 1em @colorMain;
+  }
+  /* 弹出框 */
+  .modal-header {
+    button.close {
+      background-color:@colorMain;
+    }
+  }
+  /* 标题旁边的添加按钮 */
+  .table-title,
+  .section-title {
+    .btn {
+      background-color: @colorMain;
+      border-color: @colorMain;
+      &:hover {
+        background-color:lighten(@colorMain,5%);
+      }
+    }
+  }
+  /* 中间树 */
+  .show-tree-panel {
+    .tree-frame {
+      .tree-frame-switch {
+        &:hover {
+          background-color:@colorMain;
+        }
+      }
+      .tree {
+        .tree-node-selected {
+          border-left:4px solid @colorMain;border-right:4px solid @colorMain;
+        }
+      }
+    }
+  }
+  .tree-frame-switch {
+    background-color:@colorMainGrayLight;
+  }
+  .tree-collapsed,
+  .tree-expanded {
+    &:before {
+      border-bottom: 6px solid @colorMain;
+    }
+    &:after {
+      background-color:@colorMain;
+    }
+  }
+  /* 加减行 */
+  .btn-plus,
+  .btn-minus {
+    background-color:@colorMainGrayLight;border-color:@colorMainGrayLight;
+    &:hover,
+    &:active,
+    &.active,
+    &:focus,
+    &.focus,
+    &:checked,
+    &.checked {
+      background-color:lighten(@colorMainGrayLight,5%);
+      border-color:lighten(@colorMainGrayLight,5%);
+    }
+  }
+  /* 树搜索栏 */
+  .tree-search-bar {
+    li {
+      [type=text] {
+        border-radius:30px;border:1px solid @colorMain;
+      }
+    }
+  }
+  /* 进度条 */
+  .step-bar ul li.active {
+    &:before,
+    &:after {
+      background-color:@colorMain;
+    }
+    span {
+      color:@colorMain;
+    }
+  }
+  .rul-title {
+    .glyphicon {
+      color:@colorMain;
+    }
+  }
+  /* 后台首页 */
+  .div-home {
+    .main-frame {
+      .home-panel .hp-more {
+        .btn {
+          &:hover {
+            color:@colorMain!important;
+          }
+        }
+      }
+      .home-panel .list-group-item {
+        a {
+          &:hover {
+            color:@colorMain;
+          }
+        }
+      }
+
+    }
+  }
+  .badge {background-color:@colorMain;}
+}
