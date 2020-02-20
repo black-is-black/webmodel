@@ -1,0 +1,62 @@
+.words {
+    font-size: 150px;
+    font-family: 'Regular', cursive;
+    width: auto;
+    text-align: center;
+}
+   .days {
+    font-size: 216px;
+    font-family: 'Rye', cursive;
+    width: auto;
+    text-align: center;
+}
+
+.days-label {
+    font-size: 54px;
+}
+
+.seconds {
+    margin-top: 32px;
+    font-size: 32px;
+    font-family: "Monda_bo", Georgia, sans-serif;
+    width: auto;
+    text-align: center;
+}
+
+.seconds-label {
+     margin-top: 32px;
+    font-size: 32px;
+    font-family: "Monda_no", Georgia, sans-serif;
+    width: auto;
+    text-align: center; 
+}
+
+.container {
+    position: absolute;
+}
+
+@font-face {
+  font-family: 'Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rye Regular'), local('Rye-Regular'), url('../fonts/text1.ttf') format('woff');
+}
+
+@font-face {
+  font-family: 'Rye';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rye Regular'), local('Rye-Regular'), url('../fonts/Clockopia.ttf') format('woff');
+}
+@font-face {
+  font-family: 'Monda_no';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Monda'), local('Monda-Regular'), url('../fonts/Monda-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Monda_bo';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Monda Bold'), local('Monda-Bold'), url('../fonts/Monda-Bold.ttf') format('truetype');
+}

@@ -1,0 +1,1043 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Protable - Admin Dashboard Template</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/media/image/favicon.png"/>
+
+    <!-- Plugin styles -->
+    <link rel="stylesheet" href="vendors/bundle.css" type="text/css">
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="assets/css/app.min.css" type="text/css">
+</head>
+<body>
+
+<!-- begin::preloader-->
+<div class="preloader">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="50px" height="50px" viewBox="0 0 128 128"
+         xml:space="preserve">
+        <rect x="0" y="0" width="100%" height="100%" fill="#FFFFFF"/>
+        <g>
+            <path d="M75.4 126.63a11.43 11.43 0 0 1-2.1-22.65 40.9 40.9 0 0 0 30.5-30.6 11.4 11.4 0 1 1 22.27 4.87h.02a63.77 63.77 0 0 1-47.8 48.05v-.02a11.38 11.38 0 0 1-2.93.37z"
+                  fill="#000000" fill-opacity="1"/>
+            <animateTransform attributeName="transform" type="rotate" from="0 64 64" to="360 64 64"
+                              dur="500ms" repeatCount="indefinite">
+            </animateTransform>
+        </g>
+    </svg>
+</div>
+<!-- end::preloader -->
+
+<!-- begin::navigation -->
+<div class="navigation">
+
+    <!-- begin::logo -->
+    <div id="logo">
+        <a href="index.html">
+            <img class="logo" src="assets/media/image/logo.png" alt="logo">
+            <img class="logo-sm" src="assets/media/image/logo-sm.png" alt="small logo">
+            <img class="logo-dark" src="assets/media/image/logo-dark.png" alt="dark logo">
+        </a>
+    </div>
+    <!-- end::logo -->
+
+    <!-- begin::navigation header -->
+    <header class="navigation-header">
+        <figure class="avatar avatar-state-success">
+            <img src="assets/media/image/user/man_avatar3.jpg" class="rounded-circle" alt="image">
+        </figure>
+        <div>
+            <h5>Nikos Pedlow</h5>
+            <p class="text-muted">Administrator</p>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="profile.html" class="btn nav-link bg-info-bright" title="Profile" data-toggle="tooltip">
+                        <i data-feather="user"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="btn nav-link bg-success-bright" title="Settings" data-toggle="tooltip">
+                        <i data-feather="settings"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="btn nav-link bg-danger-bright" title="Logout" data-toggle="tooltip">
+                        <i data-feather="log-out"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- end::navigation header -->
+
+    <!-- begin::navigation menu -->
+    <div class="navigation-menu-body">
+        <ul>
+            <li class="navigation-divider">Main</li>
+            <li class="open">
+                <a href="index.html">
+                    <i class="nav-link-icon" data-feather="bar-chart-2"></i>
+                    <span>Dashboard</span>
+                </a>
+                <ul>
+                    <li><a href="index.html">Dashboard 1</a></li>
+                    <li><a class="active" href="dashboard-two.html">Dashboard 2</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="chat.html">
+                    <i class="nav-link-icon" data-feather="message-circle"></i>
+                    <span>Chat</span>
+                    <span class="badge badge-danger">2</span>
+                </a>
+            </li>
+            <li>
+                <a href="inbox.html">
+                    <i class="nav-link-icon" data-feather="mail"></i>
+                    <span>Mail</span>
+                    <span class="badge badge-success">2</span>
+                </a>
+            </li>
+            <li>
+                <a href="app-todo.html">
+                    <i class="nav-link-icon" data-feather="check-circle"></i>
+                    <span>Todo</span>
+                    <span class="badge badge-warning">2</span>
+                </a>
+            </li>
+            <li>
+                <a href="file-manager.html">
+                    <i class="nav-link-icon" data-feather="file"></i>
+                    <span>File Manager</span>
+                </a>
+            </li>
+            <li>
+                <a href="calendar.html">
+                    <i class="nav-link-icon" data-feather="calendar"></i>
+                    <span>Calendar</span>
+                </a>
+            </li>
+            <li class="navigation-divider">UI Elements</li>
+            <li>
+                <a href="#">
+                    <i class="nav-link-icon" data-feather="monitor"></i>
+                    <span>Components</span>
+                </a>
+                <ul>
+                    <li>
+                        <a href="#">Basic</a>
+                        <ul>
+                            <li><a href="alerts.html">Alert</a></li>
+                            <li><a href="accordion.html">Accordion</a></li>
+                            <li><a href="buttons.html">Buttons</a></li>
+                            <li><a href="dropdown.html">Dropdown</a></li>
+                            <li><a href="list-group.html">List Group</a></li>
+                            <li><a href="pagination.html">Pagination</a></li>
+                            <li><a href="typography.html">Typography</a></li>
+                            <li><a href="media-object.html">Media Object</a></li>
+                            <li><a href="progress.html">Progress</a></li>
+                            <li><a href="modal.html">Modal</a></li>
+                            <li><a href="spinners.html">Spinners</a></li>
+                            <li><a href="navs.html">Navs</a></li>
+                            <li><a href="tab.html">Tab</a></li>
+                            <li><a href="tooltip.html">Tooltip</a></li>
+                            <li><a href="popovers.html">Popovers</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Cards</a>
+                        <ul>
+                            <li><a href="basic-cards.html">Basic Cards </a></li>
+                            <li><a href="image-cards.html">Image Cards </a></li>
+                            <li><a href="card-scroll.html">Card Scroll </a></li>
+                            <li><a href="other-cards.html">Others </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="avatar.html">Avatar</a></li>
+                    <li><a href="icons.html">Icons</a></li>
+                    <li><a href="colors.html">Colors</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="nav-link-icon" data-feather="globe"></i>
+                    <span>Plugins</span>
+                </a>
+                <ul>
+                    <li><a href="sweet-alert.html">Sweet Alert</a></li>
+                    <li><a href="lightbox.html">Lightbox</a></li>
+                    <li><a href="toast.html">Toast</a></li>
+                    <li><a href="tour.html">Tour</a></li>
+                    <li><a href="slick-slide.html">Slick Slide</a></li>
+                    <li><a href="nestable.html">Nestable</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="nav-link-icon" data-feather="mouse-pointer"></i>
+                    <span>Forms</span>
+                </a>
+                <ul>
+                    <li><a href="basic-form.html">Form Layouts</a></li>
+                    <li><a href="custom-form.html">Custom Forms</a></li>
+                    <li><a href="advanced-form.html">Advanced Form</a></li>
+                    <li><a href="form-validation.html">Validation</a></li>
+                    <li><a href="form-wizard.html">Wizard</a></li>
+                    <li><a href="file-upload.html">File Upload</a></li>
+                    <li><a href="datepicker.html">Datepicker</a></li>
+                    <li><a href="timepicker.html">Timepicker</a></li>
+                    <li><a href="colorpicker.html">Colorpicker</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="nav-link-icon" data-feather="grid"></i>
+                    <span>Tables</span>
+                </a>
+                <ul>
+                    <li><a href="tables.html">Basic Tables</a></li>
+                    <li><a href="data-table.html">Datatable</a></li>
+                    <li><a href="responsive-table.html">Responsive Tables</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="nav-link-icon" data-feather="pie-chart"></i>
+                    <span>Charts</span>
+                </a>
+                <ul>
+                    <li><a href="apexchart.html">Apex</a></li>
+                    <li><a href="chartjs.html">Chartjs</a></li>
+                    <li><a href="justgage.html">Justgage</a></li>
+                    <li><a href="morsis.html">Morsis</a></li>
+                    <li><a href="peity.html">Peity</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="nav-link-icon" data-feather="map-pin"></i>
+                    <span>Maps</span>
+                </a>
+                <ul>
+                    <li><a href="google-map.html">Google</a></li>
+                    <li><a href="vector-map.html">Vector</a></li>
+                </ul>
+            </li>
+            <li class="navigation-divider">Extras</li>
+            <li>
+                <a href="#">
+                    <i class="nav-link-icon" data-feather="user"></i>
+                    <span>Authentication</span>
+                </a>
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="recover-password.html">Recovery Password</a></li>
+                    <li><a href="lock-screen.html">Lock Screen</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="nav-link-icon" data-feather="copy"></i>
+                    <span>Pages</span>
+                </a>
+                <ul>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="timeline.html">Timeline</a></li>
+                    <li><a href="invoice.html">Invoice</a></li>
+
+                    <li><a href="pricing-table.html">Pricing Table</a></li>
+                    <li><a href="search-result.html">Search Result</a></li>
+                    <li>
+                        <a href="#">Error Pages</a>
+                        <ul>
+                            <li><a href="404.html">404</a></li>
+                            <li><a href="404-2.html">404 V2</a></li>
+                            <li><a href="503.html">503</a></li>
+                            <li><a href="mean-at-work.html">Mean at Work</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="blank-page.html">Starter Page</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="nav-link-icon" data-feather="send"></i>
+                    <span>Email Templates</span>
+                </a>
+                <ul>
+                    <li><a href="email-template-basic.html">Basic</a></li>
+                    <li><a href="email-template-alert.html">Alert</a></li>
+                    <li><a href="email-template-billing.html">Billing</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="nav-link-icon" data-feather="menu"></i>
+                    <span>Menu Level</span>
+                </a>
+                <ul>
+                    <li>
+                        <a href="#">Menu Level</a>
+                        <ul>
+                            <li>
+                                <a href="#">Menu Level </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- end::navigation menu -->
+
+</div>
+<!-- end::navigation -->
+
+<div id="main">
+
+    <!-- begin::header -->
+    <div class="header">
+
+        <!-- begin::header left -->
+        <ul class="navbar-nav">
+
+            <!-- begin::navigation-toggler -->
+            <li class="nav-item navigation-toggler">
+                <a href="#" class="nav-link">
+                    <i data-feather="menu"></i>
+                </a>
+            </li>
+            <!-- end::navigation-toggler -->
+
+            <!-- begin::header-logo -->
+            <li class="nav-item" id="header-logo">
+                <a href="index.html">
+                    <img class="logo" src="assets/media/image/logo.png" alt="logo">
+                    <img class="logo-sm" src="assets/media/image/logo-sm.png" alt="small logo">
+                    <img class="logo-dark" src="assets/media/image/logo-dark.png" alt="dark logo">
+                </a>
+            </li>
+            <!-- end::header-logo -->
+        </ul>
+        <!-- end::header left -->
+
+        <!-- begin::header-right -->
+        <div class="header-right">
+            <ul class="navbar-nav">
+
+                <!-- begin::search-form -->
+                <li class="nav-item search-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-default" type="button">
+                                            <i data-feather="search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+                <!-- end::search-form -->
+
+                <!-- begin::header minimize/maximize -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link" title="Fullscreen" data-toggle="fullscreen">
+                        <i class="maximize" data-feather="maximize"></i>
+                        <i class="minimize" data-feather="minimize"></i>
+                    </a>
+                </li>
+                <!-- end::header minimize/maximize -->
+
+                <!-- begin::header app list -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link" title="Apps" data-toggle="dropdown">
+                        <i data-feather="grid"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-big">
+                        <div class="p-3">
+                            <h6 class="text-uppercase font-size-11 mb-3">Web Apps</h6>
+                            <div class="row row-xs">
+                                <div class="col-6">
+                                    <a href="chat.html">
+                                        <div class="text-uppercase font-size-11 p-3 border-radius-1 border text-center mb-3">
+                                            <i class="text-success width-23 height-23"
+                                               data-feather="message-circle"></i>
+                                            <div class="mt-2">Chat</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="inbox.html">
+                                        <div class="text-uppercase font-size-11 p-3 border-radius-1 border text-center mb-3">
+                                            <i class="text-info width-23 height-23" data-feather="mail"></i>
+                                            <div class="mt-2">Mail</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="calendar.html">
+                                        <div class="text-uppercase font-size-11 p-3 border-radius-1 border text-center">
+                                            <i class="text-warning width-23 height-23" data-feather="calendar"></i>
+                                            <div class="mt-2">Calendar</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="file-manager.html">
+                                        <div class="text-uppercase font-size-11 p-3 border-radius-1 border text-center">
+                                            <i class="text-danger width-23 height-23" data-feather="file"></i>
+                                            <div class="mt-2">File Manager</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- end::header app list -->
+
+                <!-- begin::header messages dropdown -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link nav-link-notify" title="Messages" data-toggle="dropdown">
+                        <i data-feather="message-circle"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-big">
+                        <div class="p-4 text-center" data-backround-image="assets/media/image/image1.png">
+                            <h6 class="mb-1">Messages</h6>
+                            <small class="font-size-11 opacity-7">2 unread messages</small>
+                        </div>
+                        <div>
+                            <ul class="list-group list-group-flush">
+                                <li>
+                                    <a href="#" class="list-group-item d-flex hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <img src="assets/media/image/user/man_avatar1.jpg"
+                                                     class="rounded-circle" alt="user">
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                Herbie Pallatina
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-circle-o font-size-11"></i>
+                                            </p>
+                                            <div class="small text-muted">
+                                                <span class="mr-2">02:30 PM</span>
+                                                <span>Have you madimage</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                       class="list-group-item d-flex align-items-center hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <img src="assets/media/image/user/women_avatar5.jpg"
+                                                     class="rounded-circle" alt="user">
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                Andrei Miners
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-circle-o font-size-11"></i>
+                                            </p>
+                                            <div class="small text-muted">
+                                                <span class="mr-2">08:36 PM</span>
+                                                <span>I have a meetinimage</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="text-divider small pb-2 pl-3 pt-3">
+                                    <span>Old chats</span>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                       class="list-group-item d-flex align-items-center hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <img src="assets/media/image/user/man_avatar3.jpg"
+                                                     class="rounded-circle" alt="user">
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                Kevin added
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                            </p>
+                                            <div class="small text-muted">
+                                                <span class="mr-2">11:09 PM</span>
+                                                <span>Have you madimage</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="list-group-item d-flex hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <img src="assets/media/image/user/man_avatar2.jpg"
+                                                     class="rounded-circle" alt="user">
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                Eugenio Carnelley
+                                                <i title="Mark as read" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                            </p>
+                                            <div class="small text-muted">
+                                                <span class="mr-2">Yesterday</span>
+                                                <span>I have a meetinimage</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                       class="list-group-item d-flex align-items-center hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <img src="assets/media/image/user/women_avatar1.jpg"
+                                                     class="rounded-circle" alt="user">
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                Neely Ferdinand
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                            </p>
+                                            <div class="small text-muted">
+                                                <span class="mr-2">Yesterday</span>
+                                                <span>I have a meetinimage</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-2 text-right">
+                            <ul class="list-inline small">
+                                <li class="list-inline-item">
+                                    <a href="#">Mark All Read</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <!-- end::header messages dropdown -->
+
+                <!-- begin::header notification dropdown -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link nav-link-notify" title="Notifications" data-toggle="dropdown">
+                        <i data-feather="bell"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-big">
+                        <div class="p-4 text-center" data-backround-image="assets/media/image/image1.png">
+                            <h6 class="mb-1">Notifications</h6>
+                            <small class="font-size-11 opacity-7">1 unread notifications</small>
+                        </div>
+                        <div>
+                            <ul class="list-group list-group-flush">
+                                <li>
+                                    <a href="#" class="list-group-item d-flex hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <span class="avatar-title bg-success-bright text-success rounded-circle">
+                                                    <i class="ti-user"></i>
+                                                </span>
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                New customer registered
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-circle-o font-size-11"></i>
+                                            </p>
+                                            <span class="text-muted small">20 min ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="text-divider small pb-2 pl-3 pt-3">
+                                    <span>Old notifications</span>
+                                </li>
+                                <li>
+                                    <a href="#" class="list-group-item d-flex hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <span class="avatar-title bg-warning-bright text-warning rounded-circle">
+                                                    <i class="ti-package"></i>
+                                                </span>
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                New Order Recieved
+                                                <i title="Mark as read" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                            </p>
+                                            <span class="text-muted small">45 sec ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                       class="list-group-item d-flex align-items-center hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <span class="avatar-title bg-danger-bright text-danger rounded-circle">
+                                                    <i class="ti-server"></i>
+                                                </span>
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                Server Limit Reached!
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                            </p>
+                                            <span class="text-muted small">55 sec ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                       class="list-group-item d-flex align-items-center hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <span class="avatar-title bg-info-bright text-info rounded-circle">
+                                                    <i class="ti-layers"></i>
+                                                </span>
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                Apps are ready for update
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                            </p>
+                                            <span class="text-muted small">Yesterday</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-2 text-right">
+                            <ul class="list-inline small">
+                                <li class="list-inline-item">
+                                    <a href="#">Mark All Read</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <!-- end::header notification dropdown -->
+            </ul>
+
+            <!-- begin::mobile header toggler -->
+            <ul class="navbar-nav d-flex align-items-center">
+                <li class="nav-item header-toggler">
+                    <a href="#" class="nav-link">
+                        <i data-feather="arrow-down"></i>
+                    </a>
+                </li>
+            </ul>
+            <!-- end::mobile header toggler -->
+        </div>
+        <!-- end::header-right -->
+    </div>
+    <!-- end::header -->
+
+    <!-- begin::main content -->
+    <main class="main-content">
+
+        <div class="container">
+
+            <div class="page-header mb-5">
+                <h4>Helpdesk Dashboard</h4>
+                <small class="">Welcome, <span class="text-primary">Kenneth Hune</span></small>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card card-body">
+                                <h3 class="mb-3">
+                                    321
+                                    <small>New Tickets</small>
+                                </h3>
+                                <div class="progress mb-2" style="height: 5px">
+                                    <div class="progress-bar bg-primary" role="progressbar"
+                                         style="width: 100%;"
+                                         aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <p class="font-size-11 m-b-0">
+                                    <span class="text-success">+ 1.2%</span> than yesterday
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-body">
+                                <h3 class="mb-3">
+                                    70
+                                    <small>Solved Tickets</small>
+                                </h3>
+                                <div class="progress mb-2" style="height: 5px">
+                                    <div class="progress-bar bg-success" role="progressbar"
+                                         style="width: 10%;"
+                                         aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <p class="font-size-11 m-b-0">
+                                    <span class="text-danger">- 2.2%</span> than yesterday
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-body">
+                                <h4 class="mb-3">
+                                    125
+                                    <small>Pending Tickets</small>
+                                </h4>
+                                <div class="progress mb-2" style="height: 5px">
+                                    <div class="progress-bar bg-info" role="progressbar"
+                                         style="width: 55%;"
+                                         aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <p class="font-size-11 m-b-0">
+                                    <span class="text-success">+ 4.2%</span> than yesterday
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-8 col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h6 class="card-title">Ticket Status</h6>
+                                        <div class="dropdown">
+                                            <a class="btn btn-outline-light btn-sm dropdown-toggle" href="#" data-toggle="dropdown">2019</a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a href="#" class="dropdown-item">2018</a>
+                                                <a href="#" class="dropdown-item">2017</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center mb-3">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item text-uppercase font-size-11">
+                                                <i class="fa fa-circle text-primary mr-1"></i> New Tickets
+                                            </li>
+                                            <li class="list-inline-item text-uppercase font-size-11">
+                                                <i class="fa fa-circle text-success mr-1"></i> Solved Tickets
+                                            </li>
+                                            <li class="list-inline-item text-uppercase font-size-11">
+                                                <i class="fa fa-circle text-info mr-1"></i> Pending Tickets
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <canvas id="chart-ticket-status"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="card card-body">
+                                <div class="d-flex align-items-center">
+                                    <div class="position-relative mr-3 text-center">
+                                        <div id="circle-1" class="circle"></div>
+                                        <div class="position-absolute a-0 d-flex flex-column align-items-center justify-content-center">
+                                            <h4 class="mb-0">65%</h4>
+                                            <span class="font-size-11 text-uppercase text-muted">Reached</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="mb-1">Time to Resolved Complaint</p>
+                                        <p class="text-muted mb-1">
+                                            <small>The average time taken to resolve complaints.</small>
+                                        </p>
+                                        <h3 class="mb-0">7m:32s
+                                            <small>/ Goal: 8m:0s</small>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-body">
+                                <div class="d-flex align-items-center">
+                                    <div class="position-relative mr-3 text-center">
+                                        <div id="circle-2" class="circle"></div>
+                                        <div class="position-absolute a-0 d-flex flex-column align-items-center justify-content-center">
+                                            <h4 class="mb-0">35%</h4>
+                                            <span class="font-size-11 text-uppercase text-muted">Reached</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="mb-1">Average Speed of Answer</p>
+                                        <p class="text-muted mb-1">
+                                            <small>Measure how quickly support staff answer incoming calls.</small>
+                                        </p>
+                                        <h3 class="mb-0">0m:20s
+                                            <small>/ Goal: 0m:10s</small>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="card-title">Overall Rating</h6>
+                                    <p class="text-muted card-subtitle">Measures the quality or your support team’s
+                                        efforts.</p>
+                                    <div class="d-flex align-items-end">
+                                        <h1 class="m-r-10 m-b-0">4.2</h1>
+                                        <div class="font-size-18">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-muted"></i>
+                                        </div>
+                                    </div>
+                                    <hr class="m-b-0">
+                                    <div class="list-group list-group-flush">
+                                        <div class="list-group-item p-t-b-10 p-l-r-0 d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <strong class="m-r-20">5.0</strong>
+                                                <div class="font-size-14">
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-warning"></i>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <div class="m-r-20">3,230</div>
+                                                <div>58%</div>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item p-t-b-10 p-l-r-0 d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <strong class="m-r-20">4.0</strong>
+                                                <div class="font-size-14">
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-muted"></i>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <div class="m-r-20">2,230</div>
+                                                <div>24%</div>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item p-t-b-10 p-l-r-0 d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <strong class="m-r-20">3.0</strong>
+                                                <div class="font-size-14">
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-muted"></i>
+                                                    <i class="fa fa-star text-muted"></i>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <div class="m-r-20">1,230</div>
+                                                <div>10%</div>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item p-t-b-10 p-l-r-0 d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <strong class="m-r-20">2.0</strong>
+                                                <div class="font-size-14">
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-muted"></i>
+                                                    <i class="fa fa-star text-muted"></i>
+                                                    <i class="fa fa-star text-muted"></i>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <div class="m-r-20">1,230</div>
+                                                <div>5%</div>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item p-t-b-10 p-l-r-0 d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <strong class="m-r-20">1.0</strong>
+                                                <div class="font-size-14">
+                                                    <i class="fa fa-star text-warning"></i>
+                                                    <i class="fa fa-star text-muted"></i>
+                                                    <i class="fa fa-star text-muted"></i>
+                                                    <i class="fa fa-star text-muted"></i>
+                                                    <i class="fa fa-star text-muted"></i>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <div class="m-r-20">7</div>
+                                                <div>2%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="card-title">Customer Satisfaction</h6>
+                                    <h1>
+                                        9.8
+                                        <small class="text-success">2.1%</small>
+                                    </h1>
+                                    <p class="text-muted">Performance Score</p>
+                                    <div class="progress" style="height: 10px">
+                                        <div class="progress-bar" role="progressbar" style="width: 15%"
+                                             aria-valuenow="15"
+                                             aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 30%"
+                                             aria-valuenow="30"
+                                             aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 20%"
+                                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-info" role="progressbar" style="width: 10%"
+                                             aria-valuenow="20"
+                                             aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%"
+                                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="list-group list-group-flush m-t-10">
+                                        <div class="list-group-item p-t-b-10 p-l-r-0 d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fa fa-circle m-r-10 text-primary"></i>
+                                                <span>Excellent</span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <div class="m-r-20">3,230</div>
+                                                <div>58%</div>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item p-t-b-10 p-l-r-0 d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fa fa-circle m-r-10 text-danger"></i>
+                                                <span>Very Good</span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <div class="m-r-20">3,230</div>
+                                                <div>58%</div>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item p-t-b-10 p-l-r-0 d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fa fa-circle m-r-10 text-warning"></i>
+                                                <span>Good</span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <div class="m-r-20">3,230</div>
+                                                <div>58%</div>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item p-t-b-10 p-l-r-0 d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fa fa-circle m-r-10 text-info"></i>
+                                                <span>Fair</span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <div class="m-r-20">3,230</div>
+                                                <div>58%</div>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item p-t-b-10 p-l-r-0 d-flex align-items-center justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fa fa-circle m-r-10 text-success"></i>
+                                                <span>Poor</span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <div class="m-r-20">3,230</div>
+                                                <div>58%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- end::main content -->
+
+    <!-- begin::footer -->
+    <footer>
+        <div class="container">
+            <div>© 2019 Protable v1.0.0 Made by <a href="http://laborasyon.com">Laborasyon</a></div>
+            <div>
+                <nav class="nav">
+                    <a href="https://themeforest.net/licenses/standard" class="nav-link">Licenses</a>
+                    <a href="#" class="nav-link">Change Log</a>
+                    <a href="#" class="nav-link">Get Help</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <!-- end::footer -->
+
+</div>
+
+<!-- Plugin scripts -->
+<script src="vendors/bundle.js"></script>
+
+<!-- Chartjs -->
+<script src="vendors/charts/chartjs/chart.min.js"></script>
+
+<!-- Circle progress -->
+<script src="vendors/circle-progress/circle-progress.min.js"></script>
+
+<!-- Dashboard scripts -->
+<script src="assets/js/examples/dashboard.js"></script>
+<div class="colors"> <!-- To use theme colors with Javascript -->
+    <div class="bg-primary"></div>
+    <div class="bg-primary-bright"></div>
+    <div class="bg-secondary"></div>
+    <div class="bg-secondary-bright"></div>
+    <div class="bg-info"></div>
+    <div class="bg-info-bright"></div>
+    <div class="bg-success"></div>
+    <div class="bg-success-bright"></div>
+    <div class="bg-danger"></div>
+    <div class="bg-danger-bright"></div>
+    <div class="bg-warning"></div>
+    <div class="bg-warning-bright"></div>
+</div>
+
+<!-- App scripts -->
+<script src="assets/js/app.min.js"></script>
+</body>
+</html>

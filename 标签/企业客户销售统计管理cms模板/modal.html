@@ -1,0 +1,1207 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Protable - Admin Dashboard Template</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/media/image/favicon.png"/>
+
+    <!-- Plugin styles -->
+    <link rel="stylesheet" href="vendors/bundle.css" type="text/css">
+
+    <!-- Prism -->
+    <link rel="stylesheet" href="vendors/prism/prism.css" type="text/css">
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="assets/css/app.min.css" type="text/css">
+</head>
+<body>
+
+<!-- begin::preloader-->
+<div class="preloader">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="50px" height="50px" viewBox="0 0 128 128"
+         xml:space="preserve">
+        <rect x="0" y="0" width="100%" height="100%" fill="#FFFFFF"/>
+        <g>
+            <path d="M75.4 126.63a11.43 11.43 0 0 1-2.1-22.65 40.9 40.9 0 0 0 30.5-30.6 11.4 11.4 0 1 1 22.27 4.87h.02a63.77 63.77 0 0 1-47.8 48.05v-.02a11.38 11.38 0 0 1-2.93.37z"
+                  fill="#000000" fill-opacity="1"/>
+            <animateTransform attributeName="transform" type="rotate" from="0 64 64" to="360 64 64"
+                              dur="500ms" repeatCount="indefinite">
+            </animateTransform>
+        </g>
+    </svg>
+</div>
+<!-- end::preloader -->
+
+<!-- begin::navigation -->
+<div class="navigation">
+
+    <!-- begin::logo -->
+    <div id="logo">
+        <a href="index.html">
+            <img class="logo" src="assets/media/image/logo.png" alt="logo">
+            <img class="logo-sm" src="assets/media/image/logo-sm.png" alt="small logo">
+            <img class="logo-dark" src="assets/media/image/logo-dark.png" alt="dark logo">
+        </a>
+    </div>
+    <!-- end::logo -->
+
+    <!-- begin::navigation header -->
+    <header class="navigation-header">
+        <figure class="avatar avatar-state-success">
+            <img src="assets/media/image/user/man_avatar3.jpg" class="rounded-circle" alt="image">
+        </figure>
+        <div>
+            <h5>Nikos Pedlow</h5>
+            <p class="text-muted">Administrator</p>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="profile.html" class="btn nav-link bg-info-bright" title="Profile" data-toggle="tooltip">
+                        <i data-feather="user"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="btn nav-link bg-success-bright" title="Settings" data-toggle="tooltip">
+                        <i data-feather="settings"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="btn nav-link bg-danger-bright" title="Logout" data-toggle="tooltip">
+                        <i data-feather="log-out"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- end::navigation header -->
+
+    <!-- begin::navigation menu -->
+    <div class="navigation-menu-body">
+        <ul>
+            <li class="navigation-divider">Main</li>
+            <li>
+                <a href="index.html">
+                    <i class="nav-link-icon" data-feather="bar-chart-2"></i>
+                    <span>Dashboard</span>
+                </a>
+                <ul>
+                    <li><a href="index.html">Dashboard 1</a></li>
+                    <li><a href="dashboard-two.html">Dashboard 2</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="chat.html">
+                    <i class="nav-link-icon" data-feather="message-circle"></i>
+                    <span>Chat</span>
+                    <span class="badge badge-danger">2</span>
+                </a>
+            </li>
+            <li>
+                <a href="inbox.html">
+                    <i class="nav-link-icon" data-feather="mail"></i>
+                    <span>Mail</span>
+                    <span class="badge badge-success">2</span>
+                </a>
+            </li>
+            <li>
+                <a href="app-todo.html">
+                    <i class="nav-link-icon" data-feather="check-circle"></i>
+                    <span>Todo</span>
+                    <span class="badge badge-warning">2</span>
+                </a>
+            </li>
+            <li>
+                <a href="file-manager.html">
+                    <i class="nav-link-icon" data-feather="file"></i>
+                    <span>File Manager</span>
+                </a>
+            </li>
+            <li>
+                <a href="calendar.html">
+                    <i class="nav-link-icon" data-feather="calendar"></i>
+                    <span>Calendar</span>
+                </a>
+            </li>
+            <li class="navigation-divider">UI Elements</li>
+            <li class="open">
+                <a href="#">
+                    <i class="nav-link-icon" data-feather="monitor"></i>
+                    <span>Components</span>
+                </a>
+                <ul>
+                    <li class="open">
+                        <a href="#">Basic</a>
+                        <ul>
+                            <li><a href="alerts.html">Alert</a></li>
+                            <li><a href="accordion.html">Accordion</a></li>
+                            <li><a href="buttons.html">Buttons</a></li>
+                            <li><a href="dropdown.html">Dropdown</a></li>
+                            <li><a href="list-group.html">List Group</a></li>
+                            <li><a href="pagination.html">Pagination</a></li>
+                            <li><a href="typography.html">Typography</a></li>
+                            <li><a href="media-object.html">Media Object</a></li>
+                            <li><a href="progress.html">Progress</a></li>
+                            <li><a class="active" href="modal.html">Modal</a></li>
+                            <li><a href="spinners.html">Spinners</a></li>
+                            <li><a href="navs.html">Navs</a></li>
+                            <li><a href="tab.html">Tab</a></li>
+                            <li><a href="tooltip.html">Tooltip</a></li>
+                            <li><a href="popovers.html">Popovers</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Cards</a>
+                        <ul>
+                            <li><a href="basic-cards.html">Basic Cards </a></li>
+                            <li><a href="image-cards.html">Image Cards </a></li>
+                            <li><a href="card-scroll.html">Card Scroll </a></li>
+                            <li><a href="other-cards.html">Others </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="avatar.html">Avatar</a></li>
+                    <li><a href="icons.html">Icons</a></li>
+                    <li><a href="colors.html">Colors</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="nav-link-icon" data-feather="globe"></i>
+                    <span>Plugins</span>
+                </a>
+                <ul>
+                    <li><a href="sweet-alert.html">Sweet Alert</a></li>
+                    <li><a href="lightbox.html">Lightbox</a></li>
+                    <li><a href="toast.html">Toast</a></li>
+                    <li><a href="tour.html">Tour</a></li>
+                    <li><a href="slick-slide.html">Slick Slide</a></li>
+                    <li><a href="nestable.html">Nestable</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="nav-link-icon" data-feather="mouse-pointer"></i>
+                    <span>Forms</span>
+                </a>
+                <ul>
+                    <li><a href="basic-form.html">Form Layouts</a></li>
+                    <li><a href="custom-form.html">Custom Forms</a></li>
+                    <li><a href="advanced-form.html">Advanced Form</a></li>
+                    <li><a href="form-validation.html">Validation</a></li>
+                    <li><a href="form-wizard.html">Wizard</a></li>
+                    <li><a href="file-upload.html">File Upload</a></li>
+                    <li><a href="datepicker.html">Datepicker</a></li>
+                    <li><a href="timepicker.html">Timepicker</a></li>
+                    <li><a href="colorpicker.html">Colorpicker</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="nav-link-icon" data-feather="grid"></i>
+                    <span>Tables</span>
+                </a>
+                <ul>
+                    <li><a href="tables.html">Basic Tables</a></li>
+                    <li><a href="data-table.html">Datatable</a></li>
+                    <li><a href="responsive-table.html">Responsive Tables</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="nav-link-icon" data-feather="pie-chart"></i>
+                    <span>Charts</span>
+                </a>
+                <ul>
+                    <li><a href="apexchart.html">Apex</a></li>
+                    <li><a href="chartjs.html">Chartjs</a></li>
+                    <li><a href="justgage.html">Justgage</a></li>
+                    <li><a href="morsis.html">Morsis</a></li>
+                    <li><a href="peity.html">Peity</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="nav-link-icon" data-feather="map-pin"></i>
+                    <span>Maps</span>
+                </a>
+                <ul>
+                    <li><a href="google-map.html">Google</a></li>
+                    <li><a href="vector-map.html">Vector</a></li>
+                </ul>
+            </li>
+            <li class="navigation-divider">Extras</li>
+            <li>
+                <a href="#">
+                    <i class="nav-link-icon" data-feather="user"></i>
+                    <span>Authentication</span>
+                </a>
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="recover-password.html">Recovery Password</a></li>
+                    <li><a href="lock-screen.html">Lock Screen</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="nav-link-icon" data-feather="copy"></i>
+                    <span>Pages</span>
+                </a>
+                <ul>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="timeline.html">Timeline</a></li>
+                    <li><a href="invoice.html">Invoice</a></li>
+
+                    <li><a href="pricing-table.html">Pricing Table</a></li>
+                    <li><a href="search-result.html">Search Result</a></li>
+                    <li>
+                        <a href="#">Error Pages</a>
+                        <ul>
+                            <li><a href="404.html">404</a></li>
+                            <li><a href="404-2.html">404 V2</a></li>
+                            <li><a href="503.html">503</a></li>
+                            <li><a href="mean-at-work.html">Mean at Work</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="blank-page.html">Starter Page</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="nav-link-icon" data-feather="send"></i>
+                    <span>Email Templates</span>
+                </a>
+                <ul>
+                    <li><a href="email-template-basic.html">Basic</a></li>
+                    <li><a href="email-template-alert.html">Alert</a></li>
+                    <li><a href="email-template-billing.html">Billing</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="nav-link-icon" data-feather="menu"></i>
+                    <span>Menu Level</span>
+                </a>
+                <ul>
+                    <li>
+                        <a href="#">Menu Level</a>
+                        <ul>
+                            <li>
+                                <a href="#">Menu Level </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- end::navigation menu -->
+
+</div>
+<!-- end::navigation -->
+
+<!-- begin::main -->
+<div id="main">
+
+    <!-- begin::header -->
+    <div class="header">
+
+        <!-- begin::header left -->
+        <ul class="navbar-nav">
+
+            <!-- begin::navigation-toggler -->
+            <li class="nav-item navigation-toggler">
+                <a href="#" class="nav-link">
+                    <i data-feather="menu"></i>
+                </a>
+            </li>
+            <!-- end::navigation-toggler -->
+
+            <!-- begin::header-logo -->
+            <li class="nav-item" id="header-logo">
+                <a href="index.html">
+                    <img class="logo" src="assets/media/image/logo.png" alt="logo">
+                    <img class="logo-sm" src="assets/media/image/logo-sm.png" alt="small logo">
+                    <img class="logo-dark" src="assets/media/image/logo-dark.png" alt="dark logo">
+                </a>
+            </li>
+            <!-- end::header-logo -->
+        </ul>
+        <!-- end::header left -->
+
+        <!-- begin::header-right -->
+        <div class="header-right">
+            <ul class="navbar-nav">
+
+                <!-- begin::search-form -->
+                <li class="nav-item search-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-default" type="button">
+                                            <i data-feather="search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+                <!-- end::search-form -->
+
+                <!-- begin::header minimize/maximize -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link" title="Fullscreen" data-toggle="fullscreen">
+                        <i class="maximize" data-feather="maximize"></i>
+                        <i class="minimize" data-feather="minimize"></i>
+                    </a>
+                </li>
+                <!-- end::header minimize/maximize -->
+
+                <!-- begin::header app list -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link" title="Apps" data-toggle="dropdown">
+                        <i data-feather="grid"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-big">
+                        <div class="p-3">
+                            <h6 class="text-uppercase font-size-11 mb-3">Web Apps</h6>
+                            <div class="row row-xs">
+                                <div class="col-6">
+                                    <a href="chat.html">
+                                        <div class="text-uppercase font-size-11 p-3 border-radius-1 border text-center mb-3">
+                                            <i class="text-success width-23 height-23" data-feather="message-circle"></i>
+                                            <div class="mt-2">Chat</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="inbox.html">
+                                        <div class="text-uppercase font-size-11 p-3 border-radius-1 border text-center mb-3">
+                                            <i class="text-info width-23 height-23" data-feather="mail"></i>
+                                            <div class="mt-2">Mail</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="calendar.html">
+                                        <div class="text-uppercase font-size-11 p-3 border-radius-1 border text-center">
+                                            <i class="text-warning width-23 height-23" data-feather="calendar"></i>
+                                            <div class="mt-2">Calendar</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="file-manager.html">
+                                        <div class="text-uppercase font-size-11 p-3 border-radius-1 border text-center">
+                                            <i class="text-danger width-23 height-23" data-feather="file"></i>
+                                            <div class="mt-2">File Manager</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- end::header app list -->
+
+                <!-- begin::header messages dropdown -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link nav-link-notify" title="Messages" data-toggle="dropdown">
+                        <i data-feather="message-circle"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-big">
+                        <div class="p-4 text-center" data-backround-image="assets/media/image/image1.png">
+                            <h6 class="mb-1">Messages</h6>
+                            <small class="font-size-11 opacity-7">2 unread messages</small>
+                        </div>
+                        <div>
+                            <ul class="list-group list-group-flush">
+                                <li>
+                                    <a href="#" class="list-group-item d-flex hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <img src="assets/media/image/user/man_avatar1.jpg"
+                                                     class="rounded-circle" alt="user">
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                Herbie Pallatina
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-circle-o font-size-11"></i>
+                                            </p>
+                                            <div class="small text-muted">
+                                                <span class="mr-2">02:30 PM</span>
+                                                <span>Have you madimage</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                       class="list-group-item d-flex align-items-center hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <img src="assets/media/image/user/women_avatar5.jpg"
+                                                     class="rounded-circle" alt="user">
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                Andrei Miners
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-circle-o font-size-11"></i>
+                                            </p>
+                                            <div class="small text-muted">
+                                                <span class="mr-2">08:36 PM</span>
+                                                <span>I have a meetinimage</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="text-divider small pb-2 pl-3 pt-3">
+                                    <span>Old chats</span>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                       class="list-group-item d-flex align-items-center hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <img src="assets/media/image/user/man_avatar3.jpg"
+                                                     class="rounded-circle" alt="user">
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                Kevin added
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                            </p>
+                                            <div class="small text-muted">
+                                                <span class="mr-2">11:09 PM</span>
+                                                <span>Have you madimage</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="list-group-item d-flex hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <img src="assets/media/image/user/man_avatar2.jpg"
+                                                     class="rounded-circle" alt="user">
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                Eugenio Carnelley
+                                                <i title="Mark as read" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                            </p>
+                                            <div class="small text-muted">
+                                                <span class="mr-2">Yesterday</span>
+                                                <span>I have a meetinimage</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                       class="list-group-item d-flex align-items-center hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <img src="assets/media/image/user/women_avatar1.jpg"
+                                                     class="rounded-circle" alt="user">
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                Neely Ferdinand
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                            </p>
+                                            <div class="small text-muted">
+                                                <span class="mr-2">Yesterday</span>
+                                                <span>I have a meetinimage</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-2 text-right">
+                            <ul class="list-inline small">
+                                <li class="list-inline-item">
+                                    <a href="#">Mark All Read</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <!-- end::header messages dropdown -->
+
+                <!-- begin::header notification dropdown -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link nav-link-notify" title="Notifications" data-toggle="dropdown">
+                        <i data-feather="bell"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-big">
+                        <div class="p-4 text-center" data-backround-image="assets/media/image/image1.png">
+                            <h6 class="mb-1">Notifications</h6>
+                            <small class="font-size-11 opacity-7">1 unread notifications</small>
+                        </div>
+                        <div>
+                            <ul class="list-group list-group-flush">
+                                <li>
+                                    <a href="#" class="list-group-item d-flex hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <span class="avatar-title bg-success-bright text-success rounded-circle">
+                                                    <i class="ti-user"></i>
+                                                </span>
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                New customer registered
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-circle-o font-size-11"></i>
+                                            </p>
+                                            <span class="text-muted small">20 min ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="text-divider small pb-2 pl-3 pt-3">
+                                    <span>Old notifications</span>
+                                </li>
+                                <li>
+                                    <a href="#" class="list-group-item d-flex hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <span class="avatar-title bg-warning-bright text-warning rounded-circle">
+                                                    <i class="ti-package"></i>
+                                                </span>
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                New Order Recieved
+                                                <i title="Mark as read" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                            </p>
+                                            <span class="text-muted small">45 sec ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                       class="list-group-item d-flex align-items-center hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <span class="avatar-title bg-danger-bright text-danger rounded-circle">
+                                                    <i class="ti-server"></i>
+                                                </span>
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                Server Limit Reached!
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                            </p>
+                                            <span class="text-muted small">55 sec ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                       class="list-group-item d-flex align-items-center hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <span class="avatar-title bg-info-bright text-info rounded-circle">
+                                                    <i class="ti-layers"></i>
+                                                </span>
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                Apps are ready for update
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                            </p>
+                                            <span class="text-muted small">Yesterday</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-2 text-right">
+                            <ul class="list-inline small">
+                                <li class="list-inline-item">
+                                    <a href="#">Mark All Read</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <!-- end::header notification dropdown -->
+            </ul>
+
+            <!-- begin::mobile header toggler -->
+            <ul class="navbar-nav d-flex align-items-center">
+                <li class="nav-item header-toggler">
+                    <a href="#" class="nav-link">
+                        <i data-feather="arrow-down"></i>
+                    </a>
+                </li>
+            </ul>
+            <!-- end::mobile header toggler -->
+        </div>
+        <!-- end::header-right -->
+    </div>
+    <!-- end::header -->
+
+    <!-- begin::main-content -->
+    <main class="main-content">
+
+        <div class="container">
+
+            <!-- begin::page-header -->
+            <div class="page-header">
+                <h4>Modal</h4>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#">Components</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">Modal</li>
+                    </ol>
+                </nav>
+            </div>
+            <!-- end::page-header -->
+
+            <div class="card">
+                <div class="card-body">
+
+                    <div class="modal" tabindex="-1" role="dialog" style="position: static;display: block">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content border">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Modal body text goes here.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-label="CODE EXAMPLE" class="demo-code-preview">
+                        <pre><code class="language-html">&lt;div class="modal" tabindex="-1" role="dialog"&gt;
+  &lt;div class="modal-dialog" role="document"&gt;
+    &lt;div class="modal-content"&gt;
+      &lt;div class="modal-header"&gt;
+        &lt;h5 class="modal-title"&gt;Modal title&lt;/h5&gt;
+        &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;
+          &lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-body"&gt;
+        &lt;p&gt;Modal body text goes here.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-footer"&gt;
+        &lt;button type="button" class="btn btn-secondary" data-dismiss="modal"&gt;Close&lt;/button&gt;
+        &lt;button type="button" class="btn btn-primary"&gt;Save changes&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h6 class="card-title">Live Demo</h6>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+                        Launch demo modal
+                    </button>
+
+                    <!-- Modal 1 -->
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModal1Label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModal1Label">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-label="CODE EXAMPLE" class="demo-code-preview">
+                        <pre><code class="language-html">&lt;button type="button" class="btn btn-primary mr-2 mb-2" data-toggle="modal" data-target="#exampleModal"&gt;
+  Launch demo modal
+&lt;/button&gt;
+
+&lt;div class="modal" tabindex="-1" role="dialog" id="exampleModal"&gt;
+  &lt;div class="modal-dialog" role="document"&gt;
+    &lt;div class="modal-content"&gt;
+      &lt;div class="modal-header"&gt;
+        &lt;h5 class="modal-title"&gt;Modal title&lt;/h5&gt;
+        &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;
+          &lt;span aria-hidden="true"&gt;×&lt;/span&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-body"&gt;
+        &lt;p&gt;Modal body text goes here.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-footer"&gt;
+        &lt;button type="button" class="btn btn-secondary" data-dismiss="modal"&gt;Close&lt;/button&gt;
+        &lt;button type="button" class="btn btn-primary"&gt;Save changes&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h6 class="card-title">Scrolling long content</h6>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                        Launch demo modal
+                    </button>
+
+                    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog " role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <i class="ti-close"></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet, atque
+                                    autem, commodi consequatur corporis cumque ea eligendi esse ex facere fugit
+                                    harum incidunt iure laborum maiores minus non pariatur praesentium quod
+                                    sapiente tenetur ullam unde vel voluptatibus. Accusamus aliquid beatae
+                                    dolore earum incidunt nulla possimus quibusdam, sed? Accusantium, impedit,
+                                    voluptatum! Accusamus asperiores aut cupiditate, debitis deleniti ea, enim
+                                    eveniet explicabo facilis inventore iusto maiores molestiae natus nostrum,
+                                    quod tempora temporibus. Blanditiis consequuntur dignissimos ducimus eos
+                                    expedita facere fugit, incidunt laudantium libero natus odit recusandae rem
+                                    sequi sunt temporibus, vel velit, voluptate! Dolores, nesciunt quod! Amet
+                                    corporis eaque esse excepturi maiores nesciunt officiis sed temporibus vitae
+                                    voluptas voluptatem, voluptatibus! Accusamus animi aperiam autem
+                                    consequatur, cupiditate distinctio dolore ducimus eius est ex explicabo id
+                                    itaque molestiae natus nostrum nulla, odit, officiis quam qui rerum sunt
+                                    suscipit temporibus vero. Ab adipisci aliquam aspernatur beatae blanditiis
+                                    cum delectus doloribus enim expedita facere impedit in laborum magnam, magni
+                                    nam, necessitatibus odio, quasi repudiandae. Deserunt doloribus esse itaque
+                                    magnam nihil nobis possimus quidem repellendus? Aliquid, amet consequuntur
+                                    dicta dignissimos dolore dolorem et, in nam neque officiis quisquam tempore.
+                                    Eligendi et hic officiis quam quisquam veniam veritatis. A doloribus natus
+                                    quisquam veniam! Beatae culpa ducimus earum exercitationem odio quae quam
+                                    quas quia quidem, quo recusandae, repudiandae sapiente sed temporibus
+                                    tenetur totam ut. Alias aspernatur at beatae consequatur cupiditate error
+                                    ipsam natus nobis numquam pariatur quaerat quia quisquam, quos, ratione
+                                    vero. Ab assumenda commodi consequatur deleniti doloribus eum excepturi
+                                    expedita facere iusto magnam maxime minus molestiae, nesciunt nostrum
+                                    numquam obcaecati odio officia officiis perferendis possimus quam quod
+                                    repellendus ullam voluptates voluptatum! Accusamus accusantium aliquam
+                                    aliquid architecto at atque autem beatae blanditiis commodi consectetur
+                                    dolores eius eligendi eos, eum incidunt magnam magni maiores odio possimus
+                                    quae quaerat quas quasi quisquam ratione reiciendis similique sit tempore
+                                    velit voluptate voluptates!
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+                                    </button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-label="CODE EXAMPLE" class="demo-code-preview">
+                        <pre><code class="language-html">&lt;div class="modal" tabindex="-1" role="dialog"&gt;
+  &lt;div class="modal-dialog" role="document"&gt;
+    &lt;div class="modal-content"&gt;
+      &lt;div class="modal-header"&gt;
+        &lt;h5 class="modal-title"&gt;Modal title&lt;/h5&gt;
+        &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;
+          &lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-body"&gt;
+        ...
+      &lt;/div&gt;
+      &lt;div class="modal-footer"&gt;
+        &lt;button type="button" class="btn btn-secondary" data-dismiss="modal"&gt;Close&lt;/button&gt;
+        &lt;button type="button" class="btn btn-primary"&gt;Save changes&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h6 class="card-title">Vertically centered</h6>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                        Vertically centered modal
+                    </button>
+
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <i class="ti-close"></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+                                    </button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-label="CODE EXAMPLE" class="demo-code-preview">
+                        <pre><code class="language-html">&lt;div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true"&gt;
+  &lt;div class="modal-dialog modal-dialog-centered" role="document"&gt;
+    &lt;div class="modal-content"&gt;
+      &lt;div class="modal-header"&gt;
+        &lt;h5 class="modal-title" id="exampleModalCenterTitle"&gt;Modal title&lt;/h5&gt;
+        &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;
+          &lt;i class="ti-close"&gt;&lt;/i&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-body"&gt;
+        ...
+      &lt;/div&gt;
+      &lt;div class="modal-footer"&gt;
+        &lt;button type="button" class="btn btn-secondary" data-dismiss="modal"&gt;Close
+        &lt;/button&gt;
+        &lt;button type="button" class="btn btn-primary"&gt;Save changes&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h6 class="card-title">Optional sizes</h6>
+
+                    <div>
+                        <button type="button" class="btn btn-primary mr-2 mb-2" data-toggle="modal"
+                                data-target=".bd-example-modal-xl">Extra large modal
+                        </button>
+                        <button type="button" class="btn btn-primary mr-2 mb-2" data-toggle="modal"
+                                data-target=".bd-example-modal-lg">Large modal
+                        </button>
+                        <button type="button" class="btn btn-primary mb-2" data-toggle="modal"
+                                data-target=".bd-example-modal-sm">Small modal
+                        </button>
+                    </div>
+
+                    <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h6 class="modal-title">Extra large modal</h6>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <i class="ti-close"></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+                                    </button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h6 class="modal-title">Large modal</h6>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <i class="ti-close"></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+                                    </button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h6 class="modal-title">Small modal</h6>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <i class="ti-close"></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+                                    </button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-label="CODE EXAMPLE" class="demo-code-preview">
+                        <pre><code class="language-html">&lt;!-- .modal-xl --&gt;
+&lt;div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"&gt;
+  &lt;div class="modal-dialog modal-xl"&gt;
+    &lt;div class="modal-content"&gt;
+      &lt;div class="modal-header"&gt;
+        &lt;h6 class="modal-title"&gt;Extra large modal&lt;/h6&gt;
+        &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;
+          &lt;i class="ti-close"&gt;&lt;/i&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-body"&gt;
+        ...
+      &lt;/div&gt;
+      &lt;div class="modal-footer"&gt;
+        &lt;button type="button" class="btn btn-secondary" data-dismiss="modal"&gt;Close
+        &lt;/button&gt;
+        &lt;button type="button" class="btn btn-primary"&gt;Save changes&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- .modal-lg --&gt;
+&lt;div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"&gt;
+  &lt;div class="modal-dialog modal-lg"&gt;
+    &lt;div class="modal-content"&gt;
+      &lt;div class="modal-header"&gt;
+        &lt;h6 class="modal-title"&gt;Large modal&lt;/h6&gt;
+        &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;
+          &lt;i class="ti-close"&gt;&lt;/i&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-body"&gt;
+        ...
+      &lt;/div&gt;
+      &lt;div class="modal-footer"&gt;
+        &lt;button type="button" class="btn btn-secondary" data-dismiss="modal"&gt;Close
+        &lt;/button&gt;
+        &lt;button type="button" class="btn btn-primary"&gt;Save changes&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- .modal-sm --&gt;
+&lt;div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true"&gt;
+  &lt;div class="modal-dialog modal-sm"&gt;
+    &lt;div class="modal-content"&gt;
+      &lt;div class="modal-header"&gt;
+        &lt;h6 class="modal-title"&gt;Small modal&lt;/h6&gt;
+        &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;
+          &lt;i class="ti-close"&gt;&lt;/i&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-body"&gt;
+        ...
+      &lt;/div&gt;
+      &lt;div class="modal-footer"&gt;
+        &lt;button type="button" class="btn btn-secondary" data-dismiss="modal"&gt;Close
+        &lt;/button&gt;
+        &lt;button type="button" class="btn btn-primary"&gt;Save changes&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h6 class="card-title">Varying modal content</h6>
+
+                    <div>
+                        <button type="button" class="btn btn-primary mr-2 mb-2" data-toggle="modal"
+                                data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo
+                        </button>
+                        <button type="button" class="btn btn-primary mr-2 mb-2" data-toggle="modal"
+                                data-target="#exampleModal" data-whatever="@fat">Open modal for @fat
+                        </button>
+                        <button type="button" class="btn btn-primary mb-2" data-toggle="modal"
+                                data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for
+                            @getbootstrap
+                        </button>
+                    </div>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <i class="ti-close"></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="message-text" class="col-form-label">Message:</label>
+                                            <textarea class="form-control" id="message-text"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+                                    </button>
+                                    <button type="button" class="btn btn-primary">Send message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-label="CODE EXAMPLE" class="demo-code-preview">
+                        <pre><code class="language-html">&lt;button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"&gt;
+  Open modal for @mdo
+&lt;/button&gt;
+
+&lt;button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat"&gt;
+  Open modal for @fat
+&lt;/button&gt;
+
+&lt;button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap"&gt;Open modal for
+  @getbootstrap
+&lt;/button&gt;
+
+&lt;!-- modal --&gt;
+&lt;div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true"&gt;
+  &lt;div class="modal-dialog" role="document"&gt;
+    &lt;div class="modal-content"&gt;
+      &lt;div class="modal-header"&gt;
+        &lt;h5 class="modal-title" id="exampleModalLabel"&gt;New message&lt;/h5&gt;
+        &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;
+          &lt;i class="ti-close"&gt;&lt;/i&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-body"&gt;
+        &lt;form&gt;
+          &lt;div class="form-group"&gt;
+            &lt;label for="recipient-name" class="col-form-label"&gt;Recipient:&lt;/label&gt;
+            &lt;input type="text" class="form-control" id="recipient-name"&gt;
+          &lt;/div&gt;
+          &lt;div class="form-group"&gt;
+              &lt;label for="message-text" class="col-form-label"&gt;Message:&lt;/label&gt;
+              &lt;textarea class="form-control" id="message-text"&gt;&lt;/textarea&gt;
+            &lt;/div&gt;
+         &lt;/form&gt;
+       &lt;/div&gt;
+       &lt;div class="modal-footer"&gt;
+          &lt;button type="button" class="btn btn-secondary" data-dismiss="modal"&gt;Close
+          &lt;/button&gt;
+          &lt;button type="button" class="btn btn-primary"&gt;Send message&lt;/button&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    <!-- end::main-content -->
+
+    <!-- begin::footer -->
+    <footer>
+        <div class="container">
+            <div>© 2019 Protable v1.0.0 Made by <a href="http://laborasyon.com">Laborasyon</a></div>
+            <div>
+                <nav class="nav">
+                    <a href="https://themeforest.net/licenses/standard" class="nav-link">Licenses</a>
+                    <a href="#" class="nav-link">Change Log</a>
+                    <a href="#" class="nav-link">Get Help</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <!-- end::footer -->
+
+</div>
+<!-- end::main -->
+
+<!-- Plugin scripts -->
+<script src="vendors/bundle.js"></script>
+
+<!-- Prism -->
+<script src="vendors/prism/prism.js"></script>
+
+<!-- App scripts -->
+<script src="assets/js/app.min.js"></script>
+</body>
+</html>

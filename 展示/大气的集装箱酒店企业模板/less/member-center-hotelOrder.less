@@ -1,0 +1,251 @@
+@import "dome.less";
+.search_parent{
+    background: #fafafa;
+}
+.message{
+    padding:100px 0 60px 0;
+    overflow: hidden;
+    position: relative;
+    .container{
+        background: #fff;
+        overflow:hidden;
+    }
+    .content{
+        width: 100%;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .left{
+        width: 28%;
+        max-width: 250px;
+        float: left;
+        background: #f3f3f3;
+        height:100%;
+        animation:left 1s linear 0s both;
+        dl{
+            width: 100%;
+            overflow: hidden;
+            padding-bottom: 60px;
+        }
+        .on{
+            dt{
+                background: @color;
+                color:#fff;
+            }
+            .in{
+                color:@color;
+            }
+        }
+        dt{
+            width: 100%;
+            height: 66px;
+            line-height: 66px;
+            background: #e4e4e4;
+            text-align: right;  
+            font-size: 18px;
+            margin-bottom: 8px;
+            p{
+                width: 80%;
+            }      
+        }
+        dd{
+            width: 100%;
+            font-size: 14px;
+            color:#545454;
+            line-height: 35px;
+            text-align: right;
+            .guodu(.6s);
+            p{
+                width: 80%;
+            }
+        }
+        dd:hover{
+            color:@color;
+        }
+    }
+    .right{
+        width: 73%;
+        float: right;
+        animation:right 1s linear 0s both;
+        .info{
+            padding-left: 8%;
+            padding-top: 70px;
+            padding-right: 2%;
+            h5{
+                font-size: 30px;
+                color:@c4;
+                font-family: 'acanthusregular';
+            }
+            .top{
+                padding-top: 30px;
+                width: 100%;
+                overflow: hidden;
+                .child{
+                    padding-bottom: 20px;
+                    float: left;
+                    margin-right: 60px;
+                    font-size: 14px;
+                    color:@c6;
+                    span{
+                        color:@color;
+                    }
+                }
+                .on{
+                    border-bottom: 2px solid @color;
+                    color:@color;
+                }
+            }
+            ul{
+                padding: 30px 0;
+                overflow: hidden;
+                width: 100%;
+
+                li{
+                    padding:36px 0;
+                    overflow: hidden;
+                    .bdb();
+                    width: 100%;
+                    .title01{
+                        width: 100%;
+                        font-size: 14px;
+                        color:@c4;
+                        span{
+                            padding-right: 20px;
+                        }
+                    }
+                    .content{
+                        padding-top: 34px;
+                        overflow: hidden;
+                        width: 100%;
+                        .imgs,.money,.number,.payment,.state{
+                            width: 20%;
+                            float: left;
+                            text-align: center;
+
+                        }
+                        .state{
+                            height: 110px;
+                            line-height: 110px;
+                            p{
+                                color:@color;
+                                font-size: 14px;
+                            }
+                        }
+                        .imgs{
+                            text-align: left;
+                            height: 110px;
+                            line-height: 110px;
+                            img{
+                                max-width: 80%;
+                                max-height: 80%;
+                            }
+                        }
+                        .money{
+                            text-align: left;
+                            p{
+                                padding-top: 26px;
+                                font-size: 16px;
+                                color:@c4;
+                                padding-bottom: 10px;
+                            }
+                            span{
+                                
+                                font-size: 12px;
+                                color:@c8;
+                                line-height: 20px;
+                                display: block;
+                            }
+                        }
+                        .number{
+                            height: 110px;
+                            line-height: 110px;
+                            font-size: 20px;
+                            color:@color;
+                        }
+                        .payment{
+
+                            .yes{
+                                margin-top: 18px;
+                                width: 116px;
+                                height: 35px;
+                                background: @color;
+                                text-align: center;
+                                line-height: 35px;
+                                cursor: pointer;
+                                font-size: 14px;
+                                color:#fff;
+                                .rad(3px);
+                                display: block;
+                            }
+                            .queren{
+                                background: #d8d8d8;
+                                color:@c6;
+                            }
+                            .quxiao{
+                                width: 116px;
+                                text-align: center;
+                                color:#666;
+                                display: block;
+                                padding-top: 10px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+            .page{
+                width: 100%;
+                padding-bottom: 80px;
+                overflow: hidden;
+                text-align: right;
+                a{
+                    font-size: 14px;
+                    color:#868686;
+                    display: inline-block;
+                    *zoom:1;
+                    *display:inline;
+                    padding:0 4px;
+                }
+                .page-c:hover,.on{
+                    color:@color;
+                }
+            }
+        }
+    }
+}
+@media (max-width:639px) {
+h2 {padding-bottom: 20px;}
+.message{padding:40px 0 30px 0;}
+.message .left{width:100%;max-width:100%;height:auto!important;}
+.message .left dt{font-size: 16px;text-align: left;width:auto;padding-left: 10%;}
+.message .left dd{text-align: left;width:auto;padding-left: 10%;}
+.message .right{width: 100%;}
+.message .right .info{width: 90%;padding-left: 0;padding-right: 0;margin:0 auto;padding-top: 40px;}
+.message .right .info .top .child{margin-right: 20px;height: 36px;padding-bottom: 0;line-height: 36px;margin-bottom: 10px;}
+.message .right .info .top .on{height: 34px;}
+.message .right .info ul{padding:20px 0;}
+.message .right .info ul li{padding:16px 0;}
+.message .right .info ul li .content .imgs, .message .right .info ul li .content .money, .message .right .info ul li .content .number, .message .right .info ul li .content .payment, .message .right .info ul li .content .state{width: 50%;height: 110px;}
+.message .right .info ul li .title01 span{display: block;line-height: 26px;}
+
+
+
+
+
+}
+@media (min-width:640px) and (max-width:1023px) {
+.message{padding:60px 0;}
+.message .left{width: 24%;}
+.message .left dt{font-size: 16px;}
+.message .right{width: 76%;}
+.message .right .info{padding-left: 6%;padding-right: 1%;}
+.message .right .info ul li .content .money p{font-size: 12px;}
+.message .right .info ul li .content .payment .yes,.message .right .info ul li .content .payment .quxiao{width: 80px;font-size: 12px;}
+.message .right .info ul li .title01{font-size: 12px;}
+.message .right .info ul li .content .imgs img{max-width: 80%;max-height: 80%;}
+.message .right .info .top .child{margin-right: 20px;}
+.message .right .info ul li{padding:20px 0;}
+.message .right .info ul li .content{padding-top: 20px;}
+}
+@media (min-width:1024px) and (max-width:1335px) {
+}

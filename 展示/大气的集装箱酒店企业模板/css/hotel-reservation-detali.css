@@ -1,0 +1,577 @@
+.dib {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+}
+@keyframes left {
+  0% {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+@-webkit-keyframes left {
+  0% {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+@-moz-keyframes left {
+  0% {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+@-ms-keyframes left {
+  0% {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+@-o-keyframes left {
+  0% {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+@keyframes right {
+  0% {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+@-webkit-keyframes right {
+  0% {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+@-moz-keyframes right {
+  0% {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+@-ms-keyframes right {
+  0% {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+@-o-keyframes right {
+  0% {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+.banner02 {
+  width: 100%;
+  height: 450px;
+  transition-duration: 0.6s;
+  -webkit-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  -ms-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  background: no-repeat center 126px fixed;
+  position: relative;
+}
+.reservation {
+  overflow: hidden;
+  padding-top: 60px;
+  padding-bottom: 90px;
+}
+.reservation .banner {
+  width: 770px;
+  float: left;
+  height: auto;
+  position: relative;
+}
+.reservation .info {
+  width: 420px;
+  float: left;
+  height: 500px;
+  background: #fff;
+}
+.reservation .info .txt {
+  padding-top: 30px;
+  width: 90%;
+  margin: 0 auto;
+}
+.reservation .info .txt h6 {
+  font-size: 26px;
+  color: #1e1e1e;
+  padding-bottom: 20px;
+}
+.reservation .info .txt p {
+  font-size: 14px;
+  color: #999;
+  padding-bottom: 26px;
+}
+.reservation .info .txt p span {
+  padding-right: 10px;
+}
+.reservation .info .txt p em {
+  color: #1e1e1e;
+}
+.reservation .info .txt p em i {
+  font-size: 36px;
+  color: #ea5706;
+  font-weight: bold;
+}
+.reservation .info .txt .child,
+.reservation .info .txt .kefang {
+  width: 100%;
+  height: 38px;
+  border: 1px solid #c4c4c4;
+  line-height: 38px;
+  margin-bottom: 16px;
+}
+.reservation .info .txt .child input,
+.reservation .info .txt .kefang input {
+  width: 95%;
+  padding-left: 2%;
+  height: 38px;
+  color: #999;
+  cursor: pointer;
+  background: url(../images/index/time-icon.png) no-repeat right center;
+}
+.reservation .info .txt dl {
+  font-size: 14px;
+  color: #999;
+}
+.reservation .info .txt dt {
+  padding-left: 2%;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+}
+.reservation .info .txt dt span {
+  border-width: 10px;
+  border-color: #7d7d7d transparent transparent transparent;
+  border-style: solid dashed dashed dashed;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -5px;
+}
+.reservation .info .txt .show {
+  width: 100%;
+  background: #fff;
+  position: relative;
+  z-index: 2;
+  display: none;
+}
+.reservation .info .txt dd {
+  padding-left: 2%;
+  cursor: pointer;
+}
+.reservation .info .txt .show dd:hover {
+  background: #ea5706;
+  color: #fff;
+}
+.reservation .info .txt .button {
+  width: 99%;
+  height: 45px;
+  background: #ea5706;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #fff;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.head {
+  width: 770px;
+  float: left;
+  height: auto;
+  overflow: hidden;
+  background: #fafafa;
+}
+/*BANNER BEGIN*/
+.head .box {
+  width: 100%;
+  height: 580px;
+  position: relative;
+  float: left;
+}
+.head .box_big {
+  height: 500px;
+  width: 100%;
+  line-height: 360px;
+  text-align: center;
+  position: relative;
+}
+.head .box_big li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+  overflow: hidden;
+}
+.head .box_big li .imgs {
+  max-width: 100%;
+  max-height: 100%;
+}
+.head .box_big li .boxG img {
+  width: auto;
+  height: auto;
+}
+.head .box_litle {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.head .box_litle li {
+  width: 108px;
+  height: 70px;
+  float: left;
+  line-height: 50px;
+  text-align: center;
+  margin-right: 4px;
+}
+.head .box_litle li img {
+  max-width: 108px;
+  max-height: 70px;
+  opacity: .5;
+}
+.head .box_litle li.on img {
+  opacity: 1;
+}
+.head .box_litle ul {
+  width: 10000%;
+  overflow: hidden;
+  position: relative;
+  left: 0;
+}
+/*切换*/
+.head .anniu {
+  width: 28px;
+  height: 51px;
+  line-height: 51px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  z-index: 999;
+  cursor: pointer;
+  display: none;
+}
+.head .prev {
+  left: 10px;
+}
+.head .next {
+  right: 10px;
+}
+.introduce {
+  overflow: hidden;
+  padding-bottom: 150px;
+}
+.introduce .container {
+  background: #ffffff url(../images/index/i.png) no-repeat -10% top;
+}
+.introduce .imgs {
+  position: relative;
+  height: 350px;
+}
+.introduce .imgs img {
+  max-width: 90%;
+  position: absolute;
+  bottom: -80px;
+  right: 0;
+}
+.introduce .infos {
+  width: 80%;
+  max-width: 810px;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+.introduce .infos h5 {
+  font-size: 60px;
+  color: #1e1e1e;
+  font-family: 'acanthusregular';
+  padding-bottom: 20px;
+}
+.introduce .infos p {
+  font-size: 14px;
+  color: #333;
+  line-height: 26px;
+}
+.introduce .infos p a {
+  color: #333;
+}
+.introduce .infos p .area {
+  color: #ea5706;
+}
+.introduce .infos p img {
+  max-width: 100%;
+}
+@media (max-width: 639px) {
+  h2 {
+    font-size: 34px;
+    padding-bottom: 20px;
+  }
+  .banner02 {
+    height: 220px;
+    background: no-repeat center 10px fixed;
+  }
+  .introduce .infos {
+    width: 92%;
+  }
+  .introduce .infos {
+    width: 86%;
+  }
+  .head {
+    width: 100%;
+    max-width: 770px;
+    float: none;
+    margin: 0 auto;
+  }
+  .reservation .info {
+    width: 100%;
+    max-width: 770px;
+    float: none;
+    margin: 0 auto;
+    height: auto;
+    padding-bottom: 30px;
+    overflow: hidden;
+  }
+  .reservation .info .txt {
+    width: 96%;
+    overflow: hidden;
+  }
+  .reservation .info .txt .child,
+  .reservation .info .txt .kefang {
+    width: 99%;
+  }
+  .reservation .info .txt .button {
+    margin-bottom: 16px;
+    margin-top: 0;
+    height: 38px;
+    line-height: 38px;
+    font-size: 16px;
+  }
+  .head .box_litle li {
+    height: 0;
+  }
+  .head .box_big,
+  .head .box {
+    height: 360px;
+  }
+  .head .anniu img {
+    max-width: 70%;
+  }
+  .reservation .info .txt h6 {
+    font-size: 18px;
+  }
+  .introduce .imgs {
+    height: 150px;
+  }
+  .introduce .imgs img {
+    bottom: -40px;
+  }
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+  .banner02 {
+    height: 320px;
+    background: no-repeat center 40px fixed;
+  }
+  .introduce .infos {
+    width: 86%;
+  }
+  .head {
+    width: 100%;
+    max-width: 770px;
+    float: none;
+    margin: 0 auto;
+  }
+  .reservation .info {
+    width: 100%;
+    max-width: 770px;
+    float: none;
+    margin: 0 auto;
+    height: auto;
+    padding-bottom: 30px;
+    overflow: hidden;
+  }
+  .reservation .info .txt {
+    width: 96%;
+    overflow: hidden;
+  }
+  .reservation .info .txt .child,
+  .reservation .info .txt .kefang {
+    width: 25%;
+    float: left;
+    margin-right: 2px;
+  }
+  .reservation .info .txt .button {
+    width: 22%;
+    float: left;
+    margin-bottom: 16px;
+    margin-top: 0;
+    height: 38px;
+    line-height: 38px;
+    font-size: 16px;
+  }
+  .introduce .imgs {
+    height: 260px;
+  }
+  .introduce .imgs img {
+    bottom: -40px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1335px) {
+  .banner02 {
+    height: 400px;
+    background: no-repeat center 110px fixed;
+  }
+  .head {
+    width: 64%;
+    max-width: 660px;
+  }
+  .reservation .info {
+    width: 36%;
+  }
+  .head .box_big {
+    height: 400px;
+  }
+  .head .box_big li .imgs {
+    max-height: 400px;
+  }
+  .reservation .info .txt h6 {
+    font-size: 22px;
+  }
+  .head .prev {
+    left: 6%;
+  }
+  .head .next {
+    right: 6%;
+  }
+}
+@media (min-width: 640px) and (max-width: 800px) {
+  .head .box {
+    height: 460px;
+  }
+  .head {
+    max-width: 583px;
+  }
+  .reservation .info {
+    max-width: 583px;
+    float: none;
+    margin: 0 auto;
+  }
+  .head .box_big {
+    height: 380px;
+  }
+  .head .box_big li .imgs {
+    max-height: 380px;
+  }
+}

@@ -1,0 +1,1 @@
+// Pure CSS minimal switch

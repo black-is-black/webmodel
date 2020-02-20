@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Limelight|Mada');
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #1a121f;
+}
+
+.container {
+  width: 750px;
+  text-align: center;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  font-family: 'Mada', sans-serif;
+}
+
+.intro {
+  margin: 5% auto;
+  color: #9e8686;
+  letter-spacing: 1px;
+  word-spacing: 12px;
+}
+
+.intro span {
+  font-size: 40px;
+  font-family: 'Limelight', cursive;
+}
+.countdown-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin: 5% auto;
+  color: #7e8c6a;
+}
+
+label,
+output,
+.time-el span {
+  display: block;
+}
+.time-el {
+  position: relative;
+  margin-right: 20px;
+}
+
+.time-el:not(:last-child):after {
+  content: ":";
+  position: absolute;
+  right: -36px;
+  top: 28%;
+  font-size: 30px;
+}
+.time-el .digit{
+  position: relative;
+  width: 70px;
+  height: 90px;
+  display: inline-block;
+  font-size: 70px;
+  line-height: 90px;
+  font-family: 'Limelight', cursive;
+  perspective: 120px;
+}
+
+.inner {
+  height: 200%;
+  width: 100%;
+  position: absolute;
+}
+
+.top .inner {
+  top: 0;
+}
+
+.bottom .inner {
+  bottom: 0;
+}
+.time-el .top, .time-el .bottom {
+  position: absolute;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+/*   background: linear-gradient(to bottom, #543243 10%, #461f32 50%, #543243 90%); */
+}
+
+.time-el .top {
+  top: 0;
+  transform-origin: 50% 100%;
+  color: #738263;
+  background: linear-gradient(300deg, #331926 50%, #542e40);
+  border-radius: 6px 6px 0 0;
+  z-index: 1;
+  backface-visibility: hidden;
+}
+
+.time-el .bottom {
+  bottom: 0;
+  transform-origin: 50% 0%;
+  background:  linear-gradient(340deg, #542e40, #331926 40%);
+  border-radius: 0 0 6px 6px;
+}
+
+
+
+.time-el label{
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #9e8686;
+}

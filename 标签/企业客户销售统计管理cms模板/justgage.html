@@ -1,0 +1,824 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Protable - Admin Dashboard Template</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/media/image/favicon.png"/>
+
+    <!-- Plugin styles -->
+    <link rel="stylesheet" href="vendors/bundle.css" type="text/css">
+
+    <!-- Prism -->
+    <link rel="stylesheet" href="vendors/prism/prism.css" type="text/css">
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="assets/css/app.min.css" type="text/css">
+</head>
+<body>
+
+<!-- begin::preloader-->
+<div class="preloader">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="50px" height="50px" viewBox="0 0 128 128"
+         xml:space="preserve">
+        <rect x="0" y="0" width="100%" height="100%" fill="#FFFFFF"/>
+        <g>
+            <path d="M75.4 126.63a11.43 11.43 0 0 1-2.1-22.65 40.9 40.9 0 0 0 30.5-30.6 11.4 11.4 0 1 1 22.27 4.87h.02a63.77 63.77 0 0 1-47.8 48.05v-.02a11.38 11.38 0 0 1-2.93.37z"
+                  fill="#000000" fill-opacity="1"/>
+            <animateTransform attributeName="transform" type="rotate" from="0 64 64" to="360 64 64"
+                              dur="500ms" repeatCount="indefinite">
+            </animateTransform>
+        </g>
+    </svg>
+</div>
+<!-- end::preloader -->
+
+<!-- begin::navigation -->
+<div class="navigation">
+
+    <!-- begin::logo -->
+    <div id="logo">
+        <a href="index.html">
+            <img class="logo" src="assets/media/image/logo.png" alt="logo">
+            <img class="logo-sm" src="assets/media/image/logo-sm.png" alt="small logo">
+            <img class="logo-dark" src="assets/media/image/logo-dark.png" alt="dark logo">
+        </a>
+    </div>
+    <!-- end::logo -->
+
+    <!-- begin::navigation header -->
+    <header class="navigation-header">
+        <figure class="avatar avatar-state-success">
+            <img src="assets/media/image/user/man_avatar3.jpg" class="rounded-circle" alt="image">
+        </figure>
+        <div>
+            <h5>Nikos Pedlow</h5>
+            <p class="text-muted">Administrator</p>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="profile.html" class="btn nav-link bg-info-bright" title="Profile" data-toggle="tooltip">
+                        <i data-feather="user"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="btn nav-link bg-success-bright" title="Settings" data-toggle="tooltip">
+                        <i data-feather="settings"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="btn nav-link bg-danger-bright" title="Logout" data-toggle="tooltip">
+                        <i data-feather="log-out"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- end::navigation header -->
+
+    <!-- begin::navigation menu -->
+    <div class="navigation-menu-body">
+        <ul>
+            <li class="navigation-divider">Main</li>
+            <li>
+                <a href="index.html">
+                    <i class="nav-link-icon" data-feather="bar-chart-2"></i>
+                    <span>Dashboard</span>
+                </a>
+                <ul>
+                    <li><a href="index.html">Dashboard 1</a></li>
+                    <li><a href="dashboard-two.html">Dashboard 2</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="chat.html">
+                    <i class="nav-link-icon" data-feather="message-circle"></i>
+                    <span>Chat</span>
+                    <span class="badge badge-danger">2</span>
+                </a>
+            </li>
+            <li>
+                <a href="inbox.html">
+                    <i class="nav-link-icon" data-feather="mail"></i>
+                    <span>Mail</span>
+                    <span class="badge badge-success">2</span>
+                </a>
+            </li>
+            <li>
+                <a href="app-todo.html">
+                    <i class="nav-link-icon" data-feather="check-circle"></i>
+                    <span>Todo</span>
+                    <span class="badge badge-warning">2</span>
+                </a>
+            </li>
+            <li>
+                <a href="file-manager.html">
+                    <i class="nav-link-icon" data-feather="file"></i>
+                    <span>File Manager</span>
+                </a>
+            </li>
+            <li>
+                <a href="calendar.html">
+                    <i class="nav-link-icon" data-feather="calendar"></i>
+                    <span>Calendar</span>
+                </a>
+            </li>
+            <li class="navigation-divider">UI Elements</li>
+            <li>
+                <a href="#">
+                    <i class="nav-link-icon" data-feather="monitor"></i>
+                    <span>Components</span>
+                </a>
+                <ul>
+                    <li>
+                        <a href="#">Basic</a>
+                        <ul>
+                            <li><a href="alerts.html">Alert</a></li>
+                            <li><a href="accordion.html">Accordion</a></li>
+                            <li><a href="buttons.html">Buttons</a></li>
+                            <li><a href="dropdown.html">Dropdown</a></li>
+                            <li><a href="list-group.html">List Group</a></li>
+                            <li><a href="pagination.html">Pagination</a></li>
+                            <li><a href="typography.html">Typography</a></li>
+                            <li><a href="media-object.html">Media Object</a></li>
+                            <li><a href="progress.html">Progress</a></li>
+                            <li><a href="modal.html">Modal</a></li>
+                            <li><a href="spinners.html">Spinners</a></li>
+                            <li><a href="navs.html">Navs</a></li>
+                            <li><a href="tab.html">Tab</a></li>
+                            <li><a href="tooltip.html">Tooltip</a></li>
+                            <li><a href="popovers.html">Popovers</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Cards</a>
+                        <ul>
+                            <li><a href="basic-cards.html">Basic Cards </a></li>
+                            <li><a href="image-cards.html">Image Cards </a></li>
+                            <li><a href="card-scroll.html">Card Scroll </a></li>
+                            <li><a href="other-cards.html">Others </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="avatar.html">Avatar</a></li>
+                    <li><a href="icons.html">Icons</a></li>
+                    <li><a href="colors.html">Colors</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="nav-link-icon" data-feather="globe"></i>
+                    <span>Plugins</span>
+                </a>
+                <ul>
+                    <li><a href="sweet-alert.html">Sweet Alert</a></li>
+                    <li><a href="lightbox.html">Lightbox</a></li>
+                    <li><a href="toast.html">Toast</a></li>
+                    <li><a href="tour.html">Tour</a></li>
+                    <li><a href="slick-slide.html">Slick Slide</a></li>
+                    <li><a href="nestable.html">Nestable</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="nav-link-icon" data-feather="mouse-pointer"></i>
+                    <span>Forms</span>
+                </a>
+                <ul>
+                    <li><a href="basic-form.html">Form Layouts</a></li>
+                    <li><a href="custom-form.html">Custom Forms</a></li>
+                    <li><a href="advanced-form.html">Advanced Form</a></li>
+                    <li><a href="form-validation.html">Validation</a></li>
+                    <li><a href="form-wizard.html">Wizard</a></li>
+                    <li><a href="file-upload.html">File Upload</a></li>
+                    <li><a href="datepicker.html">Datepicker</a></li>
+                    <li><a href="timepicker.html">Timepicker</a></li>
+                    <li><a href="colorpicker.html">Colorpicker</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="nav-link-icon" data-feather="grid"></i>
+                    <span>Tables</span>
+                </a>
+                <ul>
+                    <li><a href="tables.html">Basic Tables</a></li>
+                    <li><a href="data-table.html">Datatable</a></li>
+                    <li><a href="responsive-table.html">Responsive Tables</a></li>
+                </ul>
+            </li>
+            <li class="open">
+                <a href="#">
+                    <i class="nav-link-icon" data-feather="pie-chart"></i>
+                    <span>Charts</span>
+                </a>
+                <ul>
+                    <li><a href="apexchart.html">Apex</a></li>
+                    <li><a href="chartjs.html">Chartjs</a></li>
+                    <li><a class="active" href="justgage.html">Justgage</a></li>
+                    <li><a href="morsis.html">Morsis</a></li>
+                    <li><a href="peity.html">Peity</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="nav-link-icon" data-feather="map-pin"></i>
+                    <span>Maps</span>
+                </a>
+                <ul>
+                    <li><a href="google-map.html">Google</a></li>
+                    <li><a href="vector-map.html">Vector</a></li>
+                </ul>
+            </li>
+            <li class="navigation-divider">Extras</li>
+            <li>
+                <a href="#">
+                    <i class="nav-link-icon" data-feather="user"></i>
+                    <span>Authentication</span>
+                </a>
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="recover-password.html">Recovery Password</a></li>
+                    <li><a href="lock-screen.html">Lock Screen</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="nav-link-icon" data-feather="copy"></i>
+                    <span>Pages</span>
+                </a>
+                <ul>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="timeline.html">Timeline</a></li>
+                    <li><a href="invoice.html">Invoice</a></li>
+
+                    <li><a href="pricing-table.html">Pricing Table</a></li>
+                    <li><a href="search-result.html">Search Result</a></li>
+                    <li>
+                        <a href="#">Error Pages</a>
+                        <ul>
+                            <li><a href="404.html">404</a></li>
+                            <li><a href="404-2.html">404 V2</a></li>
+                            <li><a href="503.html">503</a></li>
+                            <li><a href="mean-at-work.html">Mean at Work</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="blank-page.html">Starter Page</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="nav-link-icon" data-feather="send"></i>
+                    <span>Email Templates</span>
+                </a>
+                <ul>
+                    <li><a href="email-template-basic.html">Basic</a></li>
+                    <li><a href="email-template-alert.html">Alert</a></li>
+                    <li><a href="email-template-billing.html">Billing</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="nav-link-icon" data-feather="menu"></i>
+                    <span>Menu Level</span>
+                </a>
+                <ul>
+                    <li>
+                        <a href="#">Menu Level</a>
+                        <ul>
+                            <li>
+                                <a href="#">Menu Level </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- end::navigation menu -->
+
+</div>
+<!-- end::navigation -->
+
+<!-- begin::main -->
+<div id="main">
+
+    <!-- begin::header -->
+    <div class="header">
+
+        <!-- begin::header left -->
+        <ul class="navbar-nav">
+
+            <!-- begin::navigation-toggler -->
+            <li class="nav-item navigation-toggler">
+                <a href="#" class="nav-link">
+                    <i data-feather="menu"></i>
+                </a>
+            </li>
+            <!-- end::navigation-toggler -->
+
+            <!-- begin::header-logo -->
+            <li class="nav-item" id="header-logo">
+                <a href="index.html">
+                    <img class="logo" src="assets/media/image/logo.png" alt="logo">
+                    <img class="logo-sm" src="assets/media/image/logo-sm.png" alt="small logo">
+                    <img class="logo-dark" src="assets/media/image/logo-dark.png" alt="dark logo">
+                </a>
+            </li>
+            <!-- end::header-logo -->
+        </ul>
+        <!-- end::header left -->
+
+        <!-- begin::header-right -->
+        <div class="header-right">
+            <ul class="navbar-nav">
+
+                <!-- begin::search-form -->
+                <li class="nav-item search-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-default" type="button">
+                                            <i data-feather="search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+                <!-- end::search-form -->
+
+                <!-- begin::header minimize/maximize -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link" title="Fullscreen" data-toggle="fullscreen">
+                        <i class="maximize" data-feather="maximize"></i>
+                        <i class="minimize" data-feather="minimize"></i>
+                    </a>
+                </li>
+                <!-- end::header minimize/maximize -->
+
+                <!-- begin::header app list -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link" title="Apps" data-toggle="dropdown">
+                        <i data-feather="grid"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-big">
+                        <div class="p-3">
+                            <h6 class="text-uppercase font-size-11 mb-3">Web Apps</h6>
+                            <div class="row row-xs">
+                                <div class="col-6">
+                                    <a href="chat.html">
+                                        <div class="text-uppercase font-size-11 p-3 border-radius-1 border text-center mb-3">
+                                            <i class="text-success width-23 height-23"
+                                               data-feather="message-circle"></i>
+                                            <div class="mt-2">Chat</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="inbox.html">
+                                        <div class="text-uppercase font-size-11 p-3 border-radius-1 border text-center mb-3">
+                                            <i class="text-info width-23 height-23" data-feather="mail"></i>
+                                            <div class="mt-2">Mail</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="calendar.html">
+                                        <div class="text-uppercase font-size-11 p-3 border-radius-1 border text-center">
+                                            <i class="text-warning width-23 height-23" data-feather="calendar"></i>
+                                            <div class="mt-2">Calendar</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="file-manager.html">
+                                        <div class="text-uppercase font-size-11 p-3 border-radius-1 border text-center">
+                                            <i class="text-danger width-23 height-23" data-feather="file"></i>
+                                            <div class="mt-2">File Manager</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- end::header app list -->
+
+                <!-- begin::header messages dropdown -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link nav-link-notify" title="Messages" data-toggle="dropdown">
+                        <i data-feather="message-circle"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-big">
+                        <div class="p-4 text-center" data-backround-image="assets/media/image/image1.png">
+                            <h6 class="mb-1">Messages</h6>
+                            <small class="font-size-11 opacity-7">2 unread messages</small>
+                        </div>
+                        <div>
+                            <ul class="list-group list-group-flush">
+                                <li>
+                                    <a href="#" class="list-group-item d-flex hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <img src="assets/media/image/user/man_avatar1.jpg"
+                                                     class="rounded-circle" alt="user">
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                Herbie Pallatina
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-circle-o font-size-11"></i>
+                                            </p>
+                                            <div class="small text-muted">
+                                                <span class="mr-2">02:30 PM</span>
+                                                <span>Have you madimage</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                       class="list-group-item d-flex align-items-center hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <img src="assets/media/image/user/women_avatar5.jpg"
+                                                     class="rounded-circle" alt="user">
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                Andrei Miners
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-circle-o font-size-11"></i>
+                                            </p>
+                                            <div class="small text-muted">
+                                                <span class="mr-2">08:36 PM</span>
+                                                <span>I have a meetinimage</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="text-divider small pb-2 pl-3 pt-3">
+                                    <span>Old chats</span>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                       class="list-group-item d-flex align-items-center hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <img src="assets/media/image/user/man_avatar3.jpg"
+                                                     class="rounded-circle" alt="user">
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                Kevin added
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                            </p>
+                                            <div class="small text-muted">
+                                                <span class="mr-2">11:09 PM</span>
+                                                <span>Have you madimage</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="list-group-item d-flex hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <img src="assets/media/image/user/man_avatar2.jpg"
+                                                     class="rounded-circle" alt="user">
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                Eugenio Carnelley
+                                                <i title="Mark as read" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                            </p>
+                                            <div class="small text-muted">
+                                                <span class="mr-2">Yesterday</span>
+                                                <span>I have a meetinimage</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                       class="list-group-item d-flex align-items-center hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <img src="assets/media/image/user/women_avatar1.jpg"
+                                                     class="rounded-circle" alt="user">
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                Neely Ferdinand
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                            </p>
+                                            <div class="small text-muted">
+                                                <span class="mr-2">Yesterday</span>
+                                                <span>I have a meetinimage</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-2 text-right">
+                            <ul class="list-inline small">
+                                <li class="list-inline-item">
+                                    <a href="#">Mark All Read</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <!-- end::header messages dropdown -->
+
+                <!-- begin::header notification dropdown -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link nav-link-notify" title="Notifications" data-toggle="dropdown">
+                        <i data-feather="bell"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-big">
+                        <div class="p-4 text-center" data-backround-image="assets/media/image/image1.png">
+                            <h6 class="mb-1">Notifications</h6>
+                            <small class="font-size-11 opacity-7">1 unread notifications</small>
+                        </div>
+                        <div>
+                            <ul class="list-group list-group-flush">
+                                <li>
+                                    <a href="#" class="list-group-item d-flex hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <span class="avatar-title bg-success-bright text-success rounded-circle">
+                                                    <i class="ti-user"></i>
+                                                </span>
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                New customer registered
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-circle-o font-size-11"></i>
+                                            </p>
+                                            <span class="text-muted small">20 min ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="text-divider small pb-2 pl-3 pt-3">
+                                    <span>Old notifications</span>
+                                </li>
+                                <li>
+                                    <a href="#" class="list-group-item d-flex hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <span class="avatar-title bg-warning-bright text-warning rounded-circle">
+                                                    <i class="ti-package"></i>
+                                                </span>
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                New Order Recieved
+                                                <i title="Mark as read" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                            </p>
+                                            <span class="text-muted small">45 sec ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                       class="list-group-item d-flex align-items-center hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <span class="avatar-title bg-danger-bright text-danger rounded-circle">
+                                                    <i class="ti-server"></i>
+                                                </span>
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                Server Limit Reached!
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                            </p>
+                                            <span class="text-muted small">55 sec ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                       class="list-group-item d-flex align-items-center hide-show-toggler">
+                                        <div>
+                                            <figure class="avatar avatar-sm m-r-15">
+                                                <span class="avatar-title bg-info-bright text-info rounded-circle">
+                                                    <i class="ti-layers"></i>
+                                                </span>
+                                            </figure>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="mb-0 line-height-20 d-flex justify-content-between">
+                                                Apps are ready for update
+                                                <i title="Make unread" data-toggle="tooltip"
+                                                   class="hide-show-toggler-item fa fa-check font-size-11"></i>
+                                            </p>
+                                            <span class="text-muted small">Yesterday</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-2 text-right">
+                            <ul class="list-inline small">
+                                <li class="list-inline-item">
+                                    <a href="#">Mark All Read</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <!-- end::header notification dropdown -->
+            </ul>
+
+            <!-- begin::mobile header toggler -->
+            <ul class="navbar-nav d-flex align-items-center">
+                <li class="nav-item header-toggler">
+                    <a href="#" class="nav-link">
+                        <i data-feather="arrow-down"></i>
+                    </a>
+                </li>
+            </ul>
+            <!-- end::mobile header toggler -->
+        </div>
+        <!-- end::header-right -->
+    </div>
+    <!-- end::header -->
+
+    <!-- begin::main-content -->
+    <main class="main-content">
+
+        <div class="container">
+
+            <!-- begin::page-header -->
+            <div class="page-header">
+                <h4>Justgage</h4>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#">Charts</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">Justgage</li>
+                    </ol>
+                </nav>
+            </div>
+            <!-- end::page-header -->
+
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="lead">
+                                JustGage is a handy JavaScript plugin for generating and animating nice & clean gauges. <a href="https://justgage.com/" class="link-1" target="_blank">Plugin page</a>.
+                            </p>
+                            <div data-label="INCLUDED FILES" class="demo-code-preview">
+                                <pre><code class="language-html">&lt;script src="vendors/charts/justgage/raphael-2.1.4.min.js"&gt;&lt;/script&gt;
+&lt;script src="vendors/charts/justgage/justgage.js"&gt;&lt;/script&gt;</code></pre>
+                            </div>
+                            <p>We prepared demo samples. You don't have to use them. You can create your own demos.</p>
+                            <div data-label="INCLUDED FILES" class="demo-code-preview">
+                                <pre><code class="language-html">&lt;script src="assets/js/examples/charts/justgage.js"&gt;&lt;/script&gt;</code></pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row text-center">
+                                <div class="col-md-4 col-sm-12">
+                                    <div id="justgage_one" style="height:150px"></div>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <div id="justgage_two" style="height:150px"></div>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <div id="justgage_three" style="height:150px"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12">
+                                    <div id="justgage_four" style="height:150px"></div>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <div id="justgage_five" style="height:150px"></div>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <div id="justgage_six" style="height:150px"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div id="justgage_seven" style="height:300px"></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div id="justgage_eight" style="height:300px"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div id="justgage_nine" style="height:300px"></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div id="justgage_ten" style="height:300px"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    <!-- end::main-content -->
+
+    <!-- begin::footer -->
+    <footer>
+        <div class="container">
+            <div>© 2019 Protable v1.0.0 Made by <a href="http://laborasyon.com">Laborasyon</a></div>
+            <div>
+                <nav class="nav">
+                    <a href="https://themeforest.net/licenses/standard" class="nav-link">Licenses</a>
+                    <a href="#" class="nav-link">Change Log</a>
+                    <a href="#" class="nav-link">Get Help</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <!-- end::footer -->
+
+</div>
+<!-- end::main -->
+
+<!-- Plugin scripts -->
+<script src="vendors/bundle.js"></script>
+
+<!-- Justgage -->
+<script src="vendors/charts/justgage/raphael-2.1.4.min.js"></script>
+<script src="vendors/charts/justgage/justgage.js"></script>
+<script src="assets/js/examples/charts/justgage.js"></script>
+<div class="colors"> <!-- To use theme colors with Javascript -->
+    <div class="bg-primary"></div>
+    <div class="bg-primary-bright"></div>
+    <div class="bg-secondary"></div>
+    <div class="bg-secondary-bright"></div>
+    <div class="bg-info"></div>
+    <div class="bg-info-bright"></div>
+    <div class="bg-success"></div>
+    <div class="bg-success-bright"></div>
+    <div class="bg-danger"></div>
+    <div class="bg-danger-bright"></div>
+    <div class="bg-warning"></div>
+    <div class="bg-warning-bright"></div>
+</div>
+
+<!-- Prism -->
+<script src="vendors/prism/prism.js"></script>
+
+<!-- App scripts -->
+<script src="assets/js/app.min.js"></script>
+</body>
+</html>

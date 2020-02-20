@@ -1,0 +1,54 @@
+*{margin:0;padding:0;}
+#container {}
+#footer {position: relative; height: 70px;clear:both;} 
+.clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.clearfix {display: inline-block;}
+* html .clearfix { height: 1%;}
+.clearfix {display: block;}
+body{background:#2a2b2d;font:13px/1.3 'Microsoft Yahei','宋体';color:#999;}
+
+a, a:visited {text-decoration:none;outline:none;color:#97cae6;}
+a:hover{text-decoration:underline;}
+
+/*-核心代码-*/
+/* demo style */
+.special {
+	position:relative;
+	margin:0 auto;
+	width:840px;
+	height:247px;
+	background-image: url(../images/special_offer_bg.png);
+    background-position: 0px 74px;
+    background-repeat: no-repeat;
+	margin-bottom:46px;
+	cursor:pointer;
+	
+}
+#counter {
+	position:absolute;
+	top:135px;
+	left:279px;
+	z-index:4000;
+}
+
+.digit-separator {position: relative; float: left; width: 17px; height: 44px; overflow: hidden; background-image: url(../images/digit_separator.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+.digit {
+	background-image:url(../images/digits.png)
+}
+
+#shading {
+	background-image: url(../images/sprites.png);
+	background-position: 0px -396px;
+	background-repeat: repeat-x;
+	float: left;
+	height: 44px;
+	position: absolute;
+	width: 291px;	
+	z-index:4100;
+	top:0;
+	left:0;
+}

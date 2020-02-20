@@ -1,0 +1,523 @@
+.dib {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+}
+@keyframes left {
+  0% {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+@-webkit-keyframes left {
+  0% {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+@-moz-keyframes left {
+  0% {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+@-ms-keyframes left {
+  0% {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+@-o-keyframes left {
+  0% {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+@keyframes right {
+  0% {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+@-webkit-keyframes right {
+  0% {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+@-moz-keyframes right {
+  0% {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+@-ms-keyframes right {
+  0% {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+@-o-keyframes right {
+  0% {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+.banner02 {
+  width: 100%;
+  height: 450px;
+  transition-duration: 0.6s;
+  -webkit-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  -ms-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  background: #cdcdcd no-repeat center 126px fixed;
+  background-size: 100% auto;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -ms-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  position: relative;
+}
+.message {
+  padding: 100px 0 60px 0;
+  overflow: hidden;
+}
+.message .content {
+  width: 100%;
+  overflow: hidden;
+}
+.message .right {
+  width: 100%;
+  float: left;
+}
+.message .right .info {
+  padding-left: 8%;
+  padding-top: 70px;
+  padding-right: 2%;
+}
+.message .right .info h5 {
+  font-size: 30px;
+  color: #444444;
+  font-family: 'acanthusregular';
+}
+.message .right .info ol {
+  width: 100%;
+  overflow: hidden;
+}
+.message .right .info ol li {
+  width: 160px;
+  height: 40px;
+  float: left;
+  font-size: 24px;
+  color: #444444;
+  position: relative;
+}
+.message .right .info ol li span,
+.message .right .info ol li em {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+.message .right .info ol li em {
+  display: none;
+}
+.message .right .info ol li:hover span,
+.message .right .info ol .current span {
+  display: none;
+}
+.message .right .info ol li:hover em,
+.message .right .info ol .current em {
+  display: block;
+  color: #ea5706;
+}
+.message .right .info ul {
+  padding-top: 30px;
+  overflow: hidden;
+  font-size: 0;
+}
+.message .right .info ul li {
+  overflow: hidden;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+  width: 25%;
+  height: auto;
+  padding-top: 60px;
+  position: relative;
+  margin-bottom: 50px;
+}
+.message .right .info ul li .imgBox {
+  width: 100%;
+  height: 250px;
+  background: url(../images/center/li-bg.png) no-repeat center top;
+  text-align: center;
+  line-height: 250px;
+  background-size: 80% auto;
+  -webkit-background-size: 80% auto;
+  -moz-background-size: 80% auto;
+  -ms-background-size: 80% auto;
+  -o-background-size: 80% auto;
+}
+.message .right .info ul li .imgBox img {
+  max-height: 80%;
+  max-width: 80%;
+}
+.message .right .info ul li .infos {
+  padding-bottom: 80px;
+}
+.message .right .info ul li .infos,
+.message .right .info ul li .txt {
+  padding-top: 10px;
+  color: #6a6a6a;
+  font-size: 18px;
+  text-align: center;
+}
+.message .right .info ul li .infos span,
+.message .right .info ul li .txt span {
+  padding-top: 6px;
+  display: block;
+  color: #a2a2a2;
+}
+.message .right .info ul li .hover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+.message .right .info ul li .hover .bg {
+  width: 100%;
+  height: 100%;
+  background: #ea5706;
+  opacity: .8;
+  z-index: 2;
+}
+.message .right .info ul li .hover .top {
+  position: absolute;
+  top: 130px;
+  z-index: 2;
+  width: 100%;
+  height: 90px;
+}
+.message .right .info ul li .hover .top .icon {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.message .right .info ul li .hover .top .txt {
+  font-size: 18px;
+  color: #fff;
+}
+.message .right .info ul li .hover .top .txt span {
+  color: #fff;
+}
+.message .right .info ul li:hover .hover {
+  display: block;
+}
+.message .right .info ul li:hover .infos {
+  position: relative;
+  z-index: 6;
+  color: #fff;
+}
+.message .right .info ul li:hover .infos span {
+  color: #fff;
+}
+.message .right .info .two {
+  width: 100%;
+  height: auto;
+  padding-top: 0;
+}
+.message .right .info .two .big {
+  width: 74%;
+  margin-right: 1%;
+  padding-top: 0;
+}
+.message .right .info .two .big img {
+  max-width: 100%;
+  transition-duration: 0.6s;
+  -webkit-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  -ms-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+}
+.message .right .info .two .t-c {
+  margin-right: 0;
+  margin-left: 1%;
+}
+.message .right .info .two .big:hover img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.message .right .info .two li {
+  padding-top: 0;
+}
+.message .right .info .two li .infos {
+  padding-bottom: 28px;
+}
+.message .right .info .page {
+  width: 100%;
+  padding-bottom: 80px;
+  overflow: hidden;
+  text-align: center;
+}
+.message .right .info .page a {
+  font-size: 14px;
+  color: #868686;
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+  padding: 16px 18px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  -ms-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+}
+.message .right .info .page .page-c:hover,
+.message .right .info .page .on {
+  background: #ea5706;
+  color: #fff;
+}
+@media (max-width: 639px) {
+  .banner02 {
+    height: 220px;
+    background: #cdcdcd no-repeat center 160px fixed;
+    background-size: 100% auto;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -ms-background-size: 100% auto;
+    -o-background-size: 100% auto;
+  }
+  .message {
+    padding: 40px 0 30px 0;
+  }
+  .message .right {
+    width: 100%;
+  }
+  .message .right .info {
+    width: 90%;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+  .message .right .info ul {
+    text-align: center;
+  }
+  .message .right .info ul li {
+    width: 100%;
+    max-width: 270px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+  }
+  .message .right .info .two .big {
+    width: 100%;
+    padding-right: 0;
+    max-width: 100%;
+  }
+  .message .right .info ul li .infos {
+    padding-bottom: 20px;
+  }
+  .message .right .info ul li .imgBox {
+    height: 200px;
+    line-height: 200px;
+  }
+  .message .right .info ul li .hover .top .icon img {
+    width: 50px;
+    height: 50px;
+  }
+  .message .right .info ol li {
+    width: 66px;
+    font-size: 14px;
+  }
+  .message .right .info .page a {
+    padding: 4px 4px;
+    margin-right: 1px;
+    font-size: 12px;
+  }
+  .message .right .info .page {
+    font-size: 0;
+  }
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+  .banner02 {
+    height: 320px;
+    background: #cdcdcd no-repeat center 140px fixed;
+    background-size: 100% auto;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -ms-background-size: 100% auto;
+    -o-background-size: 100% auto;
+  }
+  .message {
+    padding: 60px 0;
+  }
+  .message .right {
+    width: 100%;
+  }
+  .message .right .info {
+    padding-left: 6%;
+    padding-right: 1%;
+  }
+  .message .right .info ul li .infos,
+  .message .right .info ul li .txt {
+    font-size: 14px;
+  }
+  .message .right .info ul li .imgBox {
+    height: 180px;
+    line-height: 180px;
+  }
+  .message .right .info ul li .hover .top .txt {
+    font-size: 14px;
+  }
+  .message .right .info ul li .hover .top .btn {
+    width: 80%;
+    max-width: 140px;
+  }
+  .message .right .info ul li .hover .top .icon img {
+    max-width: 70px;
+    max-height: 70px;
+  }
+  .message .right .info ul li .hover .top {
+    height: 200px;
+    top: 70px;
+  }
+  .message .right .info ul li {
+    padding-top: 20px;
+    margin-bottom: 12px;
+  }
+  .message .right .info ul li .infos {
+    padding-bottom: 40px;
+  }
+  .message .right .info ol li {
+    width: 100px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1335px) {
+  .banner02 {
+    height: 400px;
+    background: #cdcdcd no-repeat center 140px fixed;
+    background-size: 100% auto;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -ms-background-size: 100% auto;
+    -o-background-size: 100% auto;
+  }
+}

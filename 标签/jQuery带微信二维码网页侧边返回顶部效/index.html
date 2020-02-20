@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>有道学堂官网带微信二维码jQuery返回顶部效果</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(window).scroll(function(){
+		if($(window).scrollTop()>100){
+			$("#side-bar .gotop").fadeIn();	
+		}
+		else{
+			$("#side-bar .gotop").hide();
+		}
+	});
+	$("#side-bar .gotop").click(function(){
+		$('html,body').animate({'scrollTop':0},500);
+	});
+});
+</script>
+
+</head>
+<body style="height:3000px;background:#333;">
+
+<ul id="side-bar" class="side-pannel side-bar">
+  <a href="javascript:;" class="gotop" style="display:none;"><s class="g-icon-top"></s></a>
+  <a href="http://www.17sucai.com" target="_blank" class="text"><s class="g-icon-qq1"></s><span>在线咨询</span></a>
+  <a href="http://www.17sucai.com" target="_blank" class="text weibo"><s class="g-icon-weibo1"></s><span>微博</span></a>
+  <a href="javascript:;" class="qr"><s class="g-icon-qr1"></s><i></i></a>
+  <a href="http://www.17sucai.com" class="text survey" target="_blank"><s class="g-icon-survey1"></s><span>满意度调查</span></a>
+</ul>
+
+</body>
+</html>
