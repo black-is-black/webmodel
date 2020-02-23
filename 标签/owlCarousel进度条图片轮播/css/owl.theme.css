@@ -1,0 +1,104 @@
+@charset "utf-8";
+body{margin: 0;padding: 0;}
+.owl-theme .owl-controls{margin-top:10px;text-align:center}
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{filter:Alpha(Opacity=100);opacity:1;text-decoration:none}
+.owl-theme .owl-controls .owl-page{display:inline-block;zoom:1}
+.owl-theme .owl-controls .owl-page span{display:block;height:25px;margin:5px 7px;filter:Alpha(Opacity=50);opacity:1;-webkit-border-radius:20px;-moz-border-radius:20px;border-radius:20px;overflow:hidden}
+.owl-theme .owl-controls .owl-page.active span,.owl-theme .owl-controls.clickable .owl-page:hover span{filter:Alpha(Opacity=100);opacity:1}
+.owl-theme .owl-controls .owl-page span.owl-numbers{height:auto;width:auto;color:#FFF;padding:2px 10px;font-size:12px;-webkit-border-radius:30px;-moz-border-radius:30px;border-radius:30px}
+.owl-pagination{position:absolute;bottom:10px;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);text-align:center;-webkit-tap-highlight-color:transparent}
+.owl-pagination .owl-page{display:inline-block;zoom:1}
+.owl-pagination .owl-page span{position:relative;transition:.36s ease}
+.owl-pagination .owl-page span{background-color:transparent;width:auto;height:auto}
+.owl-pagination .owl-page{cursor:pointer;cursor:hand;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.owl-pagination{position:absolute;bottom:10px;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}
+.owl-pagination .owl-page:nth-of-type(1) span:after{content:"01"}
+.owl-pagination .owl-page:nth-of-type(2) span:after{content:"02"}
+.owl-pagination .owl-page:nth-of-type(3) span:after{content:"03"}
+.owl-pagination .owl-page span{border:0}
+.owl-pagination .owl-page:nth-of-type(1) span:after{font-size:16px;font-family:CYJXY;color:#fff}
+.owl-pagination .owl-page:nth-of-type(2) span:after{font-size:16px;font-family:CYJXY;color:#fff}
+.owl-pagination .owl-page:nth-of-type(3) span:after{font-size:16px;font-family:CYJXY;color:#fff}
+.owl-pagination{bottom:40px}
+.owl-pagination .owl-page span{background-color:transparent;width:auto;height:auto;}
+.owl-pagination .owl-page span{position:relative;transition:.36s ease}
+.owl-pagination .owl-page.active span:after{color:#0b74c3}
+.owl-pagination .owl-page.active span{padding-right:146px;background:0 0;}
+.owl-pagination .owl-page.active span:before{width:146px}
+.owl-pagination .owl-page span:before{content:"";position:absolute;top:10px;left:31px;background-color:#0b74c3;width:0;height:1px;transition:.36s ease}
+.owl-pagination .owl-page:last-of-type span:before{left:auto;right:31px}
+.owl-pagination .owl-page:last-of-type.active span{padding-left:146px;padding-right:0}
+.owl-pagination .owl-page:last-of-type.active span:before{left:auto;right:31px}
+.owl-pagination .owl-page{margin-right:8px}
+.owl-item .item img{display:block;width:100%}
+
+/*banner nav prev next buttons*/
+.owl-buttons {
+    height: 0;
+    top: 50%;
+    -webkit-transform: translateY(calc(-50%));
+    -ms-transform: translateY(calc(-50%));
+    transform: translateY(calc(-50%));
+    position: absolute;
+    width: 100%;
+    margin: 0;
+}
+.owl-buttons {
+	text-align: center;
+    -webkit-tap-highlight-color: transparent;
+}
+.owl-buttons .owl-prev,.owl-buttons .owl-next {
+    width: 36px;
+    height: 120px;
+    margin-left: 16px;
+    margin-right: 16px;
+    border-radius: 2px 0 0 2px;
+}
+.owl-buttons .owl-prev, .owl-buttons .owl-next {
+    height: 80px;
+}
+.owl-buttons .owl-prev {
+    position: absolute;
+    left: 0;
+    background: rgba(0,0,0,.2);
+    padding: 0;
+    border-radius: 0;
+    cursor: pointer;
+    background-image: url(../images/left.png);
+    background-repeat: no-repeat;
+    background-position: 7px 30px;
+}
+.owl-carousel .owl-prev:hover,.owl-carousel .owl-next:hover {
+	background-color: #0b74c3;
+	font-weight: bold;
+}
+.owl-buttons .owl-prev, .owl-buttons .owl-next {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.owl-buttons .owl-next {
+	position: absolute;
+    right: 0;
+    background: rgba(0,0,0,.2);
+    padding: 0;
+    border-radius: 0;
+    cursor: pointer;
+    background-image: url(../images/right.png);
+    background-repeat: no-repeat;
+    background-position: 7px 30px;
+}
+/*progress bar*/
+#bar {
+    width: 0%;
+    max-width: 100%;
+    height: 2px;
+    background: #0b74c3;
+    overflow: hidden;
+}
+#progressBar {
+    width: 100%;
+    background: #100E0E;
+}

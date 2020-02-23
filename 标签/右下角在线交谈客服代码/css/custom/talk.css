@@ -1,0 +1,86 @@
+.talk{
+    background-color: #fff;
+    font-size: 14px;
+    overflow: hidden;
+    /*border-radius: .25rem;*/
+    outline: none;
+    box-shadow: 0px 1px 3px #c6c8ca;
+    z-index:2;
+}
+.talk-head{
+    background-color: #17a2b8;
+    height: 40px;
+    width: 200px;
+}
+.talk-head .talk-link{
+    color: #ffffff;
+    line-height: 40px;
+
+}
+.talk-head .close{
+    color: #ffffff;
+    line-height: 35px;
+}
+.talk-head .slide{
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.talk-head .slide:hover{
+    color: #ffffff99;
+}
+.talk-body{
+    width: 360px;
+    display: none;
+}
+.talk-panel{
+    height: 255px;
+    overflow-y: scroll;
+    padding: 0 15px 0 15px;
+}
+.talk-panel p{
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+}
+.talk-input{
+    border: 1px solid #c6c8ca;
+    height: 145px;
+}
+.talk-content{
+    padding: 5px 5px 5px 5px;
+    overflow: auto;
+    height: 65%;
+    outline: none;
+}
+.talk-tools{
+    /*height: 40%;*/
+}
+.talk-tools i{
+    line-height: 42px;
+}
+.talk-emo{
+    /*width: 350px;*/
+    height: 200px;
+    border:1px solid #ccc;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    display: none;
+}
+.talk-emo .row{
+    width: 350px;
+    margin: 0px;
+}
+.talk-emo .row .col-1 a img{
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+    border: 1px solid transparent;
+}
+.talk-emo .row .col-1 a img:hover{
+    border: 1px solid red;
+}
